@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Sokole Fragrance — Brand CSS
+   Loaded globally after base.css via layout/theme.liquid
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Brand tokens
+   -------------------------------------------------------------------------- */
+:root {
+  --sokole-gold:        #C9A84C;
+  --sokole-copper:      #B5622A;
+  --sokole-truffle:     #4A2E24;
+  --sokole-burgundy:    #2A1209;
+  --sokole-cream:       #F5EFE6;
+  --sokole-mushroom:    #D4B896;
+  --sokole-blush:       #EDD5CA;
+  --sokole-dark:        #1A0D08;
+
+  --sokole-heading-spacing: 0.08em;
+  --sokole-body-spacing:    0.03em;
+}
+
+/* --------------------------------------------------------------------------
+   Typography — Cormorant Garamond refinements
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4,
+.heading {
+  letter-spacing: var(--sokole-heading-spacing);
+  font-weight: 600;
+}
+
+/* Cormorant renders beautifully in all-caps for small labels */
+.caption,
+.overline,
+.announcement-bar__message {
+  letter-spacing: 0.15em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+body {
+  letter-spacing: var(--sokole-body-spacing);
+}
+
+/* --------------------------------------------------------------------------
+   Buttons — sharp, luxury
+   -------------------------------------------------------------------------- */
+.button,
+.btn {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Gold accent on primary button hover within dark schemes */
+.color-scheme-2 .button:hover,
+.color-scheme-3 .button:hover {
+  background-color: #b8942e;
+}
+
+/* --------------------------------------------------------------------------
+   Links — copper on hover (light schemes)
+   -------------------------------------------------------------------------- */
+.color-scheme-1 a:hover,
+.color-scheme-4 a:hover,
+.color-scheme-5 a:hover {
+  color: var(--sokole-copper);
+}
+
+/* Gold on hover in dark schemes */
+.color-scheme-2 a:hover,
+.color-scheme-3 a:hover {
+  color: var(--sokole-gold);
+}
+
+/* --------------------------------------------------------------------------
+   Product cards — clean, no decoration
+   -------------------------------------------------------------------------- */
+.card-wrapper,
+.card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.card__heading a {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* Subtle image scale on hover (supplements animations_hover_elements: image) */
+.card__media img {
+  transition: transform 0.5s ease;
+}
+.card-wrapper:hover .card__media img {
+  transform: scale(1.04);
+}
+
+/* --------------------------------------------------------------------------
+   Header — brand refinements
+   -------------------------------------------------------------------------- */
+.header__heading-link img {
+  display: block;
+}
+
+/* Nav links spacing */
+.header__menu-item {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* --------------------------------------------------------------------------
+   Announcement bar
+   -------------------------------------------------------------------------- */
+.announcement-bar {
+  padding: 1rem 0;
+}
+
+/* --------------------------------------------------------------------------
+   Inputs and form fields
+   -------------------------------------------------------------------------- */
+.field__input,
+.select__select,
+.customer .field input,
+.customer textarea {
+  border-radius: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Section spacing override — flush sections (spacing_sections: 0 already
+   handles desktop; this ensures no stray margin on mobile)
+   -------------------------------------------------------------------------- */
+.shopify-section + .shopify-section {
+  margin-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.footer__content-top {
+  letter-spacing: 0.08em;
+}
+
+.footer__menu-item a {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
