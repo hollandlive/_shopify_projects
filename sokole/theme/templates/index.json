@@ -9,75 +9,199 @@
  */
 {
   "sections": {
-    "image-with-text": {
-      "type": "image-with-text",
+    "sokole-hero": {
+      "type": "sokole-hero",
+      "settings": {
+        "overline": "Fragrances",
+        "heading": "SOKOLE",
+        "tagline": "Fragrances inspired by\nelegance, mystery\nand timeless beauty.",
+        "button_label": "Discover Collection",
+        "button_link": "/collections/all"
+      }
+    },
+    "brand-story": {
+      "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h1"
+            "heading": "The Art of Scent",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sokole fragrances are born from a passion for luxury and craftsmanship. Each bottle carries a story of rare ingredients, carefully composed to create moments of pure beauty — for every day and every occasion.</p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Shop now",
-            "button_link": "shopify://collections/all",
-            "button_style_secondary": false
+            "button_label": "Our Story",
+            "button_link": "/pages/about",
+            "button_style_secondary": true
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
-        "height": "large",
-        "desktop_image_width": "large",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
-    "featured-collection": {
+    "collection-her": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Perfume for Her",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "collection": "perfume-for-her",
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
+        "show_view_all": true,
+        "view_all_style": "outline",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 56,
-        "padding_bottom": 68
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection-him": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Perfume for Him",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "perfume-for-him",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-4",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection-body-mist": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Body Mist",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "body-mist",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection-boxes": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Premium Boxes",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "premium-boxes",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-4",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection-gifts": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Exclusive Gifts",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "exclusive-gifts",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
-    "image-with-text",
-    "featured-collection"
+    "sokole-hero",
+    "brand-story",
+    "collection-her",
+    "collection-him",
+    "collection-body-mist",
+    "collection-boxes",
+    "collection-gifts"
   ]
 }
