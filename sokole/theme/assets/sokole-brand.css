@@ -138,7 +138,43 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   Footer
+   Newsletter — Rose Quartz scheme (scheme-2)
+   bg: Rose Quartz · text/borders/buttons: Truffle
+   -------------------------------------------------------------------------- */
+
+/* Generous padding for an airy, editorial feel */
+.color-scheme-2 .newsletter__wrapper {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Truffle border on the email input field */
+.color-scheme-2 .field__input,
+.color-scheme-2 .field__label {
+  border-color: rgba(90, 60, 48, 0.5);
+  color: #5A3C30;
+}
+
+.color-scheme-2 .field__input::placeholder {
+  color: rgba(90, 60, 48, 0.5);
+}
+
+/* Arrow submit button — Truffle fill, Blush icon */
+.color-scheme-2 .newsletter-form__button {
+  color: #F0D8D6;
+}
+
+.color-scheme-2 .newsletter-form__button svg {
+  fill: #F0D8D6;
+}
+
+/* Subtle hover darken on submit arrow */
+.color-scheme-2 .newsletter-form__button:hover {
+  opacity: 0.85;
+}
+
+/* --------------------------------------------------------------------------
+   Footer — deep truffle scheme (scheme-3)
    -------------------------------------------------------------------------- */
 .footer__content-top {
   letter-spacing: 0.08em;
