@@ -4,17 +4,16 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   Brand tokens
+   Brand tokens  — Feminine luxury palette
+   Rose Quartz · Blush · Mushroom · Truffle · Copper (accent only)
    -------------------------------------------------------------------------- */
 :root {
-  --sokole-gold:        #C9A84C;
-  --sokole-copper:      #B5622A;
-  --sokole-truffle:     #4A2E24;
-  --sokole-burgundy:    #2A1209;
-  --sokole-cream:       #F5EFE6;
-  --sokole-mushroom:    #D4B896;
-  --sokole-blush:       #EDD5CA;
-  --sokole-dark:        #1A0D08;
+  --sokole-rose-quartz: #C4929A;   /* primary accent — dusty feminine pink */
+  --sokole-copper:      #B5622A;   /* subtle highlights only */
+  --sokole-truffle:     #5A3C30;   /* dark contrast — warm mid-dark brown */
+  --sokole-blush:       #F0D8D6;   /* main background — pale baby pink */
+  --sokole-mushroom:    #C8B090;   /* secondary neutral — warm sandy beige */
+  --sokole-dark:        #2A1814;   /* deepest dark — for dark scheme backgrounds */
 
   --sokole-heading-spacing: 0.08em;
   --sokole-body-spacing:    0.03em;
@@ -55,25 +54,25 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Gold accent on primary button hover within dark schemes */
+/* Rose Quartz button hover in dark schemes */
 .color-scheme-2 .button:hover,
 .color-scheme-3 .button:hover {
-  background-color: #b8942e;
+  background-color: #b07e86;
 }
 
 /* --------------------------------------------------------------------------
-   Links — copper on hover (light schemes)
+   Links — rose quartz on hover (light schemes)
    -------------------------------------------------------------------------- */
 .color-scheme-1 a:hover,
 .color-scheme-4 a:hover,
 .color-scheme-5 a:hover {
-  color: var(--sokole-copper);
+  color: var(--sokole-rose-quartz);
 }
 
-/* Gold on hover in dark schemes */
+/* Blush on hover in dark schemes */
 .color-scheme-2 a:hover,
 .color-scheme-3 a:hover {
-  color: var(--sokole-gold);
+  color: var(--sokole-blush);
 }
 
 /* --------------------------------------------------------------------------

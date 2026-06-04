@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sokole — Color Palette Before / After</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #f8f8f8;
+    padding: 48px 24px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #2a1814;
+    margin-bottom: 48px;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  h2 {
+    text-align: center;
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  .swatch-group { display: flex; flex-direction: column; gap: 6px; }
+  .swatch {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 0 20px;
+    gap: 16px;
+  }
+  .swatch-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  .swatch-info { display: flex; flex-direction: column; gap: 2px; }
+  .swatch-name {
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #333;
+  }
+  .swatch-hex {
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: #888;
+    font-family: 'Courier New', monospace;
+  }
+  .swatch-role {
+    font-size: 0.7rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  .removed { opacity: 0.45; }
+  .divider {
+    margin: 20px 0 8px;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  .scheme-section { margin-top: 36px; }
+  .scheme-section h3 {
+    text-align: center;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .scheme-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 6px;
+    align-items: center;
+  }
+  .scheme-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: #999;
+    width: 64px;
+    flex-shrink: 0;
+  }
+  .scheme-chips { display: flex; gap: 3px; flex-wrap: wrap; }
+  .chip {
+    width: 28px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.08);
+    position: relative;
+  }
+  .chip[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .tag-removed {
+    display: inline-block;
+    font-size: 0.62rem;
+    background: #fde;
+    color: #c44;
+    padding: 1px 6px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    margin-left: 6px;
+  }
+  .tag-added {
+    display: inline-block;
+    font-size: 0.62rem;
+    background: #def5e8;
+    color: #2a8a4a;
+    padding: 1px 6px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    margin-left: 6px;
+  }
+  .tag-kept {
+    display: inline-block;
+    font-size: 0.62rem;
+    background: #eee;
+    color: #888;
+    padding: 1px 6px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    margin-left: 6px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Sokole — Colour Palette Revision</h1>
+
+<div class="columns">
+
+  <!-- BEFORE -->
+  <div>
+    <h2>Before</h2>
+    <div class="swatch-group">
+
+      <div class="swatch removed">
+        <div class="swatch-dot" style="background:#C9A84C;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Gold <span class="tag-removed">removed</span></span>
+          <span class="swatch-hex">#C9A84C</span>
+          <span class="swatch-role">Primary accent / button</span>
+        </div>
+      </div>
+
+      <div class="swatch removed">
+        <div class="swatch-dot" style="background:#2A1209;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Burgundy <span class="tag-removed">removed</span></span>
+          <span class="swatch-hex">#2A1209</span>
+          <span class="swatch-role">Dark scheme background</span>
+        </div>
+      </div>
+
+      <div class="swatch removed">
+        <div class="swatch-dot" style="background:#F5EFE6; border:1px solid #ddd;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Cream <span class="tag-removed">replaced</span></span>
+          <span class="swatch-hex">#F5EFE6</span>
+          <span class="swatch-role">Main background — warm ivory</span>
+        </div>
+      </div>
+
+      <div class="swatch removed">
+        <div class="swatch-dot" style="background:#EDD5CA;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Blush (old) <span class="tag-removed">updated</span></span>
+          <span class="swatch-hex">#EDD5CA</span>
+          <span class="swatch-role">Accent background — peachy</span>
+        </div>
+      </div>
+
+      <div class="swatch removed">
+        <div class="swatch-dot" style="background:#D4B896;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Mushroom (old) <span class="tag-removed">updated</span></span>
+          <span class="swatch-hex">#D4B896</span>
+          <span class="swatch-role">Neutral — warm tan</span>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#4A2E24;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Truffle (old) <span class="tag-kept">kept → updated</span></span>
+          <span class="swatch-hex">#4A2E24</span>
+          <span class="swatch-role">Dark contrast</span>
+        </div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#B5622A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Copper <span class="tag-kept">kept</span></span>
+          <span class="swatch-hex">#B5622A</span>
+          <span class="swatch-role">Highlight</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Before schemes -->
+    <div class="scheme-section">
+      <h3>Color Schemes (Before)</h3>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 1</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#F5EFE6;" title="bg #F5EFE6"></div>
+          <div class="chip" style="background:#2A1810;" title="text #2A1810"></div>
+          <div class="chip" style="background:#4A2E24;" title="btn #4A2E24"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 2</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#2A1209;" title="bg #2A1209"></div>
+          <div class="chip" style="background:#F5EFE6;" title="text #F5EFE6"></div>
+          <div class="chip" style="background:#C9A84C;" title="btn #C9A84C (gold)"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 3</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#1A0D08;" title="bg #1A0D08"></div>
+          <div class="chip" style="background:#E8C4B8;" title="text #E8C4B8"></div>
+          <div class="chip" style="background:#C9A84C;" title="btn #C9A84C (gold)"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 4</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#D4B896;" title="bg #D4B896"></div>
+          <div class="chip" style="background:#2A1810;" title="text #2A1810"></div>
+          <div class="chip" style="background:#4A2E24;" title="btn #4A2E24"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 5</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#EDD5CA;" title="bg #EDD5CA"></div>
+          <div class="chip" style="background:#2A1810;" title="text #2A1810"></div>
+          <div class="chip" style="background:#B5622A;" title="btn #B5622A (copper)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AFTER -->
+  <div>
+    <h2>After</h2>
+    <div class="swatch-group">
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#C4929A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Rose Quartz <span class="tag-added">new</span></span>
+          <span class="swatch-hex">#C4929A</span>
+          <span class="swatch-role">Primary accent / buttons on dark</span>
+        </div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#F0D8D6; border:1px solid #ddd;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Blush <span class="tag-added">updated</span></span>
+          <span class="swatch-hex">#F0D8D6</span>
+          <span class="swatch-role">Main background — pale feminine pink</span>
+        </div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#C8B090;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Mushroom <span class="tag-added">updated</span></span>
+          <span class="swatch-hex">#C8B090</span>
+          <span class="swatch-role">Secondary neutral — sandy warm beige</span>
+        </div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#5A3C30;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Truffle <span class="tag-added">updated</span></span>
+          <span class="swatch-hex">#5A3C30</span>
+          <span class="swatch-role">Dark contrast — buttons & text</span>
+        </div>
+      </div>
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#2A1814;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Deep Truffle</span>
+          <span class="swatch-hex">#2A1814</span>
+          <span class="swatch-role">Dark scheme background / deepest text</span>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#B5622A;"></div>
+        <div class="swatch-info">
+          <span class="swatch-name">Copper <span class="tag-kept">kept — accent only</span></span>
+          <span class="swatch-hex">#B5622A</span>
+          <span class="swatch-role">Subtle highlights (use sparingly)</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- After schemes -->
+    <div class="scheme-section">
+      <h3>Color Schemes (After)</h3>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 1</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#F0D8D6;" title="bg #F0D8D6 (blush)"></div>
+          <div class="chip" style="background:#2A1814;" title="text #2A1814"></div>
+          <div class="chip" style="background:#5A3C30;" title="btn #5A3C30 (truffle)"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 2</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#2A1814;" title="bg #2A1814 (deep truffle)"></div>
+          <div class="chip" style="background:#F0D8D6;" title="text #F0D8D6 (blush)"></div>
+          <div class="chip" style="background:#C4929A;" title="btn #C4929A (rose quartz)"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 3</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#1E0E0A;" title="bg #1E0E0A (darkest)"></div>
+          <div class="chip" style="background:#F0D8D6;" title="text #F0D8D6 (blush)"></div>
+          <div class="chip" style="background:#C4929A;" title="btn #C4929A (rose quartz)"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 4</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#C8B090;" title="bg #C8B090 (mushroom)"></div>
+          <div class="chip" style="background:#2A1814;" title="text #2A1814"></div>
+          <div class="chip" style="background:#5A3C30;" title="btn #5A3C30 (truffle)"></div>
+        </div>
+      </div>
+
+      <div class="scheme-row">
+        <span class="scheme-label">Scheme 5</span>
+        <div class="scheme-chips">
+          <div class="chip" style="background:#E8C2C0;" title="bg #E8C2C0 (deep blush)"></div>
+          <div class="chip" style="background:#2A1814;" title="text #2A1814"></div>
+          <div class="chip" style="background:#C4929A;" title="btn #C4929A (rose quartz)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Full-width mock strips -->
+<div style="max-width:960px; margin:56px auto 0;">
+  <h2 style="text-align:center; font-size:0.78rem; letter-spacing:0.2em; text-transform:uppercase; color:#888; margin-bottom:20px;">Full Strip Preview — After</h2>
+
+  <!-- Strip 1: Blush -->
+  <div style="background:#F0D8D6; padding:32px 40px; display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <div style="font-family:Georgia,serif; font-size:1.8rem; letter-spacing:0.08em; color:#2A1814; margin-bottom:8px;">SOKOLE</div>
+      <div style="font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; color:#5A3C30;">Luxury Fragrance</div>
+    </div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <div style="background:#5A3C30; color:#F0D8D6; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; padding:10px 22px;">Shop Now</div>
+      <div style="border:1px solid #5A3C30; color:#5A3C30; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; padding:10px 22px;">Explore</div>
+    </div>
+  </div>
+
+  <!-- Strip 2: Deep truffle dark -->
+  <div style="background:#2A1814; padding:32px 40px; display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <div style="font-family:Georgia,serif; font-size:1.4rem; letter-spacing:0.1em; color:#F0D8D6; margin-bottom:8px;">New Arrivals</div>
+      <div style="font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:#C4929A;">Spring Collection</div>
+    </div>
+    <div style="background:#C4929A; color:#2A1814; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; padding:10px 22px;">Discover</div>
+  </div>
+
+  <!-- Strip 3: Mushroom -->
+  <div style="background:#C8B090; padding:32px 40px; display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <div style="font-family:Georgia,serif; font-size:1.4rem; letter-spacing:0.08em; color:#2A1814; margin-bottom:8px;">Body Mist</div>
+      <div style="font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:#5A3C30;">299 PLN</div>
+    </div>
+    <div style="background:#5A3C30; color:#F0D8D6; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; padding:10px 22px;">Add to Cart</div>
+  </div>
+
+  <!-- Strip 4: Deep blush (scheme 5 — sale badge) -->
+  <div style="background:#E8C2C0; padding:20px 40px; display:flex; justify-content:space-between; align-items:center;">
+    <div style="font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; color:#2A1814;">Free shipping on orders over 200 PLN</div>
+    <div style="background:#C4929A; color:#F0D8D6; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; padding:6px 16px; border-radius:20px;">SALE</div>
+  </div>
+
+</div>
+
+</body>
+</html>
