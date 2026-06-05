@@ -2,8 +2,6 @@
    Sokole Fragrance — Brand CSS
    Loaded globally after base.css via layout/theme.liquid
    ========================================================================== */
-
-
 /* --------------------------------------------------------------------------
    Brand tokens  — Feminine luxury palette
    Rose Quartz · Blush · Mushroom · Truffle · Copper (accent only)
@@ -19,8 +17,6 @@
   --sokole-heading-spacing: 0.08em;
   --sokole-body-spacing:    0.03em;
 }
-
-
 
 /* --------------------------------------------------------------------------
    Typography — Cormorant Garamond refinements
