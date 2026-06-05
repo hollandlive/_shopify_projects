@@ -14,11 +14,11 @@ The store targets two markets — Greece and international — with full **bilin
 
 ## Live Store
 
-| | |
-|---|---|
-| **Store** | sokole-sqcoggyz.myshopify.com |
-| **Live theme** | Sense (customized) |
-| **Dev theme** | Development — preview at `?preview_theme_id=186688962941` |
+|                |                                                           |
+| -------------- | --------------------------------------------------------- |
+| **Store**      | sokole-sqcoggyz.myshopify.com                             |
+| **Live theme** | Sense (customized)                                        |
+| **Dev theme**  | Development — preview at `?preview_theme_id=186688962941` |
 
 ---
 
@@ -26,30 +26,31 @@ The store targets two markets — Greece and international — with full **bilin
 
 ### Color Palette
 
-| Name | Hex | Used for |
-|---|---|---|
-| Cream | `#F5EFE6` | Page background, product cards |
-| Deep Burgundy | `#2A1209` | Hero sections, dark moments |
-| Truffle | `#4A2E24` | Primary buttons, body text |
-| Gold | `#C9A84C` | Accents on dark backgrounds |
-| Copper | `#B5622A` | Links, hover states |
-| Mushroom | `#D4B896` | For Him sections |
-| Rose Quartz | `#C4837A` | For Her sections |
-| Blush | `#EDD5CA` | Feminine soft backgrounds |
-| Dark Brown | `#1A0D08` | Footer, newsletter |
+| Name          | Hex       | Used for                       |
+| ------------- | --------- | ------------------------------ |
+| Cream         | `#F5EFE6` | Page background, product cards |
+| Deep Burgundy | `#2A1209` | Hero sections, dark moments    |
+| Truffle       | `#4A2E24` | Primary buttons, body text     |
+| Gold          | `#C9A84C` | Accents on dark backgrounds    |
+| Copper        | `#B5622A` | Links, hover states            |
+| Mushroom      | `#D4B896` | For Him sections               |
+| Rose Quartz   | `#C4837A` | For Her sections               |
+| Blush         | `#EDD5CA` | Feminine soft backgrounds      |
+| Dark Brown    | `#1A0D08` | Footer, newsletter             |
 
 ### Typography
 
-| Role | Font | Rationale |
-|---|---|---|
+| Role     | Font                        | Rationale                                      |
+| -------- | --------------------------- | ---------------------------------------------- |
 | Headings | Cormorant Garamond Semibold | Serif elegance, suits the French/Arabic naming |
-| Body | Jost Regular | Clean geometric sans — readable, modern |
+| Body     | Jost Regular                | Clean geometric sans — readable, modern        |
 
 ---
 
 ## What Was Built
 
 ### Phase 1 — Brand Foundation
+
 - Replaced all 5 default Sense color schemes with the Sokole palette
 - Set typography: Cormorant Garamond headings + Jost body
 - Global style overhaul: sharp rectangular buttons (`radius: 0`), flush section spacing, no card shadows
@@ -57,11 +58,13 @@ The store targets two markets — Greece and international — with full **bilin
 - Injected brand CSS into `theme.liquid` globally
 
 ### Phase 2 — Homepage
+
 - Built a 12-section homepage layout: hero banner → brand story → collection grid → featured products → gift sets → trust badges → newsletter
 - Dark/light section rhythm (burgundy hero, cream product sections, dark footer)
 - Mobile-first: swipeable collection rows, full-width CTAs, centered logo
 
 ### Multilingual Setup
+
 - Published Greek (`el`) alongside English (`en`) in Shopify Admin
 - Full 382-key Greek translation file (`locales/el.json`) — 100% coverage
 - Language switcher enabled in header (desktop + mobile drawer)
@@ -100,6 +103,7 @@ sokole/
 ## Development Setup
 
 ### Requirements
+
 - [Shopify CLI 4.x](https://shopify.dev/docs/themes/tools/cli)
 - Node.js 18+
 
@@ -126,10 +130,10 @@ shopify theme push
 
 ## Markets & Languages
 
-| Market | Countries | Currency | Language |
-|---|---|---|---|
-| Greece | GR | EUR | Greek (el) + English (en) |
-| International | CA + rest | CAD / local | English (en) |
+| Market        | Countries | Currency    | Language                  |
+| ------------- | --------- | ----------- | ------------------------- |
+| Greece        | GR        | EUR         | Greek (el) + English (en) |
+| International | CA + rest | CAD / local | English (en)              |
 
 The language switcher renders automatically when more than one language is published — no theme code change needed.
 
@@ -163,15 +167,15 @@ The brand name "Sokole" and product lines ("Mythology", "Cashmere Aura") carry a
 
 ## Tech Stack
 
-| | |
-|---|---|
-| Platform | Shopify |
-| Theme base | Sense 15.4.1 |
-| Templating | Liquid |
+|            |                                    |
+| ---------- | ---------------------------------- |
+| Platform   | Shopify                            |
+| Theme base | Sense 15.4.1                       |
+| Templating | Liquid                             |
 | Custom CSS | Vanilla CSS with custom properties |
-| CLI | Shopify CLI 4.1.0 |
-| Languages | English, Greek |
+| CLI        | Shopify CLI 4.1.0                  |
+| Languages  | English, Greek                     |
 
 ---
 
-*First e-commerce project — June 2026*
+_First e-commerce project — June 2026_
