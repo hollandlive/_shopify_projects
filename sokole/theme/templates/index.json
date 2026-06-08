@@ -12,44 +12,66 @@
     "sokole-hero": {
       "type": "sokole-hero",
       "settings": {
-        "overline": "Fragrances",
+        "overline": "Luxury Fragrances",
         "heading": "SOKOLE",
-        "tagline": "Fragrances inspired by\nelegance, mystery\nand timeless beauty.",
-        "button_label": "Discover Collection",
+        "tagline": "Rare ingredients. Composed with intention. For those who enter a room and stay long after they've gone.",
+        "button_label": "Explore the Collection",
         "button_link": "/collections/all"
       }
     },
-    "brand-story": {
-      "type": "rich-text",
+    "brand-story-editorial": {
+      "type": "image-with-text",
       "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our Story",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "The Art of Scent",
-            "heading_size": "h2"
+            "heading": "A Reverence for Rare",
+            "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Sokole fragrances are born from a passion for luxury and craftsmanship. Each bottle carries a story of rare ingredients, carefully composed to create moments of pure beauty — for every day and every occasion.</p>"
+            "text": "<p>Sokole was born from a conviction that fragrance is the most personal form of expression. Every bottle begins as a question — what does beauty smell like without compromise?</p><p>Our perfumers work with rare, hand-selected ingredients sourced from the same producers who have supplied the great fragrance houses for generations. Each composition is crafted to evolve on your skin over hours. Not a statement. An atmosphere.</p>",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Our Story",
+            "button_label": "Our Heritage",
             "button_link": "/pages/about",
             "button_style_secondary": true
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
+      "block_order": [
+        "caption",
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "asset_image": "logo-sokole.jpg",
+        "asset_image_alt": "Sokole Fragrance",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
-        "full_width": false,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -57,7 +79,7 @@
     "collection-her": {
       "type": "featured-collection",
       "settings": {
-        "title": "Perfume for Her",
+        "title": "For Her",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -85,7 +107,7 @@
     "collection-him": {
       "type": "featured-collection",
       "settings": {
-        "title": "Perfume for Him",
+        "title": "For Him",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -97,7 +119,35 @@
         "show_view_all": true,
         "view_all_style": "outline",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection-gifts": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "The Gift of Scent",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "exclusive-gift",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -125,63 +175,7 @@
         "show_view_all": true,
         "view_all_style": "outline",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "collection-boxes": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Premium Boxes",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "premium-boxes",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-4",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "collection-gifts": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Exclusive Gifts",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "exclusive-gift",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -197,11 +191,10 @@
   },
   "order": [
     "sokole-hero",
-    "brand-story",
+    "brand-story-editorial",
     "collection-her",
     "collection-him",
-    "collection-body-mist",
-    "collection-boxes",
-    "collection-gifts"
+    "collection-gifts",
+    "collection-body-mist"
   ]
 }

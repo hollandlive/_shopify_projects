@@ -6,7 +6,7 @@
 .sokole-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 88vh;
+  min-height: 90vh;
   overflow: hidden;
 }
 
@@ -17,6 +17,16 @@
   flex-direction: column;
   justify-content: center;
   padding: 4rem clamp(2rem, 5vw, 5rem) 4rem clamp(1.5rem, calc((100vw - 1300px) / 2 + 3rem), 9rem);
+}
+
+/* Decorative rule above overline — a luxury editorial signal */
+.sokole-hero__overline::before {
+  content: '';
+  display: block;
+  width: 2.4rem;
+  height: 1px;
+  background-color: #C4929A;
+  margin-bottom: 1.4rem;
 }
 
 .sokole-hero__overline {
@@ -84,7 +94,21 @@
   display: block;
 }
 
-/* ── Mobile: stack vertically ────────────────────────────────────────────── */
+/* Subtle blush vignette on the left edge of the image — ties image to the
+   text panel so both halves read as one unified composition */
+.sokole-hero__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(240, 216, 214, 0.14) 0%,
+    transparent 28%
+  );
+  pointer-events: none;
+}
+
+/* ── Mobile: stack vertically — image first for visual impact ────────────── */
 @media screen and (max-width: 749px) {
   .sokole-hero {
     grid-template-columns: 1fr;
@@ -92,18 +116,33 @@
     min-height: unset;
   }
 
-  .sokole-hero__content {
-    padding: 4rem 2rem;
+  /* Image appears first on mobile — the visual lands before the words */
+  .sokole-hero__media {
     order: 1;
+    height: 75vw;
+    min-height: 300px;
+  }
+
+  /* Vignette shifts to bottom edge on mobile — connects image to text below */
+  .sokole-hero__media::after {
+    background: linear-gradient(
+      to top,
+      rgba(240, 216, 214, 0.22) 0%,
+      transparent 35%
+    );
+  }
+
+  .sokole-hero__content {
+    order: 2;
+    padding: 4rem 2rem;
   }
 
   .sokole-hero__heading {
     font-size: 3.8rem;
   }
 
-  .sokole-hero__media {
-    order: 2;
-    height: 60vw;
-    min-height: 260px;
+  /* Prevent tagline from becoming too small on phones */
+  .sokole-hero__tagline {
+    font-size: 1.6rem;
   }
 }

@@ -17,14 +17,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
+            "heading": "The Inner Circle",
             "heading_size": "h1"
           }
         },
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Join our email list for exclusive offers and the latest news. </p>"
+            "text": "<p>Be first to discover new launches, rare ingredient stories, and private events. An invitation, not a newsletter.</p>"
           }
         },
         "email-form": {
@@ -50,7 +50,7 @@
         "color_scheme": "scheme-2",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
+        "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
