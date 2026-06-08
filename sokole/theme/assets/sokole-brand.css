@@ -5,16 +5,13 @@
 
 
 /* --------------------------------------------------------------------------
-   Brand tokens  — Feminine luxury palette
-   Rose Quartz · Blush · Mushroom · Truffle · Copper (accent only)
+   Brand tokens  — 3-color luxury palette
+   Blush · Rose Quartz · Dark
    -------------------------------------------------------------------------- */
 :root {
+  --sokole-blush:       #F0D8D6;   /* primary light — pale baby pink */
   --sokole-rose-quartz: #C4929A;   /* primary accent — dusty feminine pink */
-  --sokole-copper:      #B5622A;   /* subtle highlights only */
-  --sokole-truffle:     #5A3C30;   /* dark contrast — warm mid-dark brown */
-  --sokole-blush:       #F0D8D6;   /* main background — pale baby pink */
-  --sokole-mushroom:    #C8B090;   /* secondary neutral — warm sandy beige */
-  --sokole-dark:        #2A1814;   /* deepest dark — for dark scheme backgrounds */
+  --sokole-dark:        #2A1814;   /* primary dark — for text and dark backgrounds */
 
   --sokole-heading-spacing: 0.08em;
   --sokole-body-spacing:    0.03em;
@@ -55,24 +52,23 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-/* Rose Quartz button hover in dark schemes */
-.color-scheme-2 .button:hover,
+/* Darker rose quartz on button hover in the dark scheme */
 .color-scheme-3 .button:hover {
   background-color: #b07e86;
 }
 
 /* --------------------------------------------------------------------------
-   Links — rose quartz on hover (light schemes)
+   Links — rose quartz on hover (blush background)
    -------------------------------------------------------------------------- */
-.color-scheme-1 a:hover,
-.color-scheme-4 a:hover,
-.color-scheme-5 a:hover {
+.color-scheme-1 a:hover {
   color: var(--sokole-rose-quartz);
 }
 
-/* Blush on hover in dark schemes */
+/* Blush on hover in rose quartz and dark schemes */
 .color-scheme-2 a:hover,
-.color-scheme-3 a:hover {
+.color-scheme-3 a:hover,
+.color-scheme-4 a:hover,
+.color-scheme-5 a:hover {
   color: var(--sokole-blush);
 }
 
@@ -154,7 +150,7 @@ body {
 
 /* --------------------------------------------------------------------------
    Newsletter — Rose Quartz scheme (scheme-2)
-   bg: Rose Quartz · text/borders/buttons: Truffle
+   bg: Rose Quartz · text/borders/buttons: Dark
    -------------------------------------------------------------------------- */
 
 /* Generous padding for an airy, editorial feel */
@@ -163,18 +159,18 @@ body {
   padding-bottom: 6rem;
 }
 
-/* Truffle border on the email input field */
+/* Dark border on the email input field */
 .color-scheme-2 .field__input,
 .color-scheme-2 .field__label {
-  border-color: rgba(90, 60, 48, 0.5);
-  color: #5A3C30;
+  border-color: rgba(42, 24, 20, 0.5);
+  color: #2A1814;
 }
 
 .color-scheme-2 .field__input::placeholder {
-  color: rgba(90, 60, 48, 0.5);
+  color: rgba(42, 24, 20, 0.5);
 }
 
-/* Arrow submit button — Truffle fill, Blush icon */
+/* Arrow submit button — Dark background, Blush icon */
 .color-scheme-2 .newsletter-form__button {
   color: #F0D8D6;
 }
@@ -189,7 +185,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   Footer — deep truffle scheme (scheme-3)
+   Footer — Rose Quartz scheme (scheme-2)
    -------------------------------------------------------------------------- */
 .footer__content-top {
   letter-spacing: 0.08em;

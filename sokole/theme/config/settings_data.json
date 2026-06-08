@@ -18,9 +18,9 @@
             "background": "#F0D8D6",
             "background_gradient": "",
             "text": "#2A1814",
-            "button": "#5A3C30",
+            "button": "#2A1814",
             "button_label": "#F0D8D6",
-            "secondary_button_label": "#5A3C30",
+            "secondary_button_label": "#2A1814",
             "shadow": "#2A1814"
           }
         },
@@ -28,17 +28,17 @@
           "settings": {
             "background": "#C4929A",
             "background_gradient": "",
-            "text": "#5A3C30",
-            "button": "#5A3C30",
+            "text": "#2A1814",
+            "button": "#2A1814",
             "button_label": "#F0D8D6",
-            "secondary_button_label": "#5A3C30",
-            "shadow": "#5A3C30"
+            "secondary_button_label": "#2A1814",
+            "shadow": "#2A1814"
           }
         },
         "scheme-3": {
           "settings": {
             "background": "#2A1814",
-            "background_gradient": "linear-gradient(160deg, #3D2218, #2A1814 100%)",
+            "background_gradient": "",
             "text": "#F0D8D6",
             "button": "#C4929A",
             "button_label": "#2A1814",
@@ -48,10 +48,10 @@
         },
         "scheme-4": {
           "settings": {
-            "background": "#C8B090",
+            "background": "#C4929A",
             "background_gradient": "",
             "text": "#2A1814",
-            "button": "#5A3C30",
+            "button": "#2A1814",
             "button_label": "#F0D8D6",
             "secondary_button_label": "#2A1814",
             "shadow": "#2A1814"
@@ -59,13 +59,13 @@
         },
         "scheme-5": {
           "settings": {
-            "background": "#E8C2C0",
+            "background": "#C4929A",
             "background_gradient": "",
             "text": "#2A1814",
-            "button": "#C4929A",
+            "button": "#2A1814",
             "button_label": "#F0D8D6",
             "secondary_button_label": "#2A1814",
-            "shadow": "#5A3C30"
+            "shadow": "#2A1814"
           }
         }
       },
