@@ -185,6 +185,36 @@ body {
 }
 
 /* --------------------------------------------------------------------------
+   Language selector — ISO code on mobile, full name on desktop
+   -------------------------------------------------------------------------- */
+
+/* Desktop: show full language name, hide short ISO code */
+.language-selector__iso {
+  display: none;
+}
+
+/* Mobile: un-hide the header language form, show ISO code instead of full name */
+@media screen and (max-width: 749px) {
+  .header__icons .desktop-localization-wrapper localization-form {
+    display: block !important;
+  }
+
+  .header__icons .desktop-localization-wrapper .localization-form__select {
+    padding: 0 1.8rem 0 0.6rem;
+    height: 3.2rem;
+    font-size: 1.1rem;
+  }
+
+  .language-selector__name {
+    display: none;
+  }
+
+  .language-selector__iso {
+    display: inline;
+  }
+}
+
+/* --------------------------------------------------------------------------
    Footer — Rose Quartz scheme (scheme-2)
    -------------------------------------------------------------------------- */
 .footer__content-top {
