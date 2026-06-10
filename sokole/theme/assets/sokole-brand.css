@@ -4,23 +4,70 @@
    ========================================================================== */
 
 
-   
 /* --------------------------------------------------------------------------
-   Brand tokens  — 3-color luxury palette
-   Blush · Rose Quartz · Dark
+   Brand tokens — champagne-gold luxury palette
+   Ivory · Champagne · Chocolate · Gold
    -------------------------------------------------------------------------- */
 :root {
-  --sokole-blush:       #F0D8D6;   /* primary light — pale baby pink */
-  --sokole-rose-quartz: #C4929A;   /* primary accent — dusty feminine pink */
-  --sokole-dark:        #2A1814;   /* primary dark — for text and dark backgrounds */
+  --sokole-ivory:      #FDF8F0;   /* primary light — warm off-white */
+  --sokole-champagne:  #F6ECD8;   /* secondary — pale champagne */
+  --sokole-chocolate:  #4A3525;   /* primary dark — warm deep brown */
+  --sokole-gold:       #C89B3C;   /* gold accent — metallic amber */
+  --sokole-gold-light: #D4AF37;   /* gold highlight */
+  --sokole-gold-dark:  #8C6A2D;   /* gold shadow */
+  --sokole-gold-warm:  #8C6A3A;   /* warm brown-gold for text accents */
 
-  --sokole-gold:        #C89B3C;   /* gold accent — metallic warm amber */
-  --sokole-gold-light:  #D4AF37;   /* gold highlight stop */
-  --sokole-gold-dark:   #8C6A2D;   /* gold shadow stop */
+  /* Legacy aliases kept so existing selectors still resolve */
+  --sokole-blush:       #FDF8F0;
+  --sokole-rose-quartz: #C89B3C;
+  --sokole-dark:        #4A3525;
 
   --sokole-heading-spacing: 0.08em;
   --sokole-body-spacing:    0.03em;
 }
+
+
+/* --------------------------------------------------------------------------
+   Announcement bar — rich champagne-gold gradient
+   Overrides the solid colour from the active colour scheme.
+   -------------------------------------------------------------------------- */
+.announcement-bar {
+  background: linear-gradient(
+    90deg,
+    #6B4E1E 0%,
+    #C89B3C 28%,
+    #D4AF37 50%,
+    #C89B3C 72%,
+    #6B4E1E 100%
+  ) !important;
+  padding: 1rem 0;
+}
+
+.announcement-bar .announcement-bar__message,
+.announcement-bar .announcement-bar__message a,
+.announcement-bar .announcement-bar__message a:hover {
+  color: #FDF8F0 !important;
+  letter-spacing: 0.18em;
+}
+
+
+/* --------------------------------------------------------------------------
+   Header — elevated wordmark
+   SOKOLE renders as <span class="h2"> when no logo image is set.
+   -------------------------------------------------------------------------- */
+.header__heading-link .h2 {
+  font-size: 4.2rem;
+  letter-spacing: 0.34em;
+  color: #8C6A3A;
+  font-weight: 600;
+  font-family: var(--font-heading-family), Georgia, serif;
+  transition: color 0.2s ease;
+}
+
+.header__heading-link:hover .h2 {
+  color: var(--sokole-gold);
+}
+
 
 /* --------------------------------------------------------------------------
    Typography — Cormorant Garamond refinements
@@ -32,7 +79,6 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 600;
 }
 
-/* Cormorant renders beautifully in all-caps for small labels */
 .caption,
 .overline,
 .announcement-bar__message {
@@ -45,8 +91,9 @@ body {
   letter-spacing: var(--sokole-body-spacing);
 }
 
+
 /* --------------------------------------------------------------------------
-   Buttons — sharp, luxury
+   Buttons — metallic gold gradient on primary
    -------------------------------------------------------------------------- */
 .button,
 .btn {
@@ -54,14 +101,13 @@ body {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: filter 0.28s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Gold metallic gradient on primary (filled) buttons */
 .button--primary {
   background-color: var(--sokole-gold);
   background-image: linear-gradient(135deg, #8C6A2D 0%, #C89B3C 40%, #D4AF37 58%, #A67828 100%);
-  color: #F0D8D6;
+  color: #FDF8F0;
   filter: drop-shadow(0 2px 8px rgba(140, 106, 45, 0.18));
   transition: filter 0.28s ease;
 }
@@ -71,28 +117,28 @@ body {
   filter: brightness(0.87) drop-shadow(0 4px 14px rgba(140, 106, 45, 0.28));
 }
 
-/* Darker rose quartz on button hover in the dark scheme */
 .color-scheme-3 .button:hover {
-  background-color: #b07e86;
+  filter: brightness(0.9);
 }
+
 
 /* --------------------------------------------------------------------------
-   Links — rose quartz on hover (blush background)
+   Links — gold on light backgrounds, ivory on chocolate
    -------------------------------------------------------------------------- */
-.color-scheme-1 a:hover {
-  color: var(--sokole-rose-quartz);
-}
-
-/* Blush on hover in rose quartz and dark schemes */
+.color-scheme-1 a:hover,
 .color-scheme-2 a:hover,
-.color-scheme-3 a:hover,
 .color-scheme-4 a:hover,
 .color-scheme-5 a:hover {
-  color: var(--sokole-blush);
+  color: var(--sokole-gold);
 }
 
+.color-scheme-3 a:hover {
+  color: var(--sokole-champagne);
+}
+
+
 /* --------------------------------------------------------------------------
-   Product cards — fixed 3:4 ratio · contain · white background
+   Product cards — 3:4 ratio · contain · white media background
    -------------------------------------------------------------------------- */
 .card-wrapper,
 .card {
@@ -106,36 +152,31 @@ body {
   font-size: 1.2rem;
 }
 
-/* Force exact 3:4 portrait ratio on every product card.
-   !important overrides the inline --ratio-percent set by Liquid. */
 .product-card-wrapper .card__inner.ratio::before {
   padding-bottom: 133.33% !important;
 }
 
-/* White neutral background — full bottle visible, no colour bleed */
 .product-card-wrapper .card__media .media {
   background-color: #ffffff;
 }
 
-/* Contain: show the full bottle, never crop */
 .product-card-wrapper .card__media .media > img {
   object-fit: contain !important;
   object-position: center center;
 }
 
-/* No scale on hover — scaling contained images creates empty-border artefacts */
 .card-wrapper:hover .card__media img {
   transform: none;
 }
 
+
 /* --------------------------------------------------------------------------
-   Header — brand refinements
+   Header — nav refinements
    -------------------------------------------------------------------------- */
 .header__heading-link img {
   display: block;
 }
 
-/* Nav links spacing */
 .header__menu-item {
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -143,8 +184,7 @@ body {
 }
 
 /* Desktop nav: thin gold underline fades in on hover and marks active page.
-   Using text-decoration (not ::after) to avoid conflicts with Dawn's focus-ring
-   pseudo-element that already lives on .link::after. */
+   text-decoration avoids conflicts with Dawn's ::after focus-ring overlay. */
 @media screen and (min-width: 990px) {
   .header__menu-item {
     text-decoration: underline;
@@ -160,12 +200,14 @@ body {
   }
 }
 
+
 /* --------------------------------------------------------------------------
-   Announcement bar
+   Section spacing
    -------------------------------------------------------------------------- */
-.announcement-bar {
-  padding: 1rem 0;
+.shopify-section + .shopify-section {
+  margin-top: 0;
 }
+
 
 /* --------------------------------------------------------------------------
    Inputs and form fields
@@ -177,60 +219,46 @@ body {
   border-radius: 0;
 }
 
-/* --------------------------------------------------------------------------
-   Section spacing override — flush sections (spacing_sections: 0 already
-   handles desktop; this ensures no stray margin on mobile)
-   -------------------------------------------------------------------------- */
-.shopify-section + .shopify-section {
-  margin-top: 0;
-}
 
 /* --------------------------------------------------------------------------
-   Newsletter — Rose Quartz scheme (scheme-2)
-   bg: Rose Quartz · text/borders/buttons: Dark
+   Newsletter — Champagne scheme (scheme-2)
+   bg: #F6ECD8 · text/accents: Chocolate
    -------------------------------------------------------------------------- */
-
-/* Generous padding for an airy, editorial feel */
 .color-scheme-2 .newsletter__wrapper {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-/* Dark border on the email input field */
 .color-scheme-2 .field__input,
 .color-scheme-2 .field__label {
-  border-color: rgba(42, 24, 20, 0.5);
-  color: #2A1814;
+  border-color: rgba(74, 53, 37, 0.35);
+  color: #4A3525;
 }
 
 .color-scheme-2 .field__input::placeholder {
-  color: rgba(42, 24, 20, 0.5);
+  color: rgba(74, 53, 37, 0.45);
 }
 
-/* Arrow submit button — Dark background, Blush icon */
 .color-scheme-2 .newsletter-form__button {
-  color: #F0D8D6;
+  color: #FDF8F0;
 }
 
 .color-scheme-2 .newsletter-form__button svg {
-  fill: #F0D8D6;
+  fill: #FDF8F0;
 }
 
-/* Subtle hover darken on submit arrow */
 .color-scheme-2 .newsletter-form__button:hover {
   opacity: 0.85;
 }
 
+
 /* --------------------------------------------------------------------------
    Language selector — ISO code on mobile, full name on desktop
    -------------------------------------------------------------------------- */
-
-/* Desktop: show full language name, hide short ISO code */
 .language-selector__iso {
   display: none;
 }
 
-/* Mobile: un-hide the header language form, show ISO code instead of full name */
 @media screen and (max-width: 749px) {
   .header__icons .desktop-localization-wrapper localization-form {
     display: block !important;
@@ -251,9 +279,10 @@ body {
   }
 }
 
+
 /* --------------------------------------------------------------------------
-   Social icons — monochrome base, gold on hover
-   Dawn uses currentColor for SVG fill, so color change propagates to icons.
+   Social icons — monochrome, gold on hover
+   Dawn SVGs use currentColor so the colour change propagates automatically.
    -------------------------------------------------------------------------- */
 .list-social__link {
   transition: color 0.25s ease;
@@ -263,8 +292,9 @@ body {
   color: var(--sokole-gold);
 }
 
+
 /* --------------------------------------------------------------------------
-   Footer — Rose Quartz scheme (scheme-2)
+   Footer — Champagne scheme (scheme-2)
    -------------------------------------------------------------------------- */
 .footer__content-top {
   letter-spacing: 0.08em;

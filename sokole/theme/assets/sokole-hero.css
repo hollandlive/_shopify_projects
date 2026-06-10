@@ -12,20 +12,20 @@
 
 /* ── Left: text column ──────────────────────────────────────────────────── */
 .sokole-hero__content {
-  background-color: #F0D8D6;
+  background-color: #FDF5E8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 4rem clamp(2rem, 5vw, 5rem) 4rem clamp(1.5rem, calc((100vw - 1300px) / 2 + 3rem), 9rem);
 }
 
-/* Decorative rule above overline — a luxury editorial signal */
+/* Decorative gold rule above overline */
 .sokole-hero__overline::before {
   content: '';
   display: block;
   width: 2.4rem;
   height: 1px;
-  background-color: #C4929A;
+  background-color: #C89B3C;
   margin-bottom: 1.4rem;
 }
 
@@ -33,7 +33,7 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-size: 1rem;
-  color: #C4929A;
+  color: #8C6A3A;
   margin: 0 0 1.2rem;
   text-shadow: 0 0 18px rgba(200, 155, 60, 0.22);
 }
@@ -44,7 +44,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #2A1814;
+  color: #4A3525;
   line-height: 1;
   margin: 0 0 2.4rem;
   text-shadow: 0 1px 0 rgba(200, 155, 60, 0.07);
@@ -55,18 +55,19 @@
   font-size: clamp(1.4rem, 2.2vw, 2rem);
   font-weight: 400;
   letter-spacing: 0.04em;
-  color: #2A1814;
+  color: #4A3525;
   line-height: 1.55;
   margin: 0 0 3.6rem;
   max-width: 28ch;
 }
 
+/* Gold metallic CTA — champagne gradient */
 .sokole-hero__cta {
   display: inline-block;
   padding: 1.4rem 3.2rem;
   background-color: #C89B3C;
   background-image: linear-gradient(135deg, #8C6A2D 0%, #C89B3C 40%, #D4AF37 58%, #A67828 100%);
-  color: #F0D8D6;
+  color: #FDF8F0;
   font-size: 1.1rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -85,7 +86,7 @@
 .sokole-hero__media {
   position: relative;
   overflow: hidden;
-  background-color: #F0D8D6;
+  background-color: #FDF5E8;
 }
 
 .sokole-hero__media img {
@@ -96,15 +97,14 @@
   display: block;
 }
 
-/* Subtle blush vignette on the left edge of the image — ties image to the
-   text panel so both halves read as one unified composition */
+/* Subtle ivory vignette on the left edge — ties image panel to text panel */
 .sokole-hero__media::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(240, 216, 214, 0.14) 0%,
+    rgba(253, 245, 232, 0.16) 0%,
     transparent 28%
   );
   pointer-events: none;
@@ -118,18 +118,16 @@
     min-height: unset;
   }
 
-  /* Image appears first on mobile — the visual lands before the words */
   .sokole-hero__media {
     order: 1;
     height: 75vw;
     min-height: 300px;
   }
 
-  /* Vignette shifts to bottom edge on mobile — connects image to text below */
   .sokole-hero__media::after {
     background: linear-gradient(
       to top,
-      rgba(240, 216, 214, 0.22) 0%,
+      rgba(253, 245, 232, 0.22) 0%,
       transparent 35%
     );
   }
@@ -143,7 +141,6 @@
     font-size: 3.8rem;
   }
 
-  /* Prevent tagline from becoming too small on phones */
   .sokole-hero__tagline {
     font-size: 1.6rem;
   }

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Sokole Trust Bar — 4-column brand promise strip
+   ========================================================================== */
+
+.sokole-trust {
+  background-color: #FDF8F0;
+  border-top: 1px solid rgba(200, 155, 60, 0.28);
+  border-bottom: 1px solid rgba(200, 155, 60, 0.28);
+  padding: 3.2rem 0;
+}
+
+.sokole-trust__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sokole-trust__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  padding: 0.8rem 2.4rem;
+}
+
+.sokole-trust__item + .sokole-trust__item {
+  border-left: 1px solid rgba(200, 155, 60, 0.22);
+}
+
+.sokole-trust__icon {
+  flex-shrink: 0;
+  color: #8C6A3A;
+  padding-top: 0.1rem;
+}
+
+.sokole-trust__label {
+  display: block;
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #4A3525;
+  margin-bottom: 0.35rem;
+}
+
+.sokole-trust__desc {
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: rgba(74, 53, 37, 0.62);
+}
+
+/* Tablet: 2 × 2 grid */
+@media screen and (max-width: 899px) {
+  .sokole-trust__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sokole-trust__item:nth-child(3) {
+    border-left: none;
+    border-top: 1px solid rgba(200, 155, 60, 0.22);
+  }
+
+  .sokole-trust__item:nth-child(4) {
+    border-top: 1px solid rgba(200, 155, 60, 0.22);
+  }
+}
+
+/* Mobile: single column */
+@media screen and (max-width: 480px) {
+  .sokole-trust__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sokole-trust__item + .sokole-trust__item {
+    border-left: none;
+    border-top: 1px solid rgba(200, 155, 60, 0.22);
+  }
+
+  .sokole-trust__item:nth-child(3),
+  .sokole-trust__item:nth-child(4) {
+    border-left: none;
+  }
+}
