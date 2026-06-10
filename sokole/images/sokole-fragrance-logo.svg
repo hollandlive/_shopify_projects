@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" role="img">
+  <title>Sokole Fragrance Logo</title>
+  <desc>Sokole Fragrance logo with golden smoke wisps and decorative border on transparent background</desc>
+
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9913A;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#E8C06A;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#F2D48A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C9913A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="smokeGrad" x1="0%" y1="100%" x2="30%" y2="0%">
+      <stop offset="0%" style="stop-color:#B8832A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E8C06A;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#F5DC98;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4A84B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Decorative outer border rectangle -->
+  <rect x="18" y="18" width="484" height="244" rx="2" ry="2"
+        fill="none" stroke="url(#goldGrad)" stroke-width="1.2"/>
+  <!-- Inner thin border line -->
+  <rect x="24" y="24" width="472" height="232" rx="1" ry="1"
+        fill="none" stroke="url(#goldGrad)" stroke-width="0.5" stroke-dasharray="none"/>
+
+  <!-- Corner ornaments - top left -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="0.9">
+    <path d="M18,38 Q18,18 38,18"/>
+    <path d="M18,44 Q18,18 44,18"/>
+    <circle cx="18" cy="18" r="3" fill="url(#goldGrad)" stroke="none"/>
+  </g>
+  <!-- Corner ornaments - top right -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="0.9">
+    <path d="M502,38 Q502,18 482,18"/>
+    <path d="M502,44 Q502,18 476,18"/>
+    <circle cx="502" cy="18" r="3" fill="url(#goldGrad)" stroke="none"/>
+  </g>
+  <!-- Corner ornaments - bottom left -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="0.9">
+    <path d="M18,242 Q18,262 38,262"/>
+    <path d="M18,236 Q18,262 44,262"/>
+    <circle cx="18" cy="262" r="3" fill="url(#goldGrad)" stroke="none"/>
+  </g>
+  <!-- Corner ornaments - bottom right -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="0.9">
+    <path d="M502,242 Q502,262 482,262"/>
+    <path d="M502,236 Q502,262 476,262"/>
+    <circle cx="502" cy="262" r="3" fill="url(#goldGrad)" stroke="none"/>
+  </g>
+
+  <!-- Smoke wisps (left of text) -->
+  <!-- Left wisp - tallest -->
+  <path d="M148,230 C142,210 155,195 148,175 C141,155 155,138 148,115 C141,92 155,75 152,55"
+        fill="none" stroke="url(#smokeGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Middle wisp -->
+  <path d="M162,230 C168,208 154,192 162,170 C170,148 155,132 162,108 C169,85 156,68 158,48"
+        fill="none" stroke="url(#smokeGrad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right wisp - shorter -->
+  <path d="M175,230 C182,212 168,197 176,177 C184,157 170,142 176,120 C182,100 170,84 172,65"
+        fill="none" stroke="url(#smokeGrad)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Horizontal line under smoke -->
+  <line x1="140" y1="235" x2="200" y2="235" stroke="url(#goldGrad)" stroke-width="0.8"/>
+
+  <!-- SOKOLE main text -->
+  <text x="290" y="162"
+        font-family="'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif"
+        font-size="74"
+        font-weight="400"
+        letter-spacing="6"
+        text-anchor="middle"
+        fill="url(#goldGrad)">SOKOLE</text>
+
+  <!-- FRAGRANCE subtitle -->
+  <text x="290" y="196"
+        font-family="'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif"
+        font-size="18"
+        font-weight="400"
+        letter-spacing="10"
+        text-anchor="middle"
+        fill="url(#goldGrad)">FRAGRANCE</text>
+
+</svg>
