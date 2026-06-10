@@ -52,20 +52,20 @@
 
 
 /* --------------------------------------------------------------------------
-   Header — elevated wordmark
-   SOKOLE renders as <span class="h2"> when no logo image is set.
+   Header — SVG logo sizing
+   sokole-fragrance-logo2.svg: viewBox 480×200, displayed at 260×108
    -------------------------------------------------------------------------- */
-.header__heading-link .h2 {
-  font-size: 4.2rem;
-  letter-spacing: 0.34em;
-  color: #8C6A2D;
-  font-weight: 600;
-  font-family: var(--font-heading-family), Georgia, serif;
-  transition: color 0.2s ease;
+.sokole-logo {
+  display: block;
+  width: 260px;
+  height: auto;
+  max-width: 100%;
 }
 
-.header__heading-link:hover .h2 {
-  color: var(--sokole-gold);
+@media screen and (max-width: 749px) {
+  .sokole-logo {
+    width: 180px;
+  }
 }
 
 
