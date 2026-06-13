@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 158" role="img">
+  <title>Sokole Fragrance — Concept 1: Refined Smoke Wisps</title>
+
+  <defs>
+    <linearGradient id="c1Gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#E8C46A"/>
+      <stop offset="42%"  stop-color="#D4A848"/>
+      <stop offset="100%" stop-color="#C08930"/>
+    </linearGradient>
+    <linearGradient id="c1Smoke1" x1="0%" y1="100%" x2="18%" y2="0%">
+      <stop offset="0%"   stop-color="#B8832A" stop-opacity="0.0"/>
+      <stop offset="25%"  stop-color="#C89B3C" stop-opacity="0.75"/>
+      <stop offset="65%"  stop-color="#E8C46A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#D4A848" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="c1Smoke2" x1="0%" y1="100%" x2="12%" y2="0%">
+      <stop offset="0%"   stop-color="#B8832A" stop-opacity="0.0"/>
+      <stop offset="30%"  stop-color="#C89B3C" stop-opacity="0.6"/>
+      <stop offset="70%"  stop-color="#E0BC60" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#C89B3C" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="c1Smoke3" x1="0%" y1="100%" x2="8%" y2="0%">
+      <stop offset="0%"   stop-color="#B8832A" stop-opacity="0.0"/>
+      <stop offset="35%"  stop-color="#C89B3C" stop-opacity="0.45"/>
+      <stop offset="80%"  stop-color="#D4A848" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#B8832A" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wisp 1 — tallest, leftmost, gentle S-curve -->
+  <path d="M 56,148  C 50,130  60,116  54,98  C 48,80  60,66  54,48  C 48,32  56,20  54,8"
+        fill="none" stroke="url(#c1Smoke1)" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Wisp 2 — middle height, curves the other way -->
+  <path d="M 70,148  C 76,128  62,114  70,95  C 78,76  66,62  72,44  C 78,28  70,16  72,6"
+        fill="none" stroke="url(#c1Smoke2)" stroke-width="2.0" stroke-linecap="round"/>
+
+  <!-- Wisp 3 — shortest, closest to text -->
+  <path d="M 83,148  C 90,130  78,117  84,100  C 90,84  80,72  85,56  C 90,42  84,30  86,18"
+        fill="none" stroke="url(#c1Smoke3)" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Thin rule below wisps, aligned with text baseline area -->
+  <line x1="48" y1="152" x2="94" y2="152"
+        stroke="url(#c1Gold)" stroke-width="0.7" stroke-opacity="0.65"/>
+
+  <!-- SOKOLE -->
+  <text x="108" y="112"
+        font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,serif"
+        font-size="84"
+        font-weight="300"
+        letter-spacing="3"
+        fill="url(#c1Gold)">SOKOLE</text>
+
+  <!-- FRAGRANCE subtitle -->
+  <text x="175" y="138"
+        font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,serif"
+        font-size="15.5"
+        font-weight="400"
+        letter-spacing="11"
+        fill="url(#c1Gold)">FRAGRANCE</text>
+
+</svg>
