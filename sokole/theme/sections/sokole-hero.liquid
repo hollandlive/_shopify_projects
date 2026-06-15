@@ -10,18 +10,34 @@
 <section class="sokole-hero shopify-section">
   <div class="sokole-hero__content">
     {%- if section.settings.overline != blank -%}
-      <p class="sokole-hero__overline">{{ section.settings.overline }}</p>
+      <p class="sokole-hero__overline">
+        {%- if localization.language.iso_code == 'el' -%}
+          Πολυτελή Αρώματα
+        {%- else -%}
+          {{ section.settings.overline }}
+        {%- endif -%}
+      </p>
     {%- endif -%}
 
     <h1 class="sokole-hero__heading">{{ section.settings.heading }}</h1>
 
     {%- if section.settings.tagline != blank -%}
-      <p class="sokole-hero__tagline">{{ section.settings.tagline }}</p>
+      <p class="sokole-hero__tagline">
+        {%- if localization.language.iso_code == 'el' -%}
+          Σπάνια συστατικά. Δημιουργημένα με πρόθεση. Για εκείνους που μπαίνουν σε ένα δωμάτιο και μένουν πολύ αφού φύγουν.
+        {%- else -%}
+          {{ section.settings.tagline }}
+        {%- endif -%}
+      </p>
     {%- endif -%}
 
     {%- if section.settings.button_label != blank -%}
       <a href="{{ section.settings.button_link }}" class="sokole-hero__cta">
-        {{ section.settings.button_label }}
+        {%- if localization.language.iso_code == 'el' -%}
+          Ανακαλύψτε τη Συλλογή
+        {%- else -%}
+          {{ section.settings.button_label }}
+        {%- endif -%}
       </a>
     {%- endif -%}
   </div>

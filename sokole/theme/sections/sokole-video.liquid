@@ -72,7 +72,13 @@
       <div class="sokole-video__placeholder-inner">
         <span class="sokole-video__placeholder-rule"></span>
         <p class="sokole-video__placeholder-title">{{ shop.name }}</p>
-        <p class="sokole-video__placeholder-sub">The film — coming soon</p>
+        <p class="sokole-video__placeholder-sub">
+          {%- if localization.language.iso_code == 'el' -%}
+            Η ταινία — σύντομα
+          {%- else -%}
+            The film — coming soon
+          {%- endif -%}
+        </p>
       </div>
     </div>
 
@@ -83,17 +89,39 @@
   {%- if section.settings.heading != blank or section.settings.overline != blank -%}
     <div class="sokole-video__content">
       {%- if section.settings.overline != blank -%}
-        <span class="sokole-video__overline">{{ section.settings.overline }}</span>
+        <span class="sokole-video__overline">
+          {%- if localization.language.iso_code == 'el' -%}
+            Το Τελετουργικό
+          {%- else -%}
+            {{ section.settings.overline }}
+          {%- endif -%}
+        </span>
       {%- endif -%}
       {%- if section.settings.heading != blank -%}
-        <h2 class="sokole-video__heading">{{ section.settings.heading }}</h2>
+        <h2 class="sokole-video__heading">
+          {%- if localization.language.iso_code == 'el' -%}
+            Φόρεσε την Ιστορία σου
+          {%- else -%}
+            {{ section.settings.heading }}
+          {%- endif -%}
+        </h2>
       {%- endif -%}
       {%- if section.settings.tagline != blank -%}
-        <p class="sokole-video__tagline">{{ section.settings.tagline }}</p>
+        <p class="sokole-video__tagline">
+          {%- if localization.language.iso_code == 'el' -%}
+            Ένα άρωμα που μένει πολύ αφού φύγεις.
+          {%- else -%}
+            {{ section.settings.tagline }}
+          {%- endif -%}
+        </p>
       {%- endif -%}
       {%- if section.settings.button_label != blank -%}
         <a href="{{ section.settings.button_link }}" class="sokole-video__cta">
-          {{ section.settings.button_label }}
+          {%- if localization.language.iso_code == 'el' -%}
+            Ανακαλύψτε τη Συλλογή
+          {%- else -%}
+            {{ section.settings.button_label }}
+          {%- endif -%}
         </a>
       {%- endif -%}
     </div>

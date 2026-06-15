@@ -75,7 +75,16 @@
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          {{ section.settings.title }}
+          {%- if localization.language.iso_code == 'el' -%}
+            {%- case section.settings.title -%}
+              {%- when 'Bestsellers' -%}Αγαπημένα
+              {%- when 'For Him' -%}Για Εκείνον
+              {%- when 'For Her' -%}Για Εκείνη
+              {%- else -%}{{ section.settings.title }}
+            {%- endcase -%}
+          {%- else -%}
+            {{ section.settings.title }}
+          {%- endif -%}
         </h2>
       {%- endif -%}
       {%- if section.settings.description != blank

@@ -35,8 +35,28 @@
           {%- endcase -%}
         </div>
         <div class="sokole-trust__text">
-          <span class="sokole-trust__label">{{ block.settings.label }}</span>
-          <span class="sokole-trust__desc">{{ block.settings.description }}</span>
+          {%- if localization.language.iso_code == 'el' -%}
+            {%- case block.settings.icon -%}
+              {%- when 'leaf' -%}
+                <span class="sokole-trust__label">Σπάνια Συστατικά</span>
+                <span class="sokole-trust__desc">Επιλεγμένα με φροντίδα από όλο τον κόσμο</span>
+              {%- when 'droplet' -%}
+                <span class="sokole-trust__label">Εκλεπτυσμένα Αρώματα</span>
+                <span class="sokole-trust__desc">Δημιουργημένα για να αφηγούνται τη μοναδική σας ιστορία</span>
+              {%- when 'gift' -%}
+                <span class="sokole-trust__label">Δωρεάν Δείγματα</span>
+                <span class="sokole-trust__desc">Με κάθε παραγγελία σας</span>
+              {%- when 'lock' -%}
+                <span class="sokole-trust__label">Ασφαλής Πληρωμή</span>
+                <span class="sokole-trust__desc">Ολοκλήρωση αγοράς με αξιόπιστους συνεργάτες</span>
+              {%- else -%}
+                <span class="sokole-trust__label">{{ block.settings.label }}</span>
+                <span class="sokole-trust__desc">{{ block.settings.description }}</span>
+            {%- endcase -%}
+          {%- else -%}
+            <span class="sokole-trust__label">{{ block.settings.label }}</span>
+            <span class="sokole-trust__desc">{{ block.settings.description }}</span>
+          {%- endif -%}
         </div>
       </div>
     {%- endfor -%}

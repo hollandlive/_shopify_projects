@@ -30,7 +30,11 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {{ block.settings.heading }}
+            {%- if localization.language.iso_code == 'el' and block.settings.heading contains 'Inner Circle' -%}
+              Ο Εσωτερικός Κύκλος
+            {%- else -%}
+              {{ block.settings.heading }}
+            {%- endif -%}
           </h2>
         {%- when 'paragraph' -%}
           <div
@@ -41,7 +45,11 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {{ block.settings.text }}
+            {%- if localization.language.iso_code == 'el' and block.settings.text contains 'invitation' -%}
+              <p>Ανακαλύψτε πρώτοι τις νέες κυκλοφορίες, ιστορίες σπάνιων συστατικών και ιδιωτικές εκδηλώσεις. Μια πρόσκληση, όχι ένα newsletter.</p>
+            {%- else -%}
+              {{ block.settings.text }}
+            {%- endif -%}
           </div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>

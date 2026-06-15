@@ -80,18 +80,30 @@
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
                     {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.heading }}
+                    {%- if localization.language.iso_code == 'el' and block.settings.heading == 'A Reverence for Rare' -%}
+                      Μια Αφιέρωση στο Σπάνιο
+                    {%- else -%}
+                      {{ block.settings.heading }}
+                    {%- endif -%}
                   </h2>
                 {%- when 'caption' -%}
                   <p
                     class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.caption | escape }}
+                    {%- if localization.language.iso_code == 'el' and block.settings.caption == 'Our Story' -%}
+                      Η Ιστορία μας
+                    {%- else -%}
+                      {{ block.settings.caption | escape }}
+                    {%- endif -%}
                   </p>
                 {%- when 'text' -%}
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.text }}
+                    {%- if localization.language.iso_code == 'el' and block.settings.text contains 'conviction' -%}
+                      <p>Το Sokole γεννήθηκε από την πεποίθηση ότι το άρωμα είναι η πιο προσωπική μορφή έκφρασης. Κάθε μπουκάλι ξεκινά ως μια ερώτηση — πώς μυρίζει η ομορφιά χωρίς συμβιβασμούς;</p><p>Οι αρωματοποιοί μας εργάζονται με σπάνια, χειροεπιλεγμένα συστατικά από τους ίδιους παραγωγούς που τροφοδοτούν τους μεγάλους αρωματικούς οίκους εδώ και γενιές. Κάθε σύνθεση είναι δημιουργημένη να εξελίσσεται στο δέρμα σας για ώρες. Όχι μια δήλωση. Μια ατμόσφαιρα.</p>
+                    {%- else -%}
+                      {{ block.settings.text }}
+                    {%- endif -%}
                   </div>
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
@@ -104,7 +116,11 @@
                       class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
-                      {{ block.settings.button_label | escape }}
+                      {%- if localization.language.iso_code == 'el' and block.settings.button_label == 'Our Heritage' -%}
+                        Η Κληρονομιά μας
+                      {%- else -%}
+                        {{ block.settings.button_label | escape }}
+                      {%- endif -%}
                     </a>
                   {%- endif -%}
               {%- endcase -%}
