@@ -57,14 +57,14 @@
    -------------------------------------------------------------------------- */
 .sokole-logo {
   display: block;
-  width: 260px;
+  width: 390px;
   height: auto;
   max-width: 100%;
 }
 
 @media screen and (max-width: 749px) {
   .sokole-logo {
-    width: 180px;
+    width: 270px;
   }
 }
 
