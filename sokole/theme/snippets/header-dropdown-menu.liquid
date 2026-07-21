@@ -3,11 +3,17 @@
 
   Usage:
   {% render 'header-dropdown-menu' %}
+  {% render 'header-dropdown-menu', links: right_menu_links, class: 'header__inline-menu--right' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+{%- liquid
+  assign menu = menu | default: section.settings.menu
+  assign link_items = links | default: menu.links
+-%}
+
+<nav class="header__inline-menu{% if class %} {{ class }}{% endif %}">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+    {%- for link in link_items -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>

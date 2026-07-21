@@ -1,0 +1,167 @@
+.sokole-showcase {
+  padding: 8rem 0;
+}
+
+.sokole-showcase__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.sokole-showcase__overline {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sokole-gold);
+  margin: 0 0 1.8rem;
+}
+
+.sokole-showcase__heading {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--sokole-espresso);
+  margin: 0 0 1.6rem;
+}
+
+.sokole-showcase__description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(43, 34, 28, 0.65);
+  margin: 0;
+}
+
+.sokole-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 5.6rem;
+  margin-top: 6.4rem;
+}
+
+.sokole-showcase__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.sokole-showcase__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background-color: var(--sokole-secondary);
+  text-decoration: none;
+}
+
+.sokole-showcase__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.9s ease-out;
+}
+
+.sokole-showcase__card:hover .sokole-showcase__media img {
+  transform: scale(1.04);
+}
+
+.sokole-showcase__tag {
+  position: absolute;
+  left: 1.6rem;
+  top: 1.6rem;
+  background-color: rgba(247, 243, 235, 0.9);
+  backdrop-filter: blur(4px);
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sokole-espresso);
+}
+
+.sokole-showcase__cta {
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  padding: 1.4rem 0;
+  background-color: var(--sokole-espresso);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sokole-cream);
+  opacity: 0;
+  transform: translateY(1.2rem);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.sokole-showcase__card:hover .sokole-showcase__cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sokole-showcase__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+.sokole-showcase__name {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--sokole-espresso);
+  margin: 0;
+}
+
+.sokole-showcase__subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(43, 34, 28, 0.55);
+  margin: 0.6rem 0 0;
+}
+
+.sokole-showcase__price {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--sokole-espresso);
+  margin: 0.8rem 0 0;
+}
+
+@media screen and (max-width: 989px) {
+  .sokole-showcase__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .sokole-showcase {
+    padding: 5rem 0;
+  }
+
+  .sokole-showcase__grid {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    margin-top: 4rem;
+  }
+
+  .sokole-showcase__cta {
+    opacity: 1;
+    transform: none;
+    position: static;
+    margin-top: 1rem;
+  }
+}

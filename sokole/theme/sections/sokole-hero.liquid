@@ -1,7 +1,7 @@
 {{ 'sokole-hero.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
-  assign hero_image_url = 'perfume-hero.jpg' | asset_url
+  assign hero_image_url = 'socole_velvet2.PNG' | asset_url
   if section.settings.image != blank
     assign hero_image_url = section.settings.image | image_url: width: 1800
   endif
@@ -10,36 +10,29 @@
 <section class="sokole-hero shopify-section">
   <div class="sokole-hero__content">
     {%- if section.settings.overline != blank -%}
-      <p class="sokole-hero__overline">
-        {%- if localization.language.iso_code == 'el' -%}
-          Πολυτελή Αρώματα
-        {%- else -%}
-          {{ section.settings.overline }}
-        {%- endif -%}
-      </p>
+      <p class="sokole-hero__overline">{{ section.settings.overline }}</p>
     {%- endif -%}
 
-    <h1 class="sokole-hero__heading">{{ section.settings.heading }}</h1>
+    <h1 class="sokole-hero__heading">
+      {{ section.settings.heading_line_1 }}<br>{{ section.settings.heading_line_2 }}
+    </h1>
 
-    {%- if section.settings.tagline != blank -%}
-      <p class="sokole-hero__tagline">
-        {%- if localization.language.iso_code == 'el' -%}
-          Σπάνια συστατικά. Δημιουργημένα με πρόθεση. Για εκείνους που μπαίνουν σε ένα δωμάτιο και μένουν πολύ αφού φύγουν.
-        {%- else -%}
-          {{ section.settings.tagline }}
-        {%- endif -%}
-      </p>
+    {%- if section.settings.description != blank -%}
+      <p class="sokole-hero__description">{{ section.settings.description }}</p>
     {%- endif -%}
 
-    {%- if section.settings.button_label != blank -%}
-      <a href="{{ section.settings.button_link }}" class="sokole-hero__cta">
-        {%- if localization.language.iso_code == 'el' -%}
-          Ανακαλύψτε τη Συλλογή
-        {%- else -%}
-          {{ section.settings.button_label }}
-        {%- endif -%}
-      </a>
-    {%- endif -%}
+    <div class="sokole-hero__actions">
+      {%- if section.settings.primary_button_label != blank -%}
+        <a href="{{ section.settings.primary_button_link }}" class="sokole-hero__cta">
+          {{ section.settings.primary_button_label }}
+        </a>
+      {%- endif -%}
+      {%- if section.settings.secondary_button_label != blank -%}
+        <a href="{{ section.settings.secondary_button_link }}" class="sokole-hero__link">
+          {{ section.settings.secondary_button_label }}
+        </a>
+      {%- endif -%}
+    </div>
   </div>
 
   <div class="sokole-hero__media">
@@ -56,13 +49,17 @@
       }}
     {%- else -%}
       <img
-        src="{{ 'perfume-hero.jpg' | asset_url }}"
-        alt="{{ section.settings.heading | escape }}"
+        src="{{ hero_image_url }}"
+        alt="{{ section.settings.heading_line_1 | append: ' ' | append: section.settings.heading_line_2 | escape }}"
         loading="eager"
         fetchpriority="high"
         width="1400"
-        height="933"
+        height="1750"
       >
+    {%- endif -%}
+
+    {%- if section.settings.image_caption != blank -%}
+      <span class="sokole-hero__caption">{{ section.settings.image_caption }}</span>
     {%- endif -%}
   </div>
 </section>
@@ -77,36 +74,59 @@
       "type": "text",
       "id": "overline",
       "label": "Overline",
-      "default": "Fragrances"
+      "default": "The Debut Eau de Parfum"
     },
     {
       "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "SOKOLE"
+      "id": "heading_line_1",
+      "label": "Heading — line 1",
+      "default": "Sokole"
+    },
+    {
+      "type": "text",
+      "id": "heading_line_2",
+      "label": "Heading — line 2",
+      "default": "Velvet"
     },
     {
       "type": "textarea",
-      "id": "tagline",
-      "label": "Tagline",
-      "default": "Fragrances inspired by elegance, mystery and timeless beauty."
+      "id": "description",
+      "label": "Description",
+      "default": "Rare ingredients, composed with intention. A rich, velvety fragrance wrapped in warmth and quiet elegance — for those who enter a room and stay long after they have gone."
     },
     {
       "type": "text",
-      "id": "button_label",
-      "label": "Button label",
-      "default": "Discover Collection"
+      "id": "primary_button_label",
+      "label": "Primary button label",
+      "default": "Discover Velvet"
     },
     {
       "type": "url",
-      "id": "button_link",
-      "label": "Button link",
+      "id": "primary_button_link",
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_label",
+      "label": "Secondary link label",
+      "default": "Explore the House"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_link",
+      "label": "Secondary link URL",
       "default": "/collections/all"
     },
     {
       "type": "image_picker",
       "id": "image",
       "label": "Hero image (overrides theme asset)"
+    },
+    {
+      "type": "text",
+      "id": "image_caption",
+      "label": "Image caption",
+      "default": "Eau de Parfum — 50ml"
     }
   ],
   "presets": [

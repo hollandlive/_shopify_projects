@@ -5,48 +5,56 @@
 
 
 /* --------------------------------------------------------------------------
-   Brand tokens — champagne-gold luxury palette
-   Ivory · Champagne · Chocolate · Gold
+   Brand tokens — wine & gold luxury palette (v0 mockup direction)
+   Cream · Wine · Espresso · Gold
    -------------------------------------------------------------------------- */
 :root {
-  --sokole-ivory:      #FDF8F0;   /* primary light — warm off-white */
-  --sokole-champagne:  #F6ECD8;   /* secondary — pale champagne */
-  --sokole-chocolate:  #4A3525;   /* primary dark — warm deep brown */
-  --sokole-gold:       #C89B3C;   /* gold accent — metallic amber */
-  --sokole-gold-light: #D4AF37;   /* gold highlight */
+  --sokole-cream:      #F7F3EB;   /* primary light — warm cream */
+  --sokole-secondary:  #EDE7DE;   /* secondary — muted warm sand */
+  --sokole-espresso:   #2B221C;   /* primary dark — near-black warm brown */
+  --sokole-wine:       #791920;   /* deep burgundy — CTA hover, accents */
+  --sokole-gold:       #B08B51;   /* muted antique gold accent */
+  --sokole-gold-light: #C6A26E;   /* gold highlight */
   --sokole-gold-dark:  #8C6A2D;   /* gold shadow */
-  --sokole-gold-warm:  #8C6A3A;   /* warm brown-gold for text accents */
+  --sokole-border:     #D6D0C7;   /* hairline borders on cream */
 
   /* Legacy aliases kept so existing selectors still resolve */
-  --sokole-blush:       #FDF8F0;
-  --sokole-rose-quartz: #C89B3C;
-  --sokole-dark:        #4A3525;
+  --sokole-ivory:       #F7F3EB;
+  --sokole-champagne:   #EDE7DE;
+  --sokole-chocolate:   #2B221C;
+  --sokole-gold-warm:   #8C6A2D;
+  --sokole-blush:       #F7F3EB;
+  --sokole-rose-quartz: #B08B51;
+  --sokole-dark:        #2B221C;
 
-  --sokole-heading-spacing: 0.08em;
+  --sokole-heading-spacing: 0.02em;
   --sokole-body-spacing:    0.03em;
+  --sokole-tracking-luxe:   0.28em;
+  --sokole-tracking-wide:   0.18em;
+}
+
+.sokole-tracking-luxe {
+  letter-spacing: var(--sokole-tracking-luxe);
+}
+
+.sokole-tracking-wide {
+  letter-spacing: var(--sokole-tracking-wide);
 }
 
 
 /* --------------------------------------------------------------------------
-   Announcement bar — rich champagne-gold gradient
+   Announcement bar — solid espresso, gold hairline
    Overrides the solid colour from the active colour scheme.
    -------------------------------------------------------------------------- */
 .announcement-bar {
-  background: linear-gradient(
-    90deg,
-    #6B4E1E 0%,
-    #C89B3C 28%,
-    #D4AF37 50%,
-    #C89B3C 72%,
-    #6B4E1E 100%
-  ) !important;
+  background: var(--sokole-espresso) !important;
   padding: 1rem 0;
 }
 
 .announcement-bar .announcement-bar__message,
 .announcement-bar .announcement-bar__message a,
 .announcement-bar .announcement-bar__message a:hover {
-  color: #FDF8F0 !important;
+  color: var(--sokole-cream) !important;
   letter-spacing: 0.18em;
 }
 
@@ -71,18 +79,19 @@
 
 /* --------------------------------------------------------------------------
    Typography — Cormorant Garamond refinements
+   Light, editorial serif display type; tracked-out uppercase for labels.
    -------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4,
 .heading {
   letter-spacing: var(--sokole-heading-spacing);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .caption,
 .overline,
 .announcement-bar__message {
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
@@ -93,7 +102,7 @@ body {
 
 
 /* --------------------------------------------------------------------------
-   Buttons — metallic gold gradient on primary
+   Buttons — flat espresso fill, wine on hover (matches v0 CTA treatment)
    -------------------------------------------------------------------------- */
 .button,
 .btn {
@@ -101,29 +110,31 @@ body {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: filter 0.28s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.25s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .button--primary {
-  background-color: var(--sokole-gold);
-  background-image: linear-gradient(135deg, #8C6A2D 0%, #C89B3C 40%, #D4AF37 58%, #A67828 100%);
-  color: #FDF8F0;
-  filter: drop-shadow(0 2px 8px rgba(140, 106, 45, 0.18));
-  transition: filter 0.28s ease;
+  background-color: var(--sokole-espresso);
+  color: var(--sokole-cream);
 }
 
 .button--primary:not([disabled]):hover,
 .button--primary:not([disabled]):focus-visible {
-  filter: brightness(0.87) drop-shadow(0 4px 14px rgba(140, 106, 45, 0.28));
+  background-color: var(--sokole-wine);
 }
 
-.color-scheme-3 .button:hover {
-  filter: brightness(0.9);
+.color-scheme-3 .button--primary {
+  background-color: var(--sokole-gold);
+  color: var(--sokole-espresso);
+}
+
+.color-scheme-3 .button--primary:not([disabled]):hover {
+  background-color: var(--sokole-gold-light);
 }
 
 
 /* --------------------------------------------------------------------------
-   Links — gold on light backgrounds, ivory on chocolate
+   Links — gold on light backgrounds, gold on espresso
    -------------------------------------------------------------------------- */
 .color-scheme-1 a:hover,
 .color-scheme-2 a:hover,
@@ -133,7 +144,7 @@ body {
 }
 
 .color-scheme-3 a:hover {
-  color: var(--sokole-champagne);
+  color: var(--sokole-gold);
 }
 
 
@@ -152,7 +163,7 @@ body {
 }
 
 .card-wrapper:hover {
-  box-shadow: 0 0 0 1px rgba(200, 155, 60, 0.28), 0 6px 24px rgba(74, 53, 37, 0.1);
+  box-shadow: 0 0 0 1px rgba(176, 139, 81, 0.28), 0 6px 24px rgba(43, 34, 28, 0.1);
 }
 
 .card__heading a {
@@ -166,7 +177,7 @@ body {
   font-size: 1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(74, 53, 37, 0.5);
+  color: rgba(43, 34, 28, 0.5);
   margin-top: 0.2rem;
   font-style: italic;
   letter-spacing: 0.06em;
@@ -223,6 +234,29 @@ body {
 
 
 /* --------------------------------------------------------------------------
+   Header — split nav (nav-left · logo-center · nav-right + icons)
+   -------------------------------------------------------------------------- */
+.header__inline-menu--right {
+  margin-right: 2.4rem;
+}
+
+.header--middle-center .header__icons {
+  display: flex;
+  align-items: center;
+}
+
+sticky-header.header-wrapper {
+  transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+.scrolled-past-header sticky-header.header-wrapper {
+  background-color: rgba(247, 243, 235, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* --------------------------------------------------------------------------
    Section spacing
    -------------------------------------------------------------------------- */
 .shopify-section + .shopify-section {
@@ -242,8 +276,8 @@ body {
 
 
 /* --------------------------------------------------------------------------
-   Newsletter — Champagne scheme (scheme-2)
-   bg: #F6ECD8 · text/accents: Chocolate
+   Dawn's default newsletter section (unused on homepage — sokole-newsletter
+   replaces it — kept in case it's re-enabled elsewhere)
    -------------------------------------------------------------------------- */
 .color-scheme-2 .newsletter__wrapper {
   padding-top: 6rem;
@@ -252,20 +286,20 @@ body {
 
 .color-scheme-2 .field__input,
 .color-scheme-2 .field__label {
-  border-color: rgba(74, 53, 37, 0.35);
-  color: #4A3525;
+  border-color: rgba(43, 34, 28, 0.35);
+  color: var(--sokole-espresso);
 }
 
 .color-scheme-2 .field__input::placeholder {
-  color: rgba(74, 53, 37, 0.45);
+  color: rgba(43, 34, 28, 0.45);
 }
 
 .color-scheme-2 .newsletter-form__button {
-  color: #FDF8F0;
+  color: var(--sokole-cream);
 }
 
 .color-scheme-2 .newsletter-form__button svg {
-  fill: #FDF8F0;
+  fill: var(--sokole-cream);
 }
 
 .color-scheme-2 .newsletter-form__button:hover {
@@ -315,7 +349,7 @@ body {
 
 
 /* --------------------------------------------------------------------------
-   Footer — Champagne scheme (scheme-2)
+   Footer — brand column + 3 link columns, matches v0 SiteFooter
    -------------------------------------------------------------------------- */
 .footer__content-top {
   letter-spacing: 0.08em;
@@ -325,4 +359,48 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 1.1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .footer .footer__blocks-wrapper {
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+  }
+}
+
+.footer-block:first-child .footer-block__heading {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.footer-block:not(:first-child) .footer-block__heading {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(43, 34, 28, 0.5);
+}
+
+.footer-block__details-content.rte ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-block__details-content.rte ul li:not(:first-child) {
+  margin-top: 1.2rem;
+}
+
+.footer-block__details-content.rte ul a {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgba(43, 34, 28, 0.75);
+  transition: color 0.25s ease;
+}
+
+.footer-block__details-content.rte ul a:hover {
+  color: var(--sokole-espresso);
 }

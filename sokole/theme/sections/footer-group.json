@@ -12,42 +12,51 @@
   "type": "footer",
   "sections": {
     "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Inner Circle",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be first to discover new launches, rare ingredient stories, and private events. An invitation, not a newsletter.</p>"
-          }
-        },
-        "email-form": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email-form"
-      ],
+      "type": "sokole-newsletter",
       "settings": {
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 44,
-        "padding_bottom": 8
+        "color_scheme": "scheme-3",
+        "overline": "The Sokole Letter",
+        "heading": "Be the first to know when Velvet returns",
+        "description": "Private launches, restock notices and an invitation to sample new compositions before anyone else.",
+        "input_placeholder": "Your email address",
+        "button_label": "Subscribe"
       }
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "brand": {
+          "type": "text",
+          "settings": {
+            "heading": "SOKOLE",
+            "subtext": "<p>Rare ingredients, composed with intention. A niche fragrance house for those who wear their story.</p>"
+          }
+        },
+        "shop": {
+          "type": "text",
+          "settings": {
+            "heading": "Shop",
+            "subtext": "<ul><li><a href=\"#\">Sokole Velvet</a></li><li><a href=\"#\">The Coffret</a></li><li><a href=\"#\">Discovery Set</a></li><li><a href=\"#\">Gift Cards</a></li></ul>"
+          }
+        },
+        "house": {
+          "type": "text",
+          "settings": {
+            "heading": "The House",
+            "subtext": "<ul><li><a href=\"#\">Our Story</a></li><li><a href=\"#\">The Atelier</a></li><li><a href=\"#\">Sustainability</a></li><li><a href=\"#\">Journal</a></li></ul>"
+          }
+        },
+        "client-care": {
+          "type": "text",
+          "settings": {
+            "heading": "Client Care",
+            "subtext": "<ul><li><a href=\"#\">Contact</a></li><li><a href=\"#\">Shipping &amp; Returns</a></li><li><a href=\"#\">Track Order</a></li><li><a href=\"#\">FAQ</a></li></ul>"
+          }
+        }
+      },
+      "block_order": ["brand", "shop", "house", "client-care"],
       "settings": {
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,

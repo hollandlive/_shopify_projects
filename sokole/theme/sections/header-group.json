@@ -11,36 +11,36 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
+    "sokole-marquee": {
+      "type": "sokole-marquee",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Complimentary samples with every order",
-            "link": "/collections/all"
-          }
+        "message-1": {
+          "type": "message",
+          "settings": { "text": "Complimentary samples with every order" }
+        },
+        "message-2": {
+          "type": "message",
+          "settings": { "text": "Wrapped by hand in the Sokole atelier" }
+        },
+        "message-3": {
+          "type": "message",
+          "settings": { "text": "Complimentary shipping across Europe" }
+        },
+        "message-4": {
+          "type": "message",
+          "settings": { "text": "A fragrance that stays long after you have gone" }
         }
       },
-      "block_order": [
-        "announcement-bar-0"
-      ],
-      "settings": {
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "color_scheme": "scheme-3",
-        "show_line_separator": false,
-        "show_social": false,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
+      "block_order": ["message-1", "message-2", "message-3", "message-4"],
+      "settings": {}
     },
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "top-center",
+        "logo_position": "middle-center",
         "mobile_logo_position": "center",
         "menu": "main-menu",
+        "menu_split_index": 2,
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
@@ -56,7 +56,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "sokole-marquee",
     "header"
   ]
 }

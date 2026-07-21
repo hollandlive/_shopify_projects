@@ -1,0 +1,116 @@
+{{ 'sokole-notes.css' | asset_url | stylesheet_tag }}
+
+<section class="sokole-notes shopify-section">
+  <div class="page-width">
+    <div class="sokole-notes__header">
+      {%- if section.settings.overline != blank -%}
+        <p class="sokole-notes__overline">{{ section.settings.overline }}</p>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="sokole-notes__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+    </div>
+
+    <div class="sokole-notes__grid">
+      {%- for block in section.blocks -%}
+        <div class="sokole-notes__item" {{ block.shopify_attributes }}>
+          <span class="sokole-notes__step">{{ block.settings.step }}</span>
+          <div class="sokole-notes__label-group">
+            <p class="sokole-notes__phase">{{ block.settings.phase }} Note</p>
+            <h3 class="sokole-notes__accord">{{ block.settings.accord }}</h3>
+          </div>
+          <p class="sokole-notes__detail">{{ block.settings.detail }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sokole Notes",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "text",
+      "id": "overline",
+      "label": "Overline",
+      "default": "The Composition"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "An olfactory pyramid, built to unfold"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "note",
+      "name": "Note",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step",
+          "label": "Step numeral",
+          "default": "I"
+        },
+        {
+          "type": "text",
+          "id": "phase",
+          "label": "Phase",
+          "default": "Top"
+        },
+        {
+          "type": "text",
+          "id": "accord",
+          "label": "Accord name",
+          "default": "The Opening"
+        },
+        {
+          "type": "textarea",
+          "id": "detail",
+          "label": "Detail",
+          "default": "Calabrian bergamot, pink pepper and a breath of saffron."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sokole Notes",
+      "blocks": [
+        {
+          "type": "note",
+          "settings": {
+            "step": "I",
+            "phase": "Top",
+            "accord": "The Opening",
+            "detail": "Calabrian bergamot, pink pepper and a breath of saffron."
+          }
+        },
+        {
+          "type": "note",
+          "settings": {
+            "step": "II",
+            "phase": "Heart",
+            "accord": "The Velvet",
+            "detail": "Turkish rose absolute, orris butter and warm violet leaf."
+          }
+        },
+        {
+          "type": "note",
+          "settings": {
+            "step": "III",
+            "phase": "Base",
+            "accord": "The Trail",
+            "detail": "Mysore sandalwood, ambergris, tonka and cashmere musk."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

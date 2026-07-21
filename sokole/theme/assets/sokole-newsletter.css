@@ -1,0 +1,121 @@
+.sokole-newsletter {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+}
+
+.sokole-newsletter__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.sokole-newsletter__logo {
+  width: auto;
+  height: 6rem;
+  max-width: 24rem;
+}
+
+.sokole-newsletter__overline {
+  margin: 2.4rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sokole-gold);
+}
+
+.sokole-newsletter__heading {
+  max-width: 60rem;
+  margin: 1.6rem 0 0;
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: clamp(3rem, 4.5vw, 4.4rem);
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+.sokole-newsletter__description {
+  max-width: 44rem;
+  margin: 1.6rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+.sokole-newsletter__form {
+  width: 100%;
+  max-width: 44rem;
+  margin: 3.2rem 0 0;
+}
+
+.sokole-newsletter__field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.3);
+  transition: border-color 0.25s ease;
+}
+
+.sokole-newsletter__field:focus-within {
+  border-color: var(--sokole-gold);
+}
+
+.sokole-newsletter__field input {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 1.4rem 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: rgb(var(--color-foreground));
+}
+
+.sokole-newsletter__field input::placeholder {
+  color: rgba(var(--color-foreground), 0.4);
+}
+
+.sokole-newsletter__field input:focus {
+  outline: none;
+}
+
+.sokole-newsletter__field button {
+  flex-shrink: 0;
+  border: 0;
+  background: transparent;
+  padding: 1.4rem 0 1.4rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgb(var(--color-foreground));
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.sokole-newsletter__field button:hover {
+  color: var(--sokole-gold);
+}
+
+.sokole-newsletter__error {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #e08787;
+}
+
+.sokole-newsletter__success {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: var(--sokole-gold);
+}
+
+@media screen and (max-width: 749px) {
+  .sokole-newsletter__wrapper {
+    padding: 5rem 2rem;
+  }
+}
