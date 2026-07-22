@@ -3,9 +3,9 @@
    ========================================================================== */
 
 .sokole-trust {
-  background-color: #FDF8F0;
-  border-top: 1px solid rgba(200, 155, 60, 0.28);
-  border-bottom: 1px solid rgba(200, 155, 60, 0.28);
+  background-color: var(--sokole-cream);
+  border-top: 1px solid rgba(176, 139, 81, 0.28);
+  border-bottom: 1px solid rgba(176, 139, 81, 0.28);
   padding: 3.2rem 0;
 }
 
@@ -22,12 +22,12 @@
 }
 
 .sokole-trust__item + .sokole-trust__item {
-  border-left: 1px solid rgba(200, 155, 60, 0.22);
+  border-left: 1px solid rgba(176, 139, 81, 0.22);
 }
 
 .sokole-trust__icon {
   flex-shrink: 0;
-  color: #8C6A3A;
+  color: var(--sokole-gold);
   padding-top: 0.1rem;
 }
 
@@ -35,10 +35,10 @@
   display: block;
   font-family: var(--font-heading-family), Georgia, serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #4A3525;
+  color: var(--sokole-espresso);
   margin-bottom: 0.35rem;
 }
 
@@ -46,7 +46,7 @@
   display: block;
   font-size: 1.1rem;
   line-height: 1.5;
-  color: rgba(74, 53, 37, 0.62);
+  color: rgba(43, 34, 28, 0.62);
 }
 
 /* Tablet: 2 × 2 grid */
@@ -57,11 +57,11 @@
 
   .sokole-trust__item:nth-child(3) {
     border-left: none;
-    border-top: 1px solid rgba(200, 155, 60, 0.22);
+    border-top: 1px solid rgba(176, 139, 81, 0.22);
   }
 
   .sokole-trust__item:nth-child(4) {
-    border-top: 1px solid rgba(200, 155, 60, 0.22);
+    border-top: 1px solid rgba(176, 139, 81, 0.22);
   }
 }
 
@@ -73,7 +73,7 @@
 
   .sokole-trust__item + .sokole-trust__item {
     border-left: none;
-    border-top: 1px solid rgba(200, 155, 60, 0.22);
+    border-top: 1px solid rgba(176, 139, 81, 0.22);
   }
 
   .sokole-trust__item:nth-child(3),

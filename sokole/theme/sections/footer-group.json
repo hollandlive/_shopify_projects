@@ -36,25 +36,18 @@
           "type": "text",
           "settings": {
             "heading": "Shop",
-            "subtext": "<ul><li><a href=\"#\">Sokole Velvet</a></li><li><a href=\"#\">The Coffret</a></li><li><a href=\"#\">Discovery Set</a></li><li><a href=\"#\">Gift Cards</a></li></ul>"
-          }
-        },
-        "house": {
-          "type": "text",
-          "settings": {
-            "heading": "The House",
-            "subtext": "<ul><li><a href=\"#\">Our Story</a></li><li><a href=\"#\">The Atelier</a></li><li><a href=\"#\">Sustainability</a></li><li><a href=\"#\">Journal</a></li></ul>"
+            "subtext": "<ul><li><a href=\"/products/sokole-velvet\">Sokole Velvet</a></li><li><a href=\"/products/gift-card\">Gift Cards</a></li></ul>"
           }
         },
         "client-care": {
           "type": "text",
           "settings": {
             "heading": "Client Care",
-            "subtext": "<ul><li><a href=\"#\">Contact</a></li><li><a href=\"#\">Shipping &amp; Returns</a></li><li><a href=\"#\">Track Order</a></li><li><a href=\"#\">FAQ</a></li></ul>"
+            "subtext": "<ul><li><a href=\"/pages/contact\">Contact</a></li><li><a href=\"/account\">Track Order</a></li></ul>"
           }
         }
       },
-      "block_order": ["brand", "shop", "house", "client-care"],
+      "block_order": ["brand", "shop", "client-care"],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": false,

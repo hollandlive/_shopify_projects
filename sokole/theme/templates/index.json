@@ -23,6 +23,45 @@
         "image_caption": "Eau de Parfum — 50ml"
       }
     },
+    "sokole-trust": {
+      "type": "sokole-trust",
+      "blocks": {
+        "trust-1": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "leaf",
+            "label": "Rare Ingredients",
+            "description": "Sourced with care from around the world"
+          }
+        },
+        "trust-2": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "droplet",
+            "label": "Fine Fragrances",
+            "description": "Crafted to tell your unique story"
+          }
+        },
+        "trust-3": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "gift",
+            "label": "Complimentary Samples",
+            "description": "With every order you receive"
+          }
+        },
+        "trust-4": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "lock",
+            "label": "Secure Payment",
+            "description": "Safe checkout with trusted partners"
+          }
+        }
+      },
+      "block_order": ["trust-1", "trust-2", "trust-3", "trust-4"],
+      "settings": {}
+    },
     "sokole-editorial": {
       "type": "sokole-editorial",
       "settings": {
@@ -30,7 +69,7 @@
         "quote": "“Every bottle begins as a question — what does beauty smell like without compromise?”",
         "body": "Our perfumers work with rare, hand-selected materials sourced from the same producers who have supplied the great houses for generations. Each composition is crafted to evolve on your skin over hours. Not a statement. An atmosphere.",
         "link_label": "Our Story",
-        "link_url": "/pages/about"
+        "link_url": "/pages/contact"
       }
     },
     "sokole-showcase": {
@@ -144,7 +183,7 @@
           "type": "button",
           "settings": {
             "button_label": "Inside the Atelier",
-            "button_link": "/pages/about",
+            "button_link": "/pages/contact",
             "button_style_secondary": true
           }
         }
@@ -175,6 +214,7 @@
   },
   "order": [
     "sokole-hero",
+    "sokole-trust",
     "sokole-editorial",
     "sokole-showcase",
     "sokole-notes",

@@ -13,8 +13,14 @@
 
 .sokole-newsletter__logo {
   width: auto;
-  height: 6rem;
-  max-width: 24rem;
+  height: 18rem;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 749px) {
+  .sokole-newsletter__logo {
+    height: 10rem;
+  }
 }
 
 .sokole-newsletter__overline {

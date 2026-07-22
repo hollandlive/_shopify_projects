@@ -363,7 +363,7 @@ sticky-header.header-wrapper {
 
 @media screen and (min-width: 750px) {
   .footer .footer__blocks-wrapper {
-    grid-template-columns: 1.4fr repeat(3, 1fr);
+    grid-template-columns: 1.6fr repeat(2, 1fr);
   }
 }
 
