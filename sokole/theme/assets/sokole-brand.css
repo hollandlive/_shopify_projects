@@ -193,7 +193,7 @@ body {
 }
 
 .product-card-wrapper .card__media .media > img {
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center center;
 }
 
