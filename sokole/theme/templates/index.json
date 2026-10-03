@@ -59,7 +59,12 @@
           }
         }
       },
-      "block_order": ["trust-1", "trust-2", "trust-3", "trust-4"],
+      "block_order": [
+        "trust-1",
+        "trust-2",
+        "trust-3",
+        "trust-4"
+      ],
       "settings": {}
     },
     "sokole-editorial": {
@@ -79,36 +84,36 @@
           "type": "product",
           "settings": {
             "product": "sokole-velvet",
-            "tag": "The Signature",
-            "fallback_image": "socole_velvet2.PNG",
-            "title": "Sokole Velvet",
-            "subtitle": "Eau de Parfum · 50ml",
-            "price_text": "€185"
+            "tag": "For Her",
+            "subtitle": "Eau de Parfum",
+            "fallback_image": "",
+            "title": "Sokole Velvet"
           }
         },
         "product-2": {
           "type": "product",
           "settings": {
-            "tag": "Limited",
-            "fallback_image": "sokole_velvet_1.PNG",
-            "title": "The Velvet Coffret",
-            "subtitle": "Gift Edition · 50ml",
-            "price_text": "€210",
-            "link": "/collections/all"
+            "product": "sokole-inferno",
+            "tag": "For Him",
+            "subtitle": "Eau de Parfum",
+            "fallback_image": ""
           }
         },
         "product-3": {
           "type": "product",
           "settings": {
-            "fallback_image": "sokole_velvet0.PNG",
-            "title": "Velvet Maison",
-            "subtitle": "Eau de Parfum · 50ml",
-            "price_text": "€185",
-            "link": "/collections/all"
+            "product": "bohemian-code",
+            "tag": "Premium Boxes",
+            "subtitle": "Eau de Parfum · 4 × 10ml",
+            "fallback_image": ""
           }
         }
       },
-      "block_order": ["product-1", "product-2", "product-3"],
+      "block_order": [
+        "product-1",
+        "product-2",
+        "product-3"
+      ],
       "settings": {
         "overline": "The Collection",
         "heading": "One fragrance, three rituals",
@@ -124,7 +129,7 @@
           "type": "note",
           "settings": {
             "step": "I",
-            "phase": "Top",
+            "phase": "Top Note",
             "accord": "The Opening",
             "detail": "Calabrian bergamot, pink pepper and a breath of saffron."
           }
@@ -133,7 +138,7 @@
           "type": "note",
           "settings": {
             "step": "II",
-            "phase": "Heart",
+            "phase": "Heart Note",
             "accord": "The Velvet",
             "detail": "Turkish rose absolute, orris butter and warm violet leaf."
           }
@@ -142,13 +147,17 @@
           "type": "note",
           "settings": {
             "step": "III",
-            "phase": "Base",
+            "phase": "Base Note",
             "accord": "The Trail",
             "detail": "Mysore sandalwood, ambergris, tonka and cashmere musk."
           }
         }
       },
-      "block_order": ["note-1", "note-2", "note-3"],
+      "block_order": [
+        "note-1",
+        "note-2",
+        "note-3"
+      ],
       "settings": {
         "overline": "The Composition",
         "heading": "An olfactory pyramid, built to unfold"
