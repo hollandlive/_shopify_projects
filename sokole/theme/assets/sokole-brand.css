@@ -310,8 +310,26 @@ sticky-header.header-wrapper {
 /* --------------------------------------------------------------------------
    Language selector — ISO code on mobile, full name on desktop
    -------------------------------------------------------------------------- */
-.language-selector__iso {
+.language-selector__iso,
+.country-selector__iso {
   display: none;
+}
+
+/* Header: country + language on one line as compact codes (GR | EUR € · EL).
+   Dropdown lists and the footer keep full names. */
+.header__icons .desktop-localization-wrapper {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header__icons .country-selector__name,
+.header__icons .language-selector__name {
+  display: none;
+}
+
+.header__icons .country-selector__iso,
+.header__icons .language-selector__iso {
+  display: inline;
 }
 
 @media screen and (max-width: 749px) {
