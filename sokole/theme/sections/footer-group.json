@@ -36,18 +36,22 @@
           "type": "text",
           "settings": {
             "heading": "Shop",
-            "subtext": "<ul><li><a href=\"/products/sokole-velvet\">Sokole Velvet</a></li><li><a href=\"/products/gift-card\">Gift Cards</a></li></ul>"
+            "subtext": "<ul><li><a href=\"/collections/perfume-for-her\">Perfume for Her</a></li><li><a href=\"/collections/perfume-for-him\">Perfume for Him</a></li><li><a href=\"/collections/premium-boxes\">Premium Boxes</a></li><li><a href=\"/collections/body-mist-fragrance\">Body Mist</a></li><li><a href=\"/products/gift-card\">Gift Cards</a></li></ul>"
           }
         },
         "client-care": {
           "type": "text",
           "settings": {
             "heading": "Client Care",
-            "subtext": "<ul><li><a href=\"/pages/contact\">Contact</a></li><li><a href=\"/account\">Track Order</a></li></ul>"
+            "subtext": "<ul><li><a href=\"/pages/contact\">Contact</a></li><li><a href=\"/account\">My Orders</a></li></ul>"
           }
         }
       },
-      "block_order": ["brand", "shop", "client-care"],
+      "block_order": [
+        "brand",
+        "shop",
+        "client-care"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
