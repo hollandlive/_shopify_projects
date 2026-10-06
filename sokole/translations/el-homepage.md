@@ -1,6 +1,6 @@
 # Sokole — Greek (EL) translations: homepage, header, footer
 
-Draft by Claude, 2026-10-03. For review by Viktoria (native speaker) before/after entering in
+Draft by Claude, 2026-10-03. **Entered in Translate & Adapt on 2026-10-03** (everything below except the footer Shop / Client Care link lists). For review by Viktoria (native speaker) before/after entering in
 Shopify Admin → Apps → Translate & Adapt → Greek.
 
 Where to enter: Translate & Adapt → Theme → **Templates → Index - Home page** (homepage sections),
@@ -133,6 +133,8 @@ Client Care column:
 ```
 
 ## Not covered yet
+
+- Footer Shop / Client Care link lists (rich text with links) — still English on /el; T&A link editor too unreliable to automate, enter manually.
 
 - Product titles/descriptions (Products in Translate & Adapt) — to do after Viktoria confirms volumes/gender.
 - Collection titles (Perfume for Her, etc.).

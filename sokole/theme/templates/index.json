@@ -12,15 +12,15 @@
     "sokole-hero": {
       "type": "sokole-hero",
       "settings": {
-        "overline": "The Debut Eau de Parfum",
+        "overline": "The Collection",
         "heading_line_1": "Sokole",
-        "heading_line_2": "Velvet",
+        "heading_line_2": "Maison",
         "description": "Rare ingredients, composed with intention. A rich, velvety fragrance wrapped in warmth and quiet elegance — for those who enter a room and stay long after they have gone.",
-        "primary_button_label": "Discover Velvet",
+        "primary_button_label": "Discover the Collection",
         "primary_button_link": "#collection",
         "secondary_button_label": "Explore the House",
         "secondary_button_link": "/collections/all",
-        "image_caption": "Eau de Parfum — 50ml"
+        "image_caption": ""
       }
     },
     "sokole-trust": {
