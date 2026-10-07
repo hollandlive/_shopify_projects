@@ -5,15 +5,20 @@
   align-items: center;
   min-height: 90vh;
   overflow: hidden;
+  background-color: var(--sokole-espresso, #2B221C);
 }
 
+/* Desktop: photo sits in the right part of the section so the copy never overlaps the box lettering */
 .sokole-editorial__image {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   z-index: -2;
-  width: 100%;
+  width: 58%;
   height: 100%;
   object-fit: cover;
+  object-position: 40% center;
   display: block;
 }
 
@@ -23,17 +28,20 @@
   z-index: -1;
   background: linear-gradient(
     to right,
-    rgba(43, 34, 28, 0.78) 0%,
-    rgba(43, 34, 28, 0.32) 55%,
-    transparent 100%
+    rgba(43, 34, 28, 1) 0%,
+    rgba(43, 34, 28, 1) 42%,
+    rgba(43, 34, 28, 0.55) 50%,
+    rgba(43, 34, 28, 0) 62%
   );
 }
 
 .sokole-editorial__content {
   width: 100%;
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 4rem clamp(2rem, 5vw, 6rem);
+  padding: 4rem clamp(2rem, 6vw, 10rem);
+}
+
+.sokole-editorial .sokole-editorial__content > * {
+  max-width: min(56rem, 34vw);
 }
 
 .sokole-editorial__overline {
@@ -83,12 +91,38 @@
   border-color: var(--sokole-cream);
 }
 
-@media screen and (max-width: 749px) {
+/* Mobile and tablet: photo on top, copy below on a solid background */
+@media screen and (max-width: 989px) {
   .sokole-editorial {
-    min-height: 70vh;
+    display: block;
+    min-height: 0;
+  }
+
+  .sokole-editorial__image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-height: 70vh;
+    object-position: center;
+    -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+  }
+
+  .sokole-editorial__overlay {
+    display: none;
   }
 
   .sokole-editorial__content {
-    padding: 3rem 2rem;
+    margin-top: -3rem;
+    padding: 0 2rem 5rem;
+  }
+
+  .sokole-editorial .sokole-editorial__content > * {
+    max-width: 60rem;
+  }
+
+  .sokole-editorial__quote {
+    font-size: clamp(2.6rem, 7vw, 3.6rem);
   }
 }
