@@ -63,6 +63,14 @@ Brand and product names (Sokole, Velvet, Inferno, Bohemian Code, Eau de Parfum) 
 layout, but the cards are now Velvet, Inferno and Bohemian Code. Suggested new English:
 "Three signatures, one house" / Greek: «Τρεις υπογραφές, ένας οίκος».
 
+### Collection heading — updated 2026-10-07 (old Greek must be replaced)
+
+| English (new) | Ελληνικά |
+|---|---|
+| Signatures | Υπογραφές |
+| Three signatures, one house | Τρεις υπογραφές, ένας οίκος |
+| From our debut Velvet to the discovery coffrets — three ways to wear Sokole. | Από το πρώτο μας Velvet έως τα κουτιά ανακάλυψης — τρεις τρόποι να φορέσετε τη Sokole. |
+
 ## Composition (sokole-notes)
 
 | English | Ελληνικά |
