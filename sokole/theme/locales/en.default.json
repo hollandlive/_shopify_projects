@@ -537,6 +537,7 @@
     }
   },
   "sokole": {
-    "related_products_heading": "You may also like"
+    "related_products_heading": "You may also like",
+    "made_by": "Made by"
   }
 }
