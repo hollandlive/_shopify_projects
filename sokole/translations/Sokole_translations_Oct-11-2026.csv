@@ -1,0 +1,1111 @@
+Type,Identification,Field,Locale,Market,Status,Default content,Translated content
+COLLECTION,684668486013,title,el,,,Perfume for Her,
+COLLECTION,684668486013,body_html,el,,,<p>Perfume for her description in English and Greek</p>,
+COLLECTION,684668486013,handle,el,,,perfume-for-her,
+COLLECTION,684668518781,title,el,,,Perfume for Him,
+COLLECTION,684668518781,body_html,el,,,"<p><meta charset=""utf-8"">Perfume for her description in English and Greek</p>",
+COLLECTION,684668518781,handle,el,,,perfume-for-him,
+COLLECTION,684668682621,title,el,,,Premium Boxes,
+COLLECTION,684668682621,body_html,el,,,"<p><meta charset=""utf-8"">Perfume for her description in English and Greek</p>",
+COLLECTION,684668682621,handle,el,,,premium-boxes,
+COLLECTION,684668715389,title,el,,,Body Mist Fragrance,
+COLLECTION,684668715389,body_html,el,,,"<p><meta charset=""utf-8"">Perfume for her description in English and Greek</p>",
+COLLECTION,684668715389,handle,el,,,body-mist-fragrance,
+COLLECTION,684668780925,title,el,,,Exclusive Gift,
+COLLECTION,684668780925,body_html,el,,,"<p><meta charset=""utf-8"">Perfume for her description in English and Greek</p>",
+COLLECTION,684668780925,handle,el,,,exclusive-gift,
+COOKIE_BANNER,7685276029,policy_link_text,el,,,Privacy Policy,
+COOKIE_BANNER,7685276029,title,el,,,Cookie consent,
+COOKIE_BANNER,7685276029,text,el,,,"We and our partners, including Shopify, use cookies and other technologies to personalize your experience, show you ads, and perform analytics, and we will not use cookies or other technologies for these purposes unless you accept them. Learn more in our ",
+COOKIE_BANNER,7685276029,button_prefs_open_text,el,,,Manage preferences,
+COOKIE_BANNER,7685276029,button_accept_text,el,,,Accept,
+COOKIE_BANNER,7685276029,button_decline_text,el,,,Decline,
+COOKIE_BANNER,7685276029,preferences_title,el,,,Cookie and privacy preferences,
+COOKIE_BANNER,7685276029,preferences_intro_title,el,,,You control your data,
+COOKIE_BANNER,7685276029,preferences_intro_text,el,,,"Learn more about the cookies we use, and choose which cookies to allow.",
+COOKIE_BANNER,7685276029,preferences_button_accept_text,el,,,Accept all,
+COOKIE_BANNER,7685276029,preferences_button_decline_text,el,,,Decline all,
+COOKIE_BANNER,7685276029,preferences_button_save_text,el,,,Save my choices,
+COOKIE_BANNER,7685276029,preferences_bullet_points_title,el,,,If you accept all cookies,
+COOKIE_BANNER,7685276029,preferences_bullet_points_first_text,el,,,Our site may be improved based on your interests,
+COOKIE_BANNER,7685276029,preferences_bullet_points_second_text,el,,,Your preferences may be stored for when you return,
+COOKIE_BANNER,7685276029,preferences_bullet_points_third_text,el,,,You may see advertising that's tailored to you,
+COOKIE_BANNER,7685276029,preferences_purposes_essential_name,el,,,Required,
+COOKIE_BANNER,7685276029,preferences_purposes_essential_desc,el,,,"These cookies are necessary for the site to function properly, including capabilities like logging in and adding items to the cart.",
+COOKIE_BANNER,7685276029,preferences_purposes_performance_name,el,,,Analytics,
+COOKIE_BANNER,7685276029,preferences_purposes_performance_desc,el,,,These cookies help us understand how you interact with the site. We use this data to identify areas to improve.,
+COOKIE_BANNER,7685276029,preferences_purposes_preferences_name,el,,,Personalization,
+COOKIE_BANNER,7685276029,preferences_purposes_preferences_desc,el,,,These cookies store details about your actions to personalize your next visit to the website.,
+COOKIE_BANNER,7685276029,preferences_purposes_marketing_name,el,,,Marketing,
+COOKIE_BANNER,7685276029,preferences_purposes_marketing_desc,el,,,"These cookies are used by us and our partners, including Shopify, to optimize marketing communications and show you ads on other websites.",
+COOKIE_BANNER,7685276029,policy_link_url,el,,,https://sokole.eu/policies/privacy-policy,
+DELIVERY_METHOD_DEFINITION,1105909809533,name,el,,,Standard,
+DELIVERY_METHOD_DEFINITION,1105909809533,description,el,,,"",
+DELIVERY_METHOD_DEFINITION,1105909842301,name,el,,,Express,
+DELIVERY_METHOD_DEFINITION,1105909842301,description,el,,,"",
+DELIVERY_METHOD_DEFINITION,1142718497149,name,el,,,Free EU Delivery,
+DELIVERY_METHOD_DEFINITION,1142718497149,description,el,,,"",
+DELIVERY_METHOD_DEFINITION,1142719152509,name,el,,,EU Delivery,
+DELIVERY_METHOD_DEFINITION,1142719152509,description,el,,,"",
+FILTER,114996347261,label,el,,,Availability,Διαθεσιμότητα
+FILTER,114996380029,label,el,,,Price,Τιμή
+LINK,773587861885,title,el,,,Home,Αρχική
+LINK,773587894653,title,el,,,Catalog,Κατάλογος
+LINK,773587927421,title,el,,,Contact,Επικοινωνία
+LINK,773587960189,title,el,,,Search,
+LINK,773587992957,title,el,,,Orders,
+LINK,773588025725,title,el,,,Profile,
+MEDIA_IMAGE,68895410159997,alt,el,,,"",
+MEDIA_IMAGE,68895410192765,alt,el,,,Gift card that shows text: Generated data gift card,
+MEDIA_IMAGE,68895730172285,alt,el,,,"",
+MEDIA_IMAGE,68895759860093,alt,el,,,"",
+MEDIA_IMAGE,68895765037437,alt,el,,,"",
+MEDIA_IMAGE,68895767724413,alt,el,,,"",
+MEDIA_IMAGE,68895768609149,alt,el,,,"",
+MEDIA_IMAGE,68895769952637,alt,el,,,"",
+MEDIA_IMAGE,68895857639805,alt,el,,,"",
+MEDIA_IMAGE,68895857836413,alt,el,,,"",
+MEDIA_IMAGE,68895858884989,alt,el,,,"",
+MEDIA_IMAGE,68895858917757,alt,el,,,"",
+MEDIA_IMAGE,68895859016061,alt,el,,,"",
+MEDIA_IMAGE,68895859114365,alt,el,,,"",
+MEDIA_IMAGE,69184206766461,alt,el,,,"",
+MEDIA_IMAGE,69184206799229,alt,el,,,"",
+MEDIA_IMAGE,69184224395645,alt,el,,,"",
+MEDIA_IMAGE,69184224428413,alt,el,,,"",
+MEDIA_IMAGE,69184251920765,alt,el,,,"",
+MEDIA_IMAGE,69184251953533,alt,el,,,"",
+MEDIA_IMAGE,69184251986301,alt,el,,,"",
+MEDIA_IMAGE,69184360186237,alt,el,,,"",
+MEDIA_IMAGE,69184360219005,alt,el,,,"",
+MEDIA_IMAGE,69184410550653,alt,el,,,"",
+MEDIA_IMAGE,69184410583421,alt,el,,,"",
+MEDIA_IMAGE,69184422248829,alt,el,,,"",
+MEDIA_IMAGE,69184422281597,alt,el,,,"",
+MEDIA_IMAGE,69184437977469,alt,el,,,"",
+MEDIA_IMAGE,69184438010237,alt,el,,,"",
+MEDIA_IMAGE,69184446955901,alt,el,,,"",
+MEDIA_IMAGE,69184446988669,alt,el,,,"",
+MEDIA_IMAGE,69184451379581,alt,el,,,"",
+MEDIA_IMAGE,69184451412349,alt,el,,,"",
+MEDIA_IMAGE,69184554336637,alt,el,,,"",
+MEDIA_IMAGE,69184554369405,alt,el,,,"",
+MEDIA_IMAGE,69184554402173,alt,el,,,"",
+MEDIA_IMAGE,69232620732797,alt,el,,,"Sokole Velvet box, For Her 50ml",
+MEDIA_IMAGE,69232620765565,alt,el,,,"Sokole Velvet bottle, For Her 50ml",
+MEDIA_IMAGE,69232620798333,alt,el,,,Sokole Velvet styled shot 1,
+MEDIA_IMAGE,69232620831101,alt,el,,,Sokole Velvet styled shot 2,
+MEDIA_IMAGE,69232620863869,alt,el,,,Sokole Velvet styled shot 3,
+MEDIA_IMAGE,69232620994941,alt,el,,,Golden Reverie box closed,
+MEDIA_IMAGE,69232621027709,alt,el,,,Golden Reverie 4 minis,
+MEDIA_IMAGE,69232621060477,alt,el,,,Ombre Mystique box closed,
+MEDIA_IMAGE,69232621093245,alt,el,,,Ombre Mystique 4 minis,
+MEDIA_IMAGE,69232621126013,alt,el,,,Velvet Noir box closed,
+MEDIA_IMAGE,69232621158781,alt,el,,,Velvet Noir open box with 4 minis,
+MEDIA_IMAGE,69249079247229,alt,el,,,"",
+MEDIA_IMAGE,69249079279997,alt,el,,,"",
+MEDIA_IMAGE,69249079312765,alt,el,,,"",
+MEDIA_IMAGE,69249079411069,alt,el,,,"",
+MEDIA_IMAGE,69249079476605,alt,el,,,"",
+MEDIA_IMAGE,69249079935357,alt,el,,,"",
+MEDIA_IMAGE,69249118339453,alt,el,,,"",
+MEDIA_IMAGE,69249118404989,alt,el,,,"",
+MEDIA_IMAGE,69251507650941,alt,el,,,"",
+MEDIA_IMAGE,69251507683709,alt,el,,,"",
+MEDIA_IMAGE,69815287087485,alt,el,,,"",
+MEDIA_IMAGE,69815287120253,alt,el,,,"",
+MEDIA_IMAGE,69815287153021,alt,el,,,"",
+MEDIA_IMAGE,69815287218557,alt,el,,,"",
+MEDIA_IMAGE,69815287251325,alt,el,,,"",
+MEDIA_IMAGE,69815287284093,alt,el,,,"",
+MEDIA_IMAGE,69815335485821,alt,el,,,"",
+MEDIA_IMAGE,69815335518589,alt,el,,,"",
+MEDIA_IMAGE,69815335551357,alt,el,,,"",
+MEDIA_IMAGE,69815335715197,alt,el,,,"",
+MEDIA_IMAGE,69815335747965,alt,el,,,"",
+MEDIA_IMAGE,69815335780733,alt,el,,,"",
+MEDIA_IMAGE,69815365075325,alt,el,,,"",
+MEDIA_IMAGE,69815365108093,alt,el,,,"",
+MEDIA_IMAGE,69815365140861,alt,el,,,"",
+MEDIA_IMAGE,69815392731517,alt,el,,,"",
+MEDIA_IMAGE,69815392764285,alt,el,,,"",
+MEDIA_IMAGE,69815392797053,alt,el,,,"",
+MEDIA_IMAGE,69815413342589,alt,el,,,"",
+MEDIA_IMAGE,69815413375357,alt,el,,,"",
+MEDIA_IMAGE,69815413408125,alt,el,,,"",
+MEDIA_IMAGE,69815441686909,alt,el,,,"",
+MEDIA_IMAGE,69815441719677,alt,el,,,"",
+MEDIA_IMAGE,69815441752445,alt,el,,,"",
+MEDIA_IMAGE,69815457612157,alt,el,,,"",
+MEDIA_IMAGE,69815457644925,alt,el,,,"",
+MEDIA_IMAGE,69815457677693,alt,el,,,"",
+MEDIA_IMAGE,69815471341949,alt,el,,,"",
+MEDIA_IMAGE,69815471374717,alt,el,,,"",
+MEDIA_IMAGE,69815471407485,alt,el,,,"",
+MEDIA_IMAGE,69815490838909,alt,el,,,"",
+MEDIA_IMAGE,69815490871677,alt,el,,,"",
+MEDIA_IMAGE,69815490904445,alt,el,,,"",
+MEDIA_IMAGE,69815513842045,alt,el,,,"",
+MEDIA_IMAGE,69815513874813,alt,el,,,"",
+MEDIA_IMAGE,69815513907581,alt,el,,,"",
+MEDIA_IMAGE,69866470375805,alt,el,,,"",
+MEDIA_IMAGE,69866470408573,alt,el,,,"",
+MEDIA_IMAGE,69866470441341,alt,el,,,"",
+MEDIA_IMAGE,69866475323773,alt,el,,,"",
+MEDIA_IMAGE,69866475356541,alt,el,,,"",
+MEDIA_IMAGE,69866475389309,alt,el,,,"",
+MEDIA_IMAGE,69866479485309,alt,el,,,"",
+MEDIA_IMAGE,69866479518077,alt,el,,,"",
+MEDIA_IMAGE,69866479550845,alt,el,,,"",
+MEDIA_IMAGE,69866482401661,alt,el,,,"",
+MEDIA_IMAGE,69866482434429,alt,el,,,"",
+MEDIA_IMAGE,69866482467197,alt,el,,,"",
+MEDIA_IMAGE,69866485809533,alt,el,,,"",
+MEDIA_IMAGE,69866485842301,alt,el,,,"",
+MEDIA_IMAGE,69866485875069,alt,el,,,"",
+MEDIA_IMAGE,69874989662589,alt,el,,,"",
+MEDIA_IMAGE,69875807781245,alt,el,,,"",
+METAFIELD,197902270136701,value,el,,,"[""snowboarding""]",
+METAOBJECT,492509593981,label,el,,,Woody,
+METAOBJECT,492509626749,label,el,,,Liquid,
+METAOBJECT,492509659517,label,el,,,Woody,
+METAOBJECT,492509692285,label,el,,,Male,
+METAOBJECT,492509725053,label,el,,,Glass,
+METAOBJECT,492509757821,label,el,,,Clear,
+METAOBJECT,510760026493,label,el,,,Female,
+METAOBJECT,510760059261,label,el,,,Gourmand,
+METAOBJECT,510760092029,label,el,,,Vanilla,
+METAOBJECT,510760124797,label,el,,,Beige,
+METAOBJECT,510760157565,label,el,,,Bottle,
+METAOBJECT,510760190333,label,el,,,Red,
+BLOG,119268278653,title,el,,,News,
+BLOG,119268278653,handle,el,,,news,
+MENU,307980370301,title,el,,,Main menu,
+MENU,307980403069,title,el,,,Footer menu,
+MENU,307980435837,title,el,,,Customer account main menu,
+PAGE,697560957309,title,el,,,Contact,
+PAGE,697560957309,handle,el,,,contact,
+PAGE,699759886717,title,el,,,Памятка по магазину Sokole,
+PAGE,699759886717,body_html,el,,,"<p><em>Памятка для владельца магазина. Страница скрыта: её нет в меню и поиске.</em></p>
+<h2>Вход и основные ссылки</h2>
+<ul>
+<li>Магазин: <a href=""https://sokole.eu"">sokole.eu</a> (греческий: <a href=""https://sokole.eu/el"">sokole.eu/el</a>)</li>
+<li>Админка: <a href=""https://admin.shopify.com"">admin.shopify.com</a> — вход по Вашему email</li>
+<li>Приложение «Shopify» на телефон — заказы и уведомления</li>
+</ul>
+<h2>Товары и цены</h2>
+<ol>
+<li>Products → нажать на товар.</li>
+<li>Цена — блок <strong>Price</strong>; старая цена для скидки — <strong>Compare-at</strong>.</li>
+<li>Описание — блок <strong>Description</strong> (в конце: «50ml · Eau de Parfum · For Her»).</li>
+<li>
+<strong>Save</strong>.</li>
+</ol>
+<p>Новый товар: Products → <strong>Add product</strong> → Title, Description, Media, Price, Type, Collections → Status <strong>Active</strong> → Save. Убрать с сайта без удаления: More actions → <strong>Archive</strong>.</p>
+<h2>Фото товаров</h2>
+<ul>
+<li>Формат <strong>4:5, 2000 × 2500</strong>, JPG до 1 МБ.</li>
+<li>Первое фото — главное (в каталоге и на главной). Порядок — перетаскиванием.</li>
+<li>Фото из нейросетей — проверять надписи на флаконах.</li>
+</ul>
+<h2>Греческая версия</h2>
+<ol>
+<li>Apps → <strong>Translate &amp; Adapt</strong> → сверху <strong>Greek</strong>.</li>
+<li>Раздел: Products, Theme → Templates (главная), Section groups (шапка и футер), Menu, Shipping and delivery.</li>
+<li>Слева оригинал, справа поле Greek → <strong>Save</strong>.</li>
+</ol>
+<p>Если поменять английский текст, греческий нужно вписать заново. Названия ароматов и «Eau de Parfum» не переводятся.</p>
+<h2>Заказы</h2>
+<ol>
+<li>
+<strong>Orders</strong> → открыть заказ.</li>
+<li>Упаковать, добавить пробники, отправить.</li>
+<li>
+<strong>Fulfill items</strong> → трек-номер и курьер → <strong>Fulfill</strong>. Клиенту уйдёт письмо с отслеживанием.</li>
+</ol>
+<p>Возврат денег: заказ → <strong>Refund</strong>.</p>
+<h2>Доставка</h2>
+<ul>
+<li>Греция: Standard €5 (бесплатно от €50), 3–5 дней; Express €13, 1–2 дня.</li>
+<li>Страны ЕС: €10 до €49,99, бесплатно от €50, 5–8 дней.</li>
+<li>Изменить: Settings → Shipping and delivery. Рынки и языки: Markets.</li>
+</ul>
+<h2>Подарочные карты и скидки</h2>
+<ul>
+<li>Выданные карты: Products → <strong>Gift cards</strong>; выдать вручную — Create gift card.</li>
+<li>Промокоды: <strong>Discounts</strong> → Create discount.</li>
+</ul>
+<h2>Что лучше не трогать</h2>
+<ul>
+<li>Код темы (Edit code) — тексты и фото меняются в редакторе (Customize).</li>
+<li>DNS-записи домена в Papaki (A, CNAME www, MX) — иначе перестанут работать сайт или почта.</li>
+<li>Settings → Domains и Markets.</li>
+</ul>
+<p>Поддержка и доработка сайта — Артём, по договорённости: <a href=""https://artemisaxen.com"" rel=""noopener"" target=""_blank"">artemisaxen.com</a>. Оплата и тариф Shopify — поддержка Shopify (значок «?» в админке).</p>",
+PAGE,699759886717,handle,el,,,sokole-guide,
+ONLINE_STORE_THEME,187553153405,general.brand_description,el,,,<p></p>,
+ONLINE_STORE_THEME,187553153405,general.social_facebook_link,el,,,https://www.facebook.com,
+ONLINE_STORE_THEME,187553153405,general.social_instagram_link,el,,,https://www.instagram.com,
+ONLINE_STORE_THEME,187553153405,general.social_youtube_link,el,,,https://www.youtube.com,
+ONLINE_STORE_THEME,187553153405,general.social_tiktok_link,el,,,https://www.tiktok.com,
+ONLINE_STORE_THEME,187553153405,section.article.json.main.share.share_label:3syj88j5f6ixv,el,,,Share,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.overline:240euh2ln6ecc,el,,,The Collection,Η Συλλογή
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.heading_line_1:1um5dziv2gg23,el,,,Sokole,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.heading_line_2:1um5dziv2ggug,el,,,Maison,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.description:2sw1ac0lu8p3u,el,,,"Rare ingredients, composed with intention. A rich, velvety fragrance wrapped in warmth and quiet elegance — for those who enter a room and stay long after they have gone.","Σπάνια συστατικά, συνθεμένα με πρόθεση. Ένα πλούσιο, βελούδινο άρωμα τυλιγμένο σε ζεστασιά και ήσυχη κομψότητα — για όσους μπαίνουν σε ένα δωμάτιο και μένουν εκεί πολύ αφότου έχουν φύγει. "
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.primary_button_label:zm3yoprxu4yo,el,,,Discover the Collection,Ανακαλύψτε τη Συλλογή
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.primary_button_link:2e0nw7xqj59pi,el,,,#collection,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.secondary_button_label:1l7f82y4vv15i,el,,,Explore the House,Γνωρίστε τον Οίκο
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-hero.secondary_button_link:3tmwlyxosmt74,el,,,/collections/all,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-1.label:27577cy9y5zt9,el,,,Rare Ingredients,Σπάνια συστατικά
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-1.description:3omububhk9vx,el,,,Sourced with care from around the world,Επιλεγμένα με φροντίδα από όλο τον κόσμο
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-2.label:day6c1g40s1a,el,,,Fine Fragrances,Εκλεπτυσμένα αρώματα
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-2.description:ps2hmve9vn1q,el,,,Crafted to tell your unique story,Δημιουργημένα για να αφηγούνται τη μοναδική σας ιστορία
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-3.label:2ca77rp23wcsv,el,,,Complimentary Samples,Δωρεάν δείγματα
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-3.description:u4sxnn1w5hzj,el,,,With every order you receive,Με κάθε παραγγελία σας
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-4.label:3ebz67a9kuqeg,el,,,Secure Payment,Ασφαλής πληρωμή
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-trust.trust-4.description:voq9weq9s0iw,el,,,Safe checkout with trusted partners,Ολοκλήρωση αγοράς με αξιόπιστους συνεργάτες
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-editorial.overline:iqmaj99kdu7d,el,,,The Philosophy,Η Φιλοσοφία
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-editorial.quote:1lh0xi8kqlghf,el,,,“Every bottle begins as a question — what does beauty smell like without compromise?”,«Κάθε φιάλη ξεκινά ως ερώτηση — πώς μυρίζει η ομορφιά χωρίς συμβιβασμούς;»
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-editorial.body:3l5eyofnra2k9,el,,,"Our perfumers work with rare, hand-selected materials sourced from the same producers who have supplied the great houses for generations. Each composition is crafted to evolve on your skin over hours. Not a statement. An atmosphere.","Οι αρωματοποιοί μας δουλεύουν με σπάνιες, προσεκτικά επιλεγμένες πρώτες ύλες από τους ίδιους παραγωγούς που εδώ και γενιές προμηθεύουν τους μεγάλους οίκους. Κάθε σύνθεση είναι φτιαγμένη για να εξελίσσεται στο δέρμα σας για ώρες. Όχι μια δήλωση. Μια ατμόσφαιρα."
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-editorial.link_label:2d845jztibj3k,el,,,Our Story,Η ιστορία μας
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-editorial.link_url:iqlxrfkjnbnh,el,,,/pages/contact,/el/pages/contact
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.overline:32en8na8v7yhn,el,,outdated,Signatures,Η Συλλογή
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.heading:3a0hm1xnj1j9v,el,,outdated,"Three signatures, one house","Ένα άρωμα, τρεις τελετουργίες"
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.description:ks952khah6bh,el,,outdated,From our debut Velvet to the discovery coffrets — three ways to wear Sokole.,"Το Sokole Velvet στις πιο αγνές του εκφράσεις — επιλεγμένο με το χέρι, με χρυσοτυπία, ολοκληρωμένο για τον τρόπο που το φοράτε."
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.add_to_bag_label:2c5fjqhkk8vng,el,,,Add to Cart,Προσθήκη στο καλάθι
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.anchor:2xi46qr4tqwma,el,,,collection,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.product-1.tag:33ra2qqkcijj9,el,,,For Her,Για εκείνη
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.product-1.title:1i9k599hn77jr,el,,,Sokole Velvet,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.product-1.subtitle:2prmzqy6i4jar,el,,,Eau de Parfum,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.product-2.tag:1jpq6lf5lt8cm,el,,,For Him,Για εκείνον
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.product-2.subtitle:2dkeo86sgar4,el,,,Eau de Parfum,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.product-3.tag:4y0pfgpco52f,el,,,Premium Boxes,Πολυτελή κουτιά δώρου
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-showcase.product-3.subtitle:1l0cf9ds9t6lt,el,,,Eau de Parfum · 4 × 10ml,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.overline:3h87lt9rbay33,el,,,The Composition,Η Σύνθεση
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.heading:3slxq9f2dy13,el,,,"An olfactory pyramid, built to unfold","Μια οσφρητική πυραμίδα, φτιαγμένη για να ξεδιπλώνεται"
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-1.step:3cbx2z785yxsa,el,,,I,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-1.phase:1aqexg15cgy2f,el,,,Top Note,Νότες κορυφής
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-1.accord:kec52zb537k,el,,,The Opening,Το Άνοιγμα
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-1.detail:kec2gughox5,el,,,"Calabrian bergamot, pink pepper and a breath of saffron.","Περγαμόντο Καλαβρίας, ροζ πιπέρι και μια πνοή σαφράν."
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-2.step:ely0qelwf4g9,el,,,II,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-2.phase:1po0l454x97tg,el,,,Heart Note,Νότες καρδιάς
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-2.accord:20x2y8pxd3803,el,,,The Velvet,Το Βελούδο
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-2.detail:20x2y2wq6d46i,el,,,"Turkish rose absolute, orris butter and warm violet leaf.","Απόλυτο τουρκικού τριαντάφυλλου, βούτυρο ίριδας και ζεστό φύλλο βιολέτας."
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-3.step:2el6vo9fsfn60,el,,,III,
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-3.phase:1ifignh4khk8l,el,,,Base Note,Νότες βάσης
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-3.accord:36f8wxqeiqkjm,el,,,The Trail,Το Ίχνος
+ONLINE_STORE_THEME,187553153405,section.index.json.sokole-notes.note-3.detail:36f8wv1ylg297,el,,,"Mysore sandalwood, ambergris, tonka and cashmere musk.","Σανταλόξυλο Mysore, άμβρα, τόνκα και μόσχος κασμίρ."
+ONLINE_STORE_THEME,187553153405,section.index.json.brand-story-editorial.asset_image:ed59svlvfgit,el,,,sokole_velvet0.PNG,
+ONLINE_STORE_THEME,187553153405,section.index.json.brand-story-editorial.asset_image_alt:1xawftp0r4ggz,el,,,"Sokole Velvet burgundy box with gold foiling, resting on marble beside a stone vessel and dried florals","Το μπορντό κουτί του Sokole Velvet με χρυσοτυπία, πάνω σε μάρμαρο δίπλα σε πέτρινο δοχείο και αποξηραμένα λουλούδια"
+ONLINE_STORE_THEME,187553153405,section.index.json.brand-story-editorial.caption.caption:3sw56wugp5fw6,el,,,A Reverence for Rare,Σεβασμός στο σπάνιο
+ONLINE_STORE_THEME,187553153405,section.index.json.brand-story-editorial.heading.heading:yalicmoipmly,el,,,Born from a conviction that fragrance is the most personal form of expression,Γεννημένο από την πεποίθηση ότι το άρωμα είναι η πιο προσωπική μορφή έκφρασης
+ONLINE_STORE_THEME,187553153405,section.index.json.brand-story-editorial.text.text:yzuc6asi2xti,el,,,"<p>Sokole is a small house with a long memory. We compose in limited batches, favouring naturals that cost more, last longer and speak more quietly than the alternatives.</p><p>Every flacon is finished and wrapped by hand in our atelier, then sent with a set of samples so the fragrance can be lived with before it is loved.</p>","<p>Η Sokole είναι ένας μικρός οίκος με μακριά μνήμη. Δημιουργούμε σε περιορισμένες παρτίδες, προτιμώντας φυσικές πρώτες ύλες που κοστίζουν περισσότερο, διαρκούν περισσότερο και μιλούν πιο διακριτικά από τις εναλλακτικές.</p><p>Κάθε φιάλη ολοκληρώνεται και τυλίγεται με το χέρι στο ατελιέ μας και αποστέλλεται μαζί με δείγματα, ώστε να ζήσετε με το άρωμα πριν το αγαπήσετε.</p>"
+ONLINE_STORE_THEME,187553153405,section.index.json.brand-story-editorial.button.button_label:3p988dkh3dkhb,el,,,Inside the Atelier,Μέσα στο ατελιέ
+ONLINE_STORE_THEME,187553153405,section.index.json.brand-story-editorial.button.button_link:xrlrqtfumm89,el,,,/pages/contact,/el/pages/contact
+ONLINE_STORE_THEME,187553153405,section.list-collections.json.main.title:1d0ti1c25d6dr,el,,,Collections,
+ONLINE_STORE_THEME,187553153405,section.password.json.main.heading.heading:3jfchdkhhlz4x,el,,,Opening soon,
+ONLINE_STORE_THEME,187553153405,section.password.json.main.paragraph.text:3dpbi4yl0bkb6,el,,,<p>Be the first to know when we launch.</p>,
+ONLINE_STORE_THEME,187553153405,section.product.json.main.vendor.text:2n788erlcind8,el,,,{{ product.vendor }},
+ONLINE_STORE_THEME,187553153405,section.product.json.main.share.share_label:1ad7auctiy024,el,,,Share,
+ONLINE_STORE_THEME,187553153405,section.product.json.related-products.heading:33ue0l8criumv,el,,,You may also like,
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.newsletter.overline:v2t8y6sy6v8h,el,,,The Sokole Letter,Το Γράμμα της Sokole
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.newsletter.heading:yx126kis2u21,el,,,Be the first to know when Velvet returns,Μάθετε πρώτοι πότε επιστρέφει το Velvet
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.newsletter.description:2p7pjq1uaj407,el,,,"Private launches, restock notices and an invitation to sample new compositions before anyone else.","Ιδιωτικά λανσαρίσματα, ειδοποιήσεις επαναδιάθεσης και πρόσκληση να δοκιμάσετε νέες συνθέσεις πριν από οποιονδήποτε άλλο."
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.newsletter.input_placeholder:2krwz9lspgugb,el,,,Your email address,Η διεύθυνση email σας
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.newsletter.button_label:1hlfquij4wbke,el,,,Subscribe,Εγγραφή
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.footer.newsletter_heading:3mws8faawdff7,el,,,Subscribe to our emails,
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.footer.brand.heading:2qzcx1dy4mnq5,el,,,SOKOLE,
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.footer.brand.subtext:2qzd952i7ezgs,el,,,"<p>Rare ingredients, composed with intention. A niche fragrance house for those who wear their story.</p>","<p>Σπάνια συστατικά, συνθεμένα με πρόθεση. Ένας niche οίκος αρωμάτων για όσους φορούν την ιστορία τους.</p>"
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.footer.shop.heading:3fdhpau7snxwi,el,,,Shop,Κατάστημα
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.footer.shop.subtext:3fdhd75nkec8j,el,,,"<ul><li><a href=""/collections/perfume-for-her"">Perfume for Her</a></li><li><a href=""/collections/perfume-for-him"">Perfume for Him</a></li><li><a href=""/collections/premium-boxes"">Premium Boxes</a></li><li><a href=""/collections/body-mist-fragrance"">Body Mist</a></li><li><a href=""/products/gift-card"">Gift Cards</a></li></ul>",
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.footer.client-care.heading:3m249kj91plqf,el,,,Client Care,Εξυπηρέτηση πελατών
+ONLINE_STORE_THEME,187553153405,section.sections/footer-group.json.footer.client-care.subtext:3m240c37wskeu,el,,,"<ul><li><a href=""/pages/contact"">Contact</a></li><li><a href=""/account"">My Orders</a></li></ul>",
+ONLINE_STORE_THEME,187553153405,section.sections/header-group.json.sokole-marquee.message-1.text:2amvpl9c20dbx,el,,,Complimentary samples with every order,Δωρεάν δείγματα σε κάθε παραγγελία
+ONLINE_STORE_THEME,187553153405,section.sections/header-group.json.sokole-marquee.message-2.text:2i3r51vxj7epq,el,,,Wrapped by hand in the Sokole atelier,Τυλιγμένο με το χέρι στο ατελιέ της Sokole
+ONLINE_STORE_THEME,187553153405,section.sections/header-group.json.sokole-marquee.message-3.text:q5c13oqg070f,el,,,Complimentary shipping across Europe,Δωρεάν αποστολή σε όλη την Ευρώπη
+ONLINE_STORE_THEME,187553153405,section.sections/header-group.json.sokole-marquee.message-4.text:2r35qzqmv8oqg,el,,,A fragrance that stays long after you have gone,Ένα άρωμα που μένει πολύ αφότου έχετε φύγει
+PACKING_SLIP_TEMPLATE,5269946749,body,el,,,"<div class=""wrapper"">
+  <div class=""header"">
+    <div class=""shop-title"">
+      <p class=""to-uppercase"">
+        {{ shop.name }}
+      </p>
+    </div>
+    <div class=""order-title"">
+      <p class=""text-align-right"">
+        Order {{ order.name }}
+      </p>
+      {% if order.po_number != blank %}
+        <p class=""text-align-right"">
+          PO number #{{ order.po_number }}
+        </p>
+      {% endif %}
+      <p class=""text-align-right"">
+        {{ order.created_at | date: format: ""date"" }}
+      </p>
+    </div>
+  </div>
+  <div class=""customer-addresses"">
+    <div class=""shipping-address"">
+      <p class=""subtitle-bold to-uppercase"">
+        {% if delivery_method.instructions != blank %}
+          Delivery to
+        {% else %}
+          Ship to
+        {% endif %}
+      </p>
+      <p class=""address-detail"">
+        {% if shipping_address != blank %}
+          {{ shipping_address.name }}
+          {% if shipping_address.company != blank %}
+            <br>
+            {{ shipping_address.company }}
+          {% endif %}
+          <br>
+          {{ shipping_address.address1 }}
+          {% if shipping_address.address2 != blank %}
+            <br>
+            {{ shipping_address.address2 }}
+          {% endif %}
+          {% if shipping_address.city_province_zip != blank %}
+            <br>
+            {{ shipping_address.city_province_zip }}
+          {% endif %}
+          <br>
+          {{ shipping_address.country }}
+          {% if shipping_address.phone != blank %}
+            <br>
+            {{ shipping_address.phone }}
+          {% endif %}
+        {% else %}
+          No shipping address
+        {% endif %}
+      </p>
+    </div>
+    <div class=""billing-address"">
+      <p class=""subtitle-bold to-uppercase"">
+        Bill to
+      </p>
+      <p class=""address-detail"">
+        {% if billing_address != blank %}
+          {{ billing_address.name }}
+          {% if billing_address.company != blank %}
+            <br>
+            {{ billing_address.company }}
+          {% endif %}
+          <br>
+          {{ billing_address.address1 }}
+          {%  if billing_address.address2 != blank %}
+            <br>
+            {{ billing_address.address2 }}
+          {% endif %}
+          {% if billing_address.city_province_zip != blank %}
+            <br>
+            {{ billing_address.city_province_zip }}
+          {% endif %}
+          <br>
+          {{ billing_address.country }}
+        {% else %}
+          No billing address
+        {% endif %}
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class=""order-container"">
+    <div class=""order-container-header"">
+      <div class=""order-container-header-left-content"">
+        <p class=""subtitle-bold to-uppercase"">
+          Items
+        </p>
+      </div>
+      <div class=""order-container-header-right-content"">
+        <p class=""subtitle-bold to-uppercase"">
+          Quantity
+        </p>
+      </div>
+    </div>
+
+    {% comment %}
+    To adjust the size of line item images, change desired_image_size.
+    The other variables make sure your images print at high quality.
+    {% endcomment %}
+    {% assign desired_image_size = 58 %}
+    {% assign resolution_adjusted_size = desired_image_size | times: 300 | divided_by: 72 | ceil %}
+    {% capture effective_image_dimensions %}
+      {{ resolution_adjusted_size }}x{{ resolution_adjusted_size }}
+    {% endcapture %}
+
+    {% for line_item in line_items_in_shipment %}
+      <div class=""flex-line-item"">
+        <div class=""flex-line-item-img"">
+          {% if line_item.image != blank %}
+            <div class=""aspect-ratio aspect-ratio-square"" style=""width: {{ desired_image_size }}px; height: {{ desired_image_size }}px;"">
+              {{ line_item.image | img_url: effective_image_dimensions | img_tag: '', 'aspect-ratio__content' }}
+            </div>
+          {% endif %}
+        </div>
+        <div class=""flex-line-item-description"">
+          <p>
+            <span class=""line-item-description-line"">
+              {{ line_item.title }}
+            </span>
+            {% if line_item.variant_title != blank %}
+              <span class=""line-item-description-line"">
+                {{ line_item.variant_title }}
+              </span>
+            {% endif %}
+            {% if line_item.sku != blank %}
+              <span class=""line-item-description-line"">
+                {{ line_item.sku }}
+              </span>
+            {% endif %}
+            {% for group in line_item.groups %}
+              {% if group.deliverable? %}
+                <span class=""line-item-description-line"">
+                  For: {{ group.title }}
+                </span>
+              {% else %}
+                <span class=""line-item-description-line"">
+                  Part of: {{ group.title }}
+                </span>
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+        <div class=""flex-line-item-quantity"">
+          <p class=""text-align-right"">
+            {{ line_item.shipping_quantity }} of {{ line_item.quantity }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% unless includes_all_line_items_in_order %}
+    <hr class=""subdued-separator"">
+    <p class=""missing-line-items-text "">
+      There are other items from your order not included in this shipment.
+    </p>
+  {% endunless %}
+  <hr>
+  {% if order.note != blank %}
+    <div class=""notes"">
+      <p class=""subtitle-bold to-uppercase"">
+        Notes
+      </p>
+      <p class=""notes-details"">
+        {{ order.note }}
+      </p>
+    </div>
+  {% endif %}
+  {% if delivery_method.instructions != blank %}
+    <div class=""notes"">
+      <p class=""subtitle-bold to-uppercase"">
+        Delivery instructions
+      </p>
+      <p class=""notes-details"">
+        {{ delivery_method.instructions }}
+      </p>
+    </div>
+  {% endif %}
+  <div class=""footer"">
+    <p>
+      Thank you for shopping with us!
+    </p>
+    <p>
+      <strong>
+        {{ shop.name }}
+      </strong>
+      <br>
+      {{ shop_address.summary }}
+      <br>
+      {{ shop.email }}
+      <br>
+      {{ shop.domain }}
+    </p>
+  </div>
+</div>
+<style type=""text/css"">
+  body {
+    font-size: 15px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 831px;
+    margin: auto;
+    padding: 4em;
+    font-family: ""Noto Sans"", sans-serif;
+    font-weight: 250;
+  }
+
+  .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+  }
+
+  .header p {
+    margin: 0;
+  }
+
+  .shop-title {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    flex: 6;
+    font-size: 1.9em;
+  }
+
+  .order-title {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    flex: 4;
+  }
+
+  .customer-addresses {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+  }
+
+  .address-detail {
+    margin: 0.7em 0 0;
+    line-height: 1.5;
+  }
+
+  .subtitle-bold {
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.85em;
+  }
+
+  .to-uppercase {
+    text-transform: uppercase;
+  }
+
+  .text-align-right {
+    text-align: right;
+  }
+
+  .shipping-address {
+    float: left;
+    min-width: 18em;
+    max-width: 50%;
+  }
+
+  .billing-address {
+    padding-left: 20em;
+    min-width: 18em;
+  }
+
+  .order-container {
+    padding: 0 0.7em;
+  }
+
+  .order-container-header {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1.4em;
+  }
+
+  .order-container-header-left-content {
+    float: left;
+  }
+
+  .order-container-header-right-content {
+    float: right;
+  }
+
+  .flex-line-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.4em 0;
+    page-break-inside: avoid;
+  }
+
+  .flex-line-item-img {
+    margin-right: 1.4em;
+    min-width: {{ desired_image_size }}px;
+  }
+
+  .flex-line-item-description {
+    -webkit-box-flex: 7;
+    -webkit-flex: 7;
+    flex: 7;
+  }
+
+  .line-item-description-line {
+    display: block;
+  }
+
+  .flex-line-item-description p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .flex-line-item-quantity {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+  }
+
+  .subdued-separator {
+    height: 0.07em;
+    border: none;
+    color: lightgray;
+    background-color: lightgray;
+    margin: 0;
+  }
+
+  .missing-line-items-text {
+    margin: 1.4em 0;
+    padding: 0 0.7em;
+  }
+
+  .notes {
+    margin-top: 2em;
+  }
+
+  .notes p {
+    margin-bottom: 0;
+  }
+
+  .notes .notes-details {
+    margin-top: 0.7em;
+  }
+
+  .footer {
+    margin-top: 2em;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .footer p {
+    margin: 0;
+    margin-bottom: 1.4em;
+  }
+
+  hr {
+    height: 0.14em;
+    border: none;
+    color: black;
+    background-color: black;
+    margin: 0;
+  }
+
+  .aspect-ratio {
+    position: relative;
+    display: block;
+    background: #fafbfc;
+    padding: 0;
+  }
+
+  .aspect-ratio::before {
+    z-index: 1;
+    content: """";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(195,207,216,0.3);
+  }
+
+  .aspect-ratio--square {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+
+  .aspect-ratio__content {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+</style>
+",
+PRODUCT,15917308543357,title,el,,,Sokole Gift Card,Sokole Gift Card
+PRODUCT,15917308543357,body_html,el,,,"<p>Give the gift of choice. A Sokole gift card, delivered by email, to be spent on any fragrance in the house.</p>","<p>&nbsp;Χαρίστε την ελευθερία της επιλογής. Μια δωροκάρτα Sokole, που αποστέλλεται με email, για οποιοδήποτε άρωμα του οίκου.</p>"
+PRODUCT,15917308543357,handle,el,,,gift-card,
+PRODUCT,15917308543357,product_type,el,,,giftcard,
+PRODUCT,15917424017789,title,el,,,Ombre Mystique,Ombre Mystique
+PRODUCT,15917424017789,body_html,el,,,"<p>A curated set of four signature miniature fragrances. A journey through mystery and depth.</p><ul>
+<li>
+<strong>Morning Raw</strong> — white floral, citrus, lavender, vanilla</li>
+<li>
+<strong>Mystic</strong> — fresh, aldehydic, musky, floral</li>
+<li>
+<strong>Invisible</strong> — sweet, vanilla, yellow floral, musky</li>
+<li>
+<strong>Aura D'Arabia</strong> — tropical, fruity, sweet, woody</li>
+</ul><p>4 × 10ml · Eau de Parfum</p>","<div>
+<div><span>Μια επιμελημένη συλλογή από τέσσερα χαρακτηριστικά αρώματα σε μινιατούρα. Ένα ταξίδι στο μυστήριο και το βάθος.</span></div>
+<div><span></span></div>
+<div><span><strong>Morning Raw </strong>— λευκά λουλούδια, εσπεριδοειδή, λεβάντα, βανίλια</span></div>
+<div><span><strong>Mystic</strong> — δροσερές νότες, αλδεΰδες, μόσχος, λουλούδια</span></div>
+<div><span><strong>Invisible</strong> — γλυκές νότες, βανίλια, κίτρινα λουλούδια, μόσχος</span></div>
+<div><span><strong>Aura D'Arabia</strong> — τροπικές νότες, φρουτώδεις νότες, γλυκές νότες, ξυλώδεις νότες</span></div>
+<div><span></span></div>
+<div><span>4 × 10ml · Eau de Parfum</span></div>
+</div>"
+PRODUCT,15917424017789,handle,el,,,ombre-mystique,
+PRODUCT,15917424017789,product_type,el,,,Premium Boxes,
+PRODUCT,15917424083325,title,el,,,Golden Reverie,Golden Reverie
+PRODUCT,15917424083325,body_html,el,,,"<p>Four luminous miniature scents gathered in an elegant gift box.</p><ul>
+<li>
+<strong>L'Ombre</strong> — citrus, fruity, musky, woody, oud</li>
+<li>
+<strong>Herbe Pura</strong> — musky, amber, sweet, powdery</li>
+<li>
+<strong>Muse</strong> — woody, vanilla, aromatic, floral</li>
+<li>
+<strong>Amor Noir</strong> — musky, cherry, sweet, amber</li>
+</ul><p>4 × 10ml · Eau de Parfum</p>","<div>
+<div><span>Τέσσερα φωτεινά αρώματα σε μινιατούρα, μαζεμένα σε ένα κομψό κουτί δώρου.</span></div>
+<div><span></span></div>
+<div><span><strong>L'Ombre </strong>— εσπεριδοειδή, φρουτώδεις νότες, μόσχος, ξυλώδεις νότες, oud</span></div>
+<div><span><strong>Herbe Pura </strong>— μόσχος, άμβρα, γλυκές νότες, πουδραρισμένες νότες</span></div>
+<div><span><strong>Muse</strong> — ξυλώδεις νότες, βανίλια, αρωματικές νότες, λουλούδια</span></div>
+<div><span><strong>Amor Noir</strong> — μόσχος, κεράσι, γλυκές νότες, άμβρα</span></div>
+<div><span></span></div>
+<div><span>4 × 10ml · Eau de Parfum</span></div>
+</div>"
+PRODUCT,15917424083325,handle,el,,,golden-reverie,
+PRODUCT,15917424083325,product_type,el,,,Premium Boxes,
+PRODUCT,15917424214397,title,el,,,Velvet Noir,Velvet Noir
+PRODUCT,15917424214397,body_html,el,,,"<p>Four velvety miniature fragrances in a signature dark presentation box.</p><ul>
+<li>
+<strong>Vert Silence</strong> — warm spicy, woody, sweet, vanilla</li>
+<li>
+<strong>Jardin Soul</strong> — amber, fruity, warm spicy, woody</li>
+<li>
+<strong>Eclipse</strong> — cherry, vanilla, sweet, warm spicy</li>
+<li>
+<strong>Golden Silk</strong> — yellow floral, white floral, sweet, powdery</li>
+</ul><p>4 × 10ml · Eau de Parfum</p>","<div>
+<div><span>Τέσσερα βελούδινα αρώματα σε μινιατούρα, σε ένα χαρακτηριστικό σκούρο κουτί δώρου.</span></div>
+<div><span></span></div>
+<div><span><strong>Vert Silence</strong> — ζεστά μπαχαρικά, ξυλώδεις νότες, γλυκές νότες, βανίλια</span></div>
+<div><span><strong>Jardin Soul </strong>— άμβρα, φρουτώδεις νότες, ζεστά μπαχαρικά, ξυλώδεις νότες</span></div>
+<div><span><strong>Eclipse</strong> — κεράσι, βανίλια, γλυκές νότες, ζεστά μπαχαρικά</span></div>
+<div><span><strong>Golden Silk</strong> — κίτρινα λουλούδια, λευκά λουλούδια, γλυκές νότες, πουδραρισμένες νότες</span></div>
+<div><span></span></div>
+<div><span>4 × 10ml · Eau de Parfum</span></div>
+</div>"
+PRODUCT,15917424214397,handle,el,,,velvet-noir,
+PRODUCT,15917424214397,product_type,el,,,Premium Boxes,
+PRODUCT,15917424345469,title,el,,,Bohemian Code,Bohemian Code
+PRODUCT,15917424345469,body_html,el,,,"<p>Four bold miniature fragrances for those who write their own rules.</p><ul>
+<li>
+<strong>El Maison</strong> — citrus, fresh spicy, green, amber</li>
+<li>
+<strong>Vesper</strong> — amber, warm spicy, oud, smoky</li>
+<li>
+<strong>Silky Wood</strong> — citrus, warm spicy, woody, patchouli</li>
+<li>
+<strong>Veil of Dunes</strong> — mineral, warm spicy, leather, oud</li>
+</ul><p>4 × 10ml · Eau de Parfum</p>","<div>
+<div><span>Τέσσερα τολμηρά αρώματα σε μινιατούρα, για όσους γράφουν τους δικούς τους κανόνες.</span></div>
+<div><span><strong>El Maison </strong>— εσπεριδοειδή, δροσερά μπαχαρικά, πράσινες νότες, άμβρα</span></div>
+<div><span><strong>Vesper</strong> — άμβρα, ζεστά μπαχαρικά, oud, καπνιστές νότες</span></div>
+<div><span><strong>Silky Wood </strong>— εσπεριδοειδή, ζεστά μπαχαρικά, ξυλώδεις νότες, πατσουλί</span></div>
+<div><span><strong>Veil of Dunes</strong> — ορυκτές νότες, ζεστά μπαχαρικά, δέρμα, oud</span></div>
+<div><span></span></div>
+<div><span>4 × 10ml · Eau de Parfum</span></div>
+</div>"
+PRODUCT,15917424345469,handle,el,,,bohemian-code,
+PRODUCT,15917424345469,product_type,el,,,Premium Boxes,
+PRODUCT,15917424476541,title,el,,,Eclat De Soie,Eclat De Soie
+PRODUCT,15917424476541,body_html,el,,,"<p>A fresh white floral mist balancing citrus and fruity brightness with warm spiced powder. Bergamot, black currant and tangerine open into gardenia, jasmine and lily-of-the-valley, settling into patchouli, musk and amber.</p><p>100ml · Fragrance Mist</p>","<div>
+<div><span>Ένα δροσερό mist λευκών λουλουδιών που ισορροπεί τη φωτεινότητα των εσπεριδοειδών και των φρούτων με ζεστή, πικάντικη πούδρα. Περγαμόντο, μαύρο φραγκοστάφυλο και μανταρίνι ανοίγουν σε γαρδένια, γιασεμί και μιγκέ, και καταλήγουν σε πατσουλί, μόσχο και άμβρα.</span></div>
+<div><span></span></div>
+<div><span>100ml · Fragrance Mist</span></div>
+</div>"
+PRODUCT,15917424476541,handle,el,,,eclat-de-soie,
+PRODUCT,15917424476541,product_type,el,,,Body Mist Fragrance,
+PRODUCT,15917424542077,title,el,,,Jardin De Velours,Jardin De Velours
+PRODUCT,15917424542077,body_html,el,,,"<p>A sweet, lactonic mist wrapped in marshmallow and vanilla. Freesia and Italian lemon open into strawberry, coconut and orange blossom, deepening into whipped cream, musk and raspberry.</p><p>100ml · Fragrance Mist</p>","<div>
+<div><span>Ένα γλυκό, γαλακτώδες mist τυλιγμένο σε marshmallow και βανίλια. Φρέζια και ιταλικό λεμόνι ανοίγουν σε φράουλα, καρύδα και άνθη πορτοκαλιάς, και βαθαίνουν σε σαντιγί, μόσχο και βατόμουρο.</span></div>
+<div><span></span></div>
+<div><span>100ml · Fragrance Mist</span></div>
+</div>"
+PRODUCT,15917424542077,handle,el,,,jardin-de-velours,
+PRODUCT,15917424542077,product_type,el,,,Body Mist Fragrance,
+PRODUCT,15917424673149,title,el,,,Scarlet Aura,Scarlet Aura
+PRODUCT,15917424673149,body_html,el,,,"<p>A bold sweet-spicy mist built on white florals and cacao warmth. Almond, coffee and bergamot open into tuberose, jasmine and Bulgarian rose, resting on tonka bean, amber and cashmere wood.</p><p>100ml · Fragrance Mist</p>","<div>
+<div><span>Ένα τολμηρό, γλυκό-πικάντικο mist χτισμένο πάνω σε λευκά λουλούδια και τη ζεστασιά του κακάο. Αμύγδαλο, καφές και περγαμόντο ανοίγουν σε τουμπερόζα, γιασεμί και βουλγαρικό τριαντάφυλλο, πάνω σε φασόλι τόνκα, άμβρα και ξύλο κασμίρ.</span></div>
+<div><span></span></div>
+<div><span>100ml · Fragrance Mist</span></div>
+</div>"
+PRODUCT,15917424673149,handle,el,,,scarlet-aura,
+PRODUCT,15917424673149,product_type,el,,,Body Mist Fragrance,
+PRODUCT,15917424738685,title,el,,,Maison De Brume,Maison De Brume
+PRODUCT,15917424738685,body_html,el,,,"<p>A soft, musky mist of yellow and white florals over sweet vanilla warmth. Pear, rose and lavender open into ylang ylang and jasmine, settling into vanilla, musk and moss.</p><p>100ml · Fragrance Mist</p>","<div><meta charset=""utf-8"">
+<div>
+<div><span>Ένα απαλό, μοσχάτο mist με κίτρινα και λευκά λουλούδια πάνω σε γλυκιά, ζεστή βανίλια. Αχλάδι, τριαντάφυλλο και λεβάντα ανοίγουν σε ylang ylang και γιασεμί, και καταλήγουν σε βανίλια, μόσχο και άμβρα.</span></div>
+</div>
+</div>
+<div><span></span></div>
+<div><span>100ml · Fragrance Mist</span></div>"
+PRODUCT,15917424738685,handle,el,,,maison-de-brume,
+PRODUCT,15917424738685,product_type,el,,,Body Mist Fragrance,
+PRODUCT,15917424836989,title,el,,,Cashmere Aura,Cashmere Aura
+PRODUCT,15917424836989,body_html,el,,,"<p>A tropical, sun-warmed mist of coconut water and pineapple. Frangipani and wild jasmine unfold into vanilla, driftwood and amberwood.</p><p>100ml · Fragrance Mist</p>","<div>
+<div><span>Ένα τροπικό, ηλιόλουστο mist με νερό καρύδας και ανανά. Το φραγκιπάνι και το άγριο γιασεμί ανοίγουν σε βανίλια, ξύλο από τη θάλασσα και amberwood.</span></div>
+<div><span></span></div>
+<div><span>100ml · Fragrance Mist</span></div>
+</div>"
+PRODUCT,15917424836989,handle,el,,,cashmere-aura,
+PRODUCT,15917424836989,product_type,el,,,Body Mist Fragrance,
+PRODUCT,15917424902525,title,el,,,Fleur De Minuit,
+PRODUCT,15917424902525,body_html,el,,,"<p>A midnight floral fragrance — deep, romantic, and hauntingly beautiful.</p>",
+PRODUCT,15917424902525,handle,el,,,fleur-de-minuit,
+PRODUCT,15917424902525,product_type,el,,,Perfume for Her,
+PRODUCT,15917425000829,title,el,,,Rose Oud Dorée,
+PRODUCT,15917425000829,body_html,el,,,"<p>A golden union of rose and oud. Rich, warm, and unmistakably luxurious.</p>",
+PRODUCT,15917425000829,handle,el,,,rose-oud-doree,
+PRODUCT,15917425000829,product_type,el,,,Perfume for Her,
+PRODUCT,15917425099133,title,el,,,Velours De Soie,
+PRODUCT,15917425099133,body_html,el,,,<p>Smooth as silk velvet — a delicate fragrance that leaves a whisper of elegance.</p>,
+PRODUCT,15917425099133,handle,el,,,velours-de-soie,
+PRODUCT,15917425099133,product_type,el,,,Perfume for Her,
+PRODUCT,15917425164669,title,el,,,Belle d'Orient,
+PRODUCT,15917425164669,body_html,el,,,<p>An opulent eastern-inspired fragrance with warm spices and precious woods.</p>,
+PRODUCT,15917425164669,handle,el,,,belle-dorient,
+PRODUCT,15917425164669,product_type,el,,,Perfume for Her,
+PRODUCT,15917425262973,title,el,,,Pétale Précieux,
+PRODUCT,15917425262973,body_html,el,,,"<p>A rare and precious floral — light as a petal, enduring as gold.</p>",
+PRODUCT,15917425262973,handle,el,,,petale-precieux,
+PRODUCT,15917425262973,product_type,el,,,Perfume for Her,
+PRODUCT,15917425328509,title,el,,,Oud Impériale,
+PRODUCT,15917425328509,body_html,el,,,"<p>A commanding imperial fragrance built on the finest oud. Powerful, distinguished, timeless.</p>",
+PRODUCT,15917425328509,handle,el,,,oud-imperiale,
+PRODUCT,15917425328509,product_type,el,,,Perfume for Him,
+PRODUCT,15917425394045,title,el,,,Bois De Santal,
+PRODUCT,15917425394045,body_html,el,,,<p>Warm sandalwood and smooth woods — a sophisticated scent for the modern man.</p>,
+PRODUCT,15917425394045,handle,el,,,bois-de-santal,
+PRODUCT,15917425394045,product_type,el,,,Perfume for Him,
+PRODUCT,15917425459581,title,el,,,Ambre Mystique,
+PRODUCT,15917425459581,body_html,el,,,<p>A deep amber fragrance with a mysterious dry-down. Bold and unforgettable.</p>,
+PRODUCT,15917425459581,handle,el,,,ambre-mystique,
+PRODUCT,15917425459581,product_type,el,,,Perfume for Her,
+PRODUCT,15917425623421,title,el,,,Désert d'Or,
+PRODUCT,15917425623421,body_html,el,,,<p>Golden sands and warm spices — an ode to the Arabian desert at dusk.</p>,
+PRODUCT,15917425623421,handle,el,,,desert-dor,
+PRODUCT,15917425623421,product_type,el,,,Perfume for Him,
+PRODUCT,15965855351165,title,el,,,Sokole Velvet,Sokole Velvet
+PRODUCT,15965855351165,body_html,el,,,"<p>A warm, spicy eau de parfum wrapped in sweet vanilla and cinnamon over soft woods and a veil of amber powder.</p><p>50ml · Eau de Parfum · For Her</p>","<div>
+<div><span>Ένα ζεστό, πικάντικο eau de parfum τυλιγμένο σε γλυκιά βανίλια και κανέλα, πάνω σε απαλά ξύλα και ένα πέπλο από πουδραρισμένη άμβρα.</span></div>
+<div><span></span></div>
+<div><span>50ml · Eau de Parfum · Για εκείνη</span></div>
+</div>"
+PRODUCT,15965855351165,handle,el,,,sokole-velvet,
+PRODUCT,15965855351165,product_type,el,,,Perfume for Her,
+PRODUCT,15973102977405,title,el,,,Sokole Divine,Sokole Divine
+PRODUCT,15973102977405,body_html,el,,,"<p>An amber and fruity eau de parfum layered with warm, aromatic spice over balsamic woods and a soft spicy dry-down.</p><p>100ml · Eau de Parfum · For Her</p>","<div>
+<div><span>Ένα κεχριμπαρένιο και φρουτώδες eau de parfum με ζεστά, αρωματικά μπαχαρικά πάνω σε βαλσαμικά ξύλα και ένα απαλό, πικάντικο τελείωμα.</span></div>
+<div><span></span></div>
+<div><span>100ml · Eau de Parfum · Για εκείνη</span></div>
+</div>"
+PRODUCT,15973102977405,handle,el,,,sokole-divine,
+PRODUCT,15973102977405,product_type,el,,,Perfume for Her,
+PRODUCT,15973103010173,title,el,,,Sokole Eclipse S,Sokole Eclipse S
+PRODUCT,15973103010173,body_html,el,,,"<p>A fresh, aldehydic eau de parfum with musky powder over rose, violet, and soapy woods.</p><p>50ml · Eau de Parfum · For Her</p>","<div>
+<div><span>Ένα δροσερό, αλδεϋδικό eau de parfum με μοσχάτη πούδρα πάνω σε τριαντάφυλλο, βιολέτα και καθαρές, σαπουνένιες ξυλώδεις νότες.</span></div>
+<div><span></span></div>
+<div><span>50ml · Eau de Parfum · Για εκείνη</span></div>
+</div>"
+PRODUCT,15973103010173,handle,el,,,sokole-eclipse-s,
+PRODUCT,15973103010173,product_type,el,,,Perfume for Her,
+PRODUCT,15973103042941,title,el,,,Sokole Inferno,Sokole Inferno
+PRODUCT,15973103042941,body_html,el,,,"<p>A commanding eau de parfum built on oud — citrus and fruity musk over sweet woods, fresh spice, and white florals.</p><p>50ml · Eau de Parfum · For Him</p>","<div>
+<div><span>Ένα επιβλητικό eau de parfum χτισμένο πάνω στο oud — εσπεριδοειδή και φρουτώδης μόσχος πάνω σε γλυκά ξύλα, δροσερά μπαχαρικά και λευκά λουλούδια.</span></div>
+<div><span></span></div>
+<div><span>50ml · Eau de Parfum · Για εκείνον</span></div>
+</div>"
+PRODUCT,15973103042941,handle,el,,,sokole-inferno,
+PRODUCT,15973103042941,product_type,el,,,Perfume for Him,
+PRODUCT,15973103075709,title,el,,,Sokole Mythology,Sokole Mythology
+PRODUCT,15973103075709,body_html,el,,,"<p>A commanding imperial fragrance — fresh citrus and spice over green amber. Powerful, distinguished, timeless.</p><p>100ml · Eau de Parfum · For Him</p>","<div>
+<div><span>Ένα επιβλητικό, αυτοκρατορικό άρωμα — δροσερά εσπεριδοειδή και μπαχαρικά πάνω σε πράσινη άμβρα. Δυνατό, αριστοκρατικό, διαχρονικό.</span></div>
+<div><span></span></div>
+<div><span>100ml · Eau de Parfum · Για εκείνον</span></div>
+</div>"
+PRODUCT,15973103075709,handle,el,,,sokole-mythology,
+PRODUCT,15973103075709,product_type,el,,,Perfume for Him,
+PRODUCT,15973103108477,title,el,,,Sokole Phantom,Sokole Phantom
+PRODUCT,15973103108477,body_html,el,,,"<p>A bold, magnetic eau de parfum — citrus and warm spice over aromatic, earthy patchouli woods.</p><p>100ml · Eau de Parfum · For Him</p>","<div>
+<div><span>Ένα τολμηρό, μαγνητικό eau de parfum — εσπεριδοειδή και ζεστά μπαχαρικά πάνω σε αρωματικά, γήινα ξύλα πατσουλί.</span></div>
+<div><span></span></div>
+<div><span>100ml · Eau de Parfum · Για εκείνον</span></div>
+</div>"
+PRODUCT,15973103108477,handle,el,,,sokole-phantom,
+PRODUCT,15973103108477,product_type,el,,,Perfume for Him,
+PRODUCT_OPTION,18868959117693,name,el,,,Denominations,
+PRODUCT_OPTION,18869077901693,name,el,,,Title,
+PRODUCT_OPTION,18869077967229,name,el,,,Title,
+PRODUCT_OPTION,18869078098301,name,el,,,Title,
+PRODUCT_OPTION,18869078229373,name,el,,,Title,
+PRODUCT_OPTION,18869078360445,name,el,,,Title,
+PRODUCT_OPTION,18869078425981,name,el,,,Title,
+PRODUCT_OPTION,18869078557053,name,el,,,Title,
+PRODUCT_OPTION,18869078622589,name,el,,,Title,
+PRODUCT_OPTION,18869078720893,name,el,,,Title,
+PRODUCT_OPTION,18869078786429,name,el,,,Title,
+PRODUCT_OPTION,18869078884733,name,el,,,Title,
+PRODUCT_OPTION,18869078983037,name,el,,,Title,
+PRODUCT_OPTION,18869079048573,name,el,,,Title,
+PRODUCT_OPTION,18869079146877,name,el,,,Title,
+PRODUCT_OPTION,18869079212413,name,el,,,Title,
+PRODUCT_OPTION,18869079277949,name,el,,,Title,
+PRODUCT_OPTION,18869079343485,name,el,,,Title,
+PRODUCT_OPTION,18869079507325,name,el,,,Title,
+PRODUCT_OPTION,18925670793597,name,el,,,Title,
+PRODUCT_OPTION,18935360946557,name,el,,,Title,
+PRODUCT_OPTION,18935360979325,name,el,,,Title,
+PRODUCT_OPTION,18935361012093,name,el,,,Title,
+PRODUCT_OPTION,18935361044861,name,el,,,Title,
+PRODUCT_OPTION,18935361077629,name,el,,,Title,
+PRODUCT_OPTION_VALUE,15132335112573,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132335178109,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132335374717,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132335604093,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132335767933,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132335833469,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132335964541,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336030077,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336226685,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336292221,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336390525,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336488829,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336587133,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336652669,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336750973,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336783741,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132336849277,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15132337013117,name,el,,,Default,
+PRODUCT_OPTION_VALUE,15299227648381,name,el,,,Default Title,
+PRODUCT_OPTION_VALUE,15329534378365,name,el,,,Default Title,
+PRODUCT_OPTION_VALUE,15329534607741,name,el,,,Default Title,
+PRODUCT_OPTION_VALUE,15329534771581,name,el,,,Default Title,
+PRODUCT_OPTION_VALUE,15329534902653,name,el,,,Default Title,
+PRODUCT_OPTION_VALUE,15329535066493,name,el,,,Default Title,
+PRODUCT_OPTION_VALUE,15339734270333,name,el,,,€100,
+SELLING_PLAN,712080359805,name,el,,,"Ski wax subscription, billed and delivered weekly",
+SELLING_PLAN,712080359805,option1,el,,,1 Week(s),
+SELLING_PLAN,712080392573,name,el,,,"A year supply of prepaid ski wax, delivered monthly",
+SELLING_PLAN,712080392573,option1,el,,,1 Week(s),
+SELLING_PLAN,712080425341,name,el,,,"Preorder ski wax, delivered in a month",
+SELLING_PLAN,712080425341,option1,el,,,1 Week(s),
+SELLING_PLAN,712080458109,name,el,,,Try our product risk-free for a week before needing to pay,
+SELLING_PLAN,712080458109,option1,el,,,1 Week(s),
+SELLING_PLAN_GROUP,99285107069,name,el,,,Subscription,
+SELLING_PLAN_GROUP,99285107069,option1,el,,,Delivery every,
+SELLING_PLAN_GROUP,99285139837,name,el,,,Prepaid,
+SELLING_PLAN_GROUP,99285139837,option1,el,,,Delivery every,
+SELLING_PLAN_GROUP,99285172605,name,el,,,Preorder,
+SELLING_PLAN_GROUP,99285172605,option1,el,,,preorder,
+SELLING_PLAN_GROUP,99285205373,name,el,,,Try Before You Buy,
+SELLING_PLAN_GROUP,99285205373,option1,el,,,Trial for,
+SHOP,94784553341,meta_title,el,,,Sokole — Niche Fragrance House | Eau de Parfum & Body Mists,
+SHOP,94784553341,meta_description,el,,,"Rare ingredients, composed with intention. Discover Sokole eaux de parfum, discovery coffrets and body mists. Free shipping in Greece and the EU from €50.",
+SHOP_POLICY,48981148029,body,el,,,"<div>
+  <p>Last updated: {{ last_updated }}</p>
+  <p>{{ shop_name }} operates this store and website, including all related information, content, features, tools, products and services, in order to provide you, the customer, with a curated shopping experience (the  ""Services""). {{ shop_name }} is powered by Shopify, which enables us to provide the Services to you. This Privacy Policy describes how we collect, use, and disclose your personal information when you visit, use, or make a purchase or other transaction using the Services or otherwise communicate with us. If there is a conflict between our Terms of Service and this Privacy Policy, this Privacy Policy controls with respect to the collection, processing, and disclosure of your personal information. </p>
+  <p>Please read this Privacy Policy carefully. By using and accessing any of the Services, you acknowledge that you have read this Privacy Policy and understand the collection, use, and disclosure of your information as described in this Privacy Policy.</p>
+  <h2>Personal Information We Collect or Process</h2>
+  <p>When we use the term  ""personal information,"" we are referring to information that identifies or can reasonably be linked to you or another person. Personal information does not include information that is collected anonymously or that has been de-identified, so that it cannot identify or be reasonably linked to you. We may collect or process the following categories of personal information, including inferences drawn from this personal information, depending on how you interact with the Services, where you live, and as permitted or required by applicable law:</p>
+  <ul>
+      <li><strong>Contact details</strong> including your name, address, billing address, shipping address, phone number, and email address.</li>
+      <li><strong>Financial information</strong> including credit card, debit card, and financial account numbers, payment card information, financial account information, transaction details, form of payment, payment confirmation and other payment details.</li>
+      <li><strong>Account information</strong> including your username, password, security questions, preferences and settings.</li>
+      <li><strong>Transaction information</strong> including the items you view, put in your cart, add to your wishlist, or purchase, return, exchange or cancel and your past transactions.</li>
+      <li><strong>Communications with us</strong> including the information you include in communications with us, for example, when sending a customer support inquiry.</li>
+      <li><strong>Device information</strong> including information about your device, browser, or network connection, your IP address, and other unique identifiers.</li>
+      <li><strong>Usage information</strong> including information regarding your interaction with the Services, including how and when you interact with or navigate the Services. </li>
+  </ul>
+  <h2>Personal Information Sources</h2>
+  <p>We may collect personal information from the following sources:</p>
+  <ul>
+      <li><strong>Directly from you</strong> including when you create an account, visit or use the Services, communicate with us, or otherwise provide us with your personal information;</li>
+      <li><strong>Automatically through the Services</strong> including from your device when you use our products or services or visit our websites, and through the use of cookies and similar technologies;</li>
+      <li><strong>From our service providers</strong> including when we engage them to enable certain technology and when they collect or process your personal information on our behalf; </li>
+      <li><strong>From our partners or other third parties.</strong></li>
+  </ul>
+  <h2>How We Use Your Personal Information</h2>
+  <p>Depending on how you interact with us or which of the Services you use, we may use personal information for the following purposes:</p>
+  <ul>
+      <li><strong>Provide, Tailor, and Improve the Services.</strong> We use your personal information to provide you with the Services, including to perform our contract with you, to process your payments, to fulfill your orders, to remember your preferences and items you are interested in, to send notifications to you related to your account, to process purchases, returns, exchanges or other transactions, to create, maintain and otherwise manage your account, to arrange for shipping, to facilitate any returns and exchanges, to enable you to post reviews, and to create a customized shopping experience for you, such as recommending products related to your purchases. This may include using your personal information to better tailor and improve the Services.</li>
+      <li><strong>Marketing and Advertising.</strong> We use your personal information for marketing and promotional purposes, such as to send marketing, advertising and promotional communications by email, text message or postal mail, and to show you online advertisements for products or services on the Services or other websites, including based on items you previously have purchased or added to your cart and other activity on the Services. </li>
+      <li><strong>Security and Fraud Prevention.</strong> We use your personal information to authenticate your account, to provide a secure payment and shopping experience, detect, investigate or take action regarding possible fraudulent, illegal, unsafe, or malicious activity, protect public safety, and to secure our services. If you choose to use the Services and register an account, you are responsible for keeping your account credentials safe. We highly recommend that you do not share your username, password or other access details with anyone else.</li>
+      <li><strong>Communicating with You.</strong> We use your personal information to provide you with customer support, to be responsive to you, to provide effective services to you and to maintain our business relationship with you. </li>
+      <li><strong>Legal Reasons.</strong> We use your personal information to comply with applicable law or respond to valid legal process, including requests from law enforcement or government agencies, to investigate or participate in civil discovery, potential or actual litigation, or other adversarial legal proceedings, and to enforce or investigate potential violations of our terms or policies.</li>
+  </ul>
+  <h2>How We Disclose Personal Information</h2>
+  <p>In certain circumstances, we may disclose your personal information to third parties for legitimate purposes subject to this Privacy Policy. Such circumstances may include:</p>
+  <ul>
+      <li>With Shopify, vendors and other third parties who perform services on our behalf (e.g. IT management, payment processing, data analytics, customer support, cloud storage, fulfillment and shipping).</li>
+      <li>With business and marketing partners to provide marketing services and advertise to you. {% if shopify_network_intelligence_enabled %} For example, we use Shopify to support personalized advertising with third-party services based on your online activity with different merchants and websites.{% endif %}  Our business and marketing partners will use your information in accordance with their own privacy notices. Depending on where you reside, you may have a right to direct us not to share information about you to show you targeted advertisements and marketing based on your online activity with different merchants and websites. {% if data_sale_opt_out_enabled %}You can exercise your rights to opt-out of those uses <a href=""{{ data_sale_opt_out_page_url }}""> here</a> {% endif %}.</li>
+      <li>When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through your use of social media widgets or login integrations.</li>
+      <li>With our affiliates or otherwise within our corporate group.</li>
+      <li>
+      In connection with a business transaction such as a merger or bankruptcy, to comply with any applicable legal obligations (including to respond to subpoenas, search warrants and similar requests), to enforce any applicable terms of service or policies, and to protect or defend the Services, our rights, and the rights of our users or others.
+      </li>
+  </ul>
+  <h2>Relationship with Shopify</h2>
+  <p>The Services are hosted by Shopify, which collects and processes personal information about your access to and use of the Services in order to provide and improve the Services for you. Information you submit to the Services will be transmitted to and shared with Shopify as well as third parties that may be located in countries other than where you reside, in order to provide and improve the Services for you. {% if shopify_network_intelligence_enabled %}In addition, to help protect, grow, and improve our business, we use certain Shopify enhanced features that incorporate data and information obtained from your interactions with our Store, along with other merchants and with Shopify. To provide these enhanced features, Shopify may make use of personal information collected about your interactions with our store, along with other merchants, and with Shopify. In these circumstances, Shopify is responsible for the processing of your personal information, including for responding to your requests to exercise your rights over use of your personal information for these purposes.{% endif %} To learn more about how Shopify uses your personal information and any rights you may have, you can visit the <a href=""https://www.shopify.com/legal/privacy/app-users"">Shopify Consumer Privacy Policy</a> . Depending on where you live, you may exercise certain rights with respect to your personal information here <a href=""https://privacy.shopify.com/en"">Shopify Privacy Portal Link</a>. </p>
+  <h2>Third Party Websites and Links</h2>
+  <p>The Services may provide links to websites or other online platforms operated by third parties. If you follow links to sites not affiliated or controlled by us, you should review their privacy and security policies and other terms and conditions. We do not guarantee and are not responsible for the privacy or security of such sites, including the accuracy, completeness, or reliability of information found on these sites. Information you provide on public or semi-public venues, including information you share on third-party social networking platforms may also be viewable by other users of the Services and/or users of those third-party platforms without limitation as to its use by us or by a third party. Our inclusion of such links does not, by itself, imply any endorsement of the content on such platforms or of their owners or operators, except as disclosed on the Services.</p>
+  <h2>Children's Data</h2>
+  <p>The Services are not intended to be used by children, and we do not knowingly collect any personal information about children under the age of majority in your jurisdiction. If you are the parent or guardian of a child who has provided us with their personal information, you may contact us using the contact details set out below to request that it be deleted.As of the Effective Date of this Privacy Policy, we do not have actual knowledge that we  ""share"" or  ""sell"" (as those terms are defined in applicable law) personal information of individuals under 16 years of age.</p>
+  <h2>Security and Retention of Your Information</h2>
+  <p>Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee ""perfect security."" In addition, any information you send to us may not be secure while in transit. We recommend that you do not use unsecure channels to communicate sensitive or confidential information to us.</p>
+  <p>How long we retain your personal information depends on different factors, such as whether we need the information to maintain your account, to provide you with Services, comply with legal obligations, resolve disputes or enforce other applicable contracts and policies.</p>
+  <h2>Your Rights and Choices</h2>
+  <p>Depending on where you live, you may have some or all of the rights listed below in relation to your personal information. However, these rights are not absolute, may apply only in certain circumstances and, in certain cases, we may decline your request as permitted by law.</p>
+  <ul>
+      <li><strong>Right to Access / Know.</strong> You may have a right to request access to personal information that we hold about you.</li>
+      <li><strong>Right to Delete.</strong> You may have a right to request that we delete personal information we maintain about you.</li>
+      <li><strong>Right to Correct.</strong> You may have a right to request that we correct inaccurate personal information we maintain about you.</li>
+      <li><strong>Right of Portability.</strong> You may have a right to receive a copy of the personal information we hold about you and to request that we transfer it to a third party, in certain circumstances and with certain exceptions.</li>
+      {% if selling_to_united_states %}<li><strong>Right to Opt out of Sale or Sharing for Targeted Advertising.</strong> Depending on where you reside, you may have a right to opt out of the ""sale"" or ""share"" of your personal information or to opt out of the processing of your personal information for purposes considered to be ""targeted advertising"", as defined in applicable privacy laws. {% if data_sale_opt_out_enabled  %}You can exercise your rights to opt-out of those uses <a href=""{{ data_sale_opt_out_page_url }}"">here</a>. Please note that if you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will automatically treat this as a request to opt-out for the device and browser that you use to visit the website. If we are able to associate the device sending the signal to a Shopify account, we will apply the opt out request to the account as well. To learn more about Global Privacy Control, you can visit https://globalprivacycontrol.org/. Other than the Global Privacy Control, we do not recognize other ""Do Not Track"" signals that may be sent from your web browser or device.{% endif %}</li>{% endif %}
+      <li>
+      <strong>Managing Communication Preferences.</strong> We may send you promotional emails, and you may opt out of receiving these at any time by using the unsubscribe option displayed in our emails to you. If you opt out, we may still send you non-promotional emails, such as those about your account or orders that you have made.
+      </li>
+  </ul>
+  <div>
+      {% if selling_to_europe %}
+      <p><strong>If you reside in the UK or European Economic Area,</strong> and subject to exceptions and limitations provided by local law, you may exercise the following rights in addition to the rights outlined above:</p>
+      <ul>
+      <li><strong>Objection to Processing and Restriction of Processing:</strong> You may have the right to ask us to stop or restrict our processing of personal information for certain purposes. </li>
+      <li><strong>Withdrawal of Consent:</strong> Where we rely on consent to process your personal information, you have the right to withdraw this consent. If you withdraw your consent, this will not affect the lawfulness of any processing based on your consent before its withdrawal.</li>
+      </ul>
+      {% endif %}
+  </div>
+  <p>You may exercise any of these rights where indicated on the Services or by contacting us using the contact details provided below. To learn more about how Shopify uses your personal information and any rights you may have, including rights related to data processed by Shopify, you can visit https://privacy.shopify.com/en. </p>
+  <p>We will not discriminate against you for exercising any of these rights. We may need to verify your identity before we can process your requests, as permitted or required under applicable law. In accordance with applicable laws, you may designate an authorized agent to make requests on your behalf to exercise your rights. Before accepting such a request from an agent, we will require that the agent provide proof you have authorized them to act on your behalf, and we may need you to verify your identity directly with us. We will respond to your request in a timely manner as required under applicable law.</p>
+  <h2>Complaints</h2>
+  <p>If you have complaints about how we process your personal information, please contact us using the contact details provided below. Depending on where you live, you may have the right to appeal our decision by contacting us using the contact details set out below, or lodge your complaint with your local data protection authority.{% if selling_to_europe %} For the EEA, you can find a list of the responsible data protection supervisory authorities <a href=""https://edpb.europa.eu/about-edpb/about-edpb/members"">here</a>.{% endif %}</p>
+  <h2>International Transfers</h2>
+  <p>Please note that we may transfer, store and process your personal information outside the country you live in. </p>
+  <p>If we transfer your personal information out of the European Economic Area or the United Kingdom, we will rely on recognized transfer mechanisms like the European Commission's Standard Contractual Clauses, or any equivalent contracts issued by the relevant competent authority of the UK, as relevant, unless the data transfer is to a country that has been determined to provide an adequate level of protection.</p>
+  <h2>Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will post the revised Privacy Policy on this website, update the  ""Last updated"" date and provide notice as required by applicable law.</p>
+  <h2>Contact</h2>
+  <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please call {{ phone }} or email us at {{ email }}{% if address != blank %} or contact us at {{ address }}{% endif %} {% if selling_to_europe %}For the purpose of applicable data protection laws, we are the data controller of your personal information. {% endif %}</p>
+</div>",
