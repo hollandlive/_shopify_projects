@@ -1,0 +1,85 @@
+{%- style -%}
+  .sokole-catalog-grouped {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sokole-catalog-group {
+    margin-bottom: 5rem;
+  }
+
+  .sokole-catalog-group__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .sokole-catalog-group__header .title {
+    margin: 0;
+  }
+{%- endstyle -%}
+
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width sokole-catalog-grouped">
+  {%- assign catalog_groups = 'perfume-for-her|Perfume for Her,perfume-for-him|Perfume for Him,premium-boxes|Premium Boxes,body-mist-fragrance|Body Mist' | split: ',' -%}
+
+  {%- for group in catalog_groups -%}
+    {%- assign parts = group | split: '|' -%}
+    {%- assign group_handle = parts[0] -%}
+    {%- assign group_title = parts[1] -%}
+    {%- assign group_collection = collections[group_handle] -%}
+
+    {%- if group_collection and group_collection.products.size > 0 -%}
+      <div class="sokole-catalog-group">
+        <div class="sokole-catalog-group__header">
+          <h2 class="title title--primary">{{ group_title }}</h2>
+          <a href="{{ group_collection.url }}" class="link underlined-link">{{ 'sections.featured_collection.view_all' | t }}</a>
+        </div>
+        <ul class="grid product-grid grid--2-col-tablet-down grid--4-col-desktop" role="list">
+          {%- for product in group_collection.products limit: 4 -%}
+            <li class="grid__item">
+              {% render 'card-product',
+                card_product: product,
+                media_aspect_ratio: 'adapt',
+                image_shape: 'default',
+                show_secondary_image: true,
+                show_vendor: false,
+                show_rating: false,
+                lazy_load: true,
+                quick_add: 'none'
+              %}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign gift_card_product = all_products['gift-card'] -%}
+  {%- if gift_card_product -%}
+    <div class="sokole-catalog-group">
+      <div class="sokole-catalog-group__header">
+        <h2 class="title title--primary">Gift Card</h2>
+        <a href="{{ gift_card_product.url }}" class="link underlined-link">{{ 'sections.featured_collection.view_all' | t }}</a>
+      </div>
+      <ul class="grid product-grid grid--2-col-tablet-down grid--4-col-desktop" role="list">
+        <li class="grid__item">
+          {% render 'card-product',
+            card_product: gift_card_product,
+            media_aspect_ratio: 'adapt',
+            image_shape: 'default',
+            show_secondary_image: true,
+            show_vendor: false,
+            show_rating: false,
+            lazy_load: true,
+            quick_add: 'none'
+          %}
+        </li>
+      </ul>
+    </div>
+  {%- endif -%}
+</div>

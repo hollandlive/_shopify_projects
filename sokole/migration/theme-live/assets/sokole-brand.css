@@ -1,0 +1,424 @@
+/* ==========================================================================
+   Sokole Fragrance — Brand CSS
+   Loaded globally after base.css via layout/theme.liquid
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   Brand tokens — wine & gold luxury palette (v0 mockup direction)
+   Cream · Wine · Espresso · Gold
+   -------------------------------------------------------------------------- */
+:root {
+  --sokole-cream:      #F7F3EB;   /* primary light — warm cream */
+  --sokole-secondary:  #EDE7DE;   /* secondary — muted warm sand */
+  --sokole-espresso:   #2B221C;   /* primary dark — near-black warm brown */
+  --sokole-wine:       #791920;   /* deep burgundy — CTA hover, accents */
+  --sokole-gold:       #B08B51;   /* muted antique gold accent */
+  --sokole-gold-light: #C6A26E;   /* gold highlight */
+  --sokole-gold-dark:  #8C6A2D;   /* gold shadow */
+  --sokole-border:     #D6D0C7;   /* hairline borders on cream */
+
+  /* Legacy aliases kept so existing selectors still resolve */
+  --sokole-ivory:       #F7F3EB;
+  --sokole-champagne:   #EDE7DE;
+  --sokole-chocolate:   #2B221C;
+  --sokole-gold-warm:   #8C6A2D;
+  --sokole-blush:       #F7F3EB;
+  --sokole-rose-quartz: #B08B51;
+  --sokole-dark:        #2B221C;
+
+  --sokole-heading-spacing: 0.02em;
+  --sokole-body-spacing:    0.03em;
+  --sokole-tracking-luxe:   0.28em;
+  --sokole-tracking-wide:   0.18em;
+}
+
+.sokole-tracking-luxe {
+  letter-spacing: var(--sokole-tracking-luxe);
+}
+
+.sokole-tracking-wide {
+  letter-spacing: var(--sokole-tracking-wide);
+}
+
+
+/* --------------------------------------------------------------------------
+   Announcement bar — solid espresso, gold hairline
+   Overrides the solid colour from the active colour scheme.
+   -------------------------------------------------------------------------- */
+.announcement-bar {
+  background: var(--sokole-espresso) !important;
+  padding: 1rem 0;
+}
+
+.announcement-bar .announcement-bar__message,
+.announcement-bar .announcement-bar__message a,
+.announcement-bar .announcement-bar__message a:hover {
+  color: var(--sokole-cream) !important;
+  letter-spacing: 0.18em;
+}
+
+
+/* --------------------------------------------------------------------------
+   Header — SVG logo sizing
+   sokole-fragrance-logo2.svg: viewBox 480×200, displayed at 260×108
+   -------------------------------------------------------------------------- */
+.sokole-logo {
+  display: block;
+  width: 390px;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .sokole-logo {
+    width: 270px;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Typography — Cormorant Garamond refinements
+   Light, editorial serif display type; tracked-out uppercase for labels.
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4,
+.heading {
+  letter-spacing: var(--sokole-heading-spacing);
+  font-weight: 400;
+}
+
+.caption,
+.overline,
+.announcement-bar__message {
+  letter-spacing: 0.18em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+body {
+  letter-spacing: var(--sokole-body-spacing);
+}
+
+
+/* --------------------------------------------------------------------------
+   Buttons — flat espresso fill, wine on hover (matches v0 CTA treatment)
+   -------------------------------------------------------------------------- */
+.button,
+.btn {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.25s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.button--primary {
+  background-color: var(--sokole-espresso);
+  color: var(--sokole-cream);
+}
+
+.button--primary:not([disabled]):hover,
+.button--primary:not([disabled]):focus-visible {
+  background-color: var(--sokole-wine);
+}
+
+.color-scheme-3 .button--primary {
+  background-color: var(--sokole-gold);
+  color: var(--sokole-espresso);
+}
+
+.color-scheme-3 .button--primary:not([disabled]):hover {
+  background-color: var(--sokole-gold-light);
+}
+
+
+/* --------------------------------------------------------------------------
+   Links — gold on light backgrounds, gold on espresso
+   -------------------------------------------------------------------------- */
+.color-scheme-1 a:hover,
+.color-scheme-2 a:hover,
+.color-scheme-4 a:hover,
+.color-scheme-5 a:hover {
+  color: var(--sokole-gold);
+}
+
+.color-scheme-3 a:hover {
+  color: var(--sokole-gold);
+}
+
+
+/* --------------------------------------------------------------------------
+   Product cards — 3:4 ratio · contain · white media background
+   -------------------------------------------------------------------------- */
+.card-wrapper,
+.card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Elegant hover: thin gold border ring + warm lift shadow */
+.card-wrapper {
+  transition: box-shadow 0.3s ease;
+}
+
+.card-wrapper:hover {
+  box-shadow: 0 0 0 1px rgba(176, 139, 81, 0.28), 0 6px 24px rgba(43, 34, 28, 0.1);
+}
+
+.card__heading a {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* Product type label — "Eau de Parfum", "Body Mist" etc. from product.type */
+.card__product-type {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(43, 34, 28, 0.5);
+  margin-top: 0.2rem;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+.product-card-wrapper .card__inner.ratio::before {
+  padding-bottom: 133.33% !important;
+}
+
+.product-card-wrapper .card__media .media {
+  background-color: #ffffff;
+}
+
+.product-card-wrapper .card__media .media > img {
+  object-fit: cover !important;
+  object-position: center center;
+}
+
+.card-wrapper:hover .card__media img {
+  transform: none;
+}
+
+
+/* --------------------------------------------------------------------------
+   Header — nav refinements
+   -------------------------------------------------------------------------- */
+.header__heading-link img {
+  display: block;
+}
+
+.header__menu-item {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* Desktop nav: thin gold underline fades in on hover and marks active page.
+   text-decoration avoids conflicts with Dawn's ::after focus-ring overlay. */
+@media screen and (min-width: 990px) {
+  .header__menu-item {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-color 0.3s ease;
+  }
+
+  .header__menu-item:hover,
+  .header__menu-item[aria-current="true"] {
+    text-decoration-color: var(--sokole-gold);
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Header — split nav (nav-left · logo-center · nav-right + icons)
+   -------------------------------------------------------------------------- */
+.header__inline-menu--right {
+  margin-right: 2.4rem;
+}
+
+.header--middle-center .header__icons {
+  display: flex;
+  align-items: center;
+}
+
+sticky-header.header-wrapper {
+  transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+.scrolled-past-header sticky-header.header-wrapper {
+  background-color: rgba(247, 243, 235, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* --------------------------------------------------------------------------
+   Section spacing
+   -------------------------------------------------------------------------- */
+.shopify-section + .shopify-section {
+  margin-top: 0;
+}
+
+
+/* --------------------------------------------------------------------------
+   Inputs and form fields
+   -------------------------------------------------------------------------- */
+.field__input,
+.select__select,
+.customer .field input,
+.customer textarea {
+  border-radius: 0;
+}
+
+
+/* --------------------------------------------------------------------------
+   Dawn's default newsletter section (unused on homepage — sokole-newsletter
+   replaces it — kept in case it's re-enabled elsewhere)
+   -------------------------------------------------------------------------- */
+.color-scheme-2 .newsletter__wrapper {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.color-scheme-2 .field__input,
+.color-scheme-2 .field__label {
+  border-color: rgba(43, 34, 28, 0.35);
+  color: var(--sokole-espresso);
+}
+
+.color-scheme-2 .field__input::placeholder {
+  color: rgba(43, 34, 28, 0.45);
+}
+
+.color-scheme-2 .newsletter-form__button {
+  color: var(--sokole-cream);
+}
+
+.color-scheme-2 .newsletter-form__button svg {
+  fill: var(--sokole-cream);
+}
+
+.color-scheme-2 .newsletter-form__button:hover {
+  opacity: 0.85;
+}
+
+
+/* --------------------------------------------------------------------------
+   Language selector — ISO code on mobile, full name on desktop
+   -------------------------------------------------------------------------- */
+.language-selector__iso,
+.country-selector__iso {
+  display: none;
+}
+
+/* Header: country + language on one line as compact codes (GR | EUR € · EL).
+   Dropdown lists and the footer keep full names. */
+.header__icons .desktop-localization-wrapper {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header__icons .country-selector__name,
+.header__icons .language-selector__name {
+  display: none;
+}
+
+.header__icons .country-selector__iso,
+.header__icons .language-selector__iso {
+  display: inline;
+}
+
+@media screen and (max-width: 749px) {
+  .header__icons .desktop-localization-wrapper localization-form {
+    display: block !important;
+  }
+
+  .header__icons .desktop-localization-wrapper .localization-form__select {
+    padding: 0 1.8rem 0 0.6rem;
+    height: 3.2rem;
+    font-size: 1.1rem;
+  }
+
+  .language-selector__name {
+    display: none;
+  }
+
+  .language-selector__iso {
+    display: inline;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Social icons — monochrome, gold on hover
+   Dawn SVGs use currentColor so the colour change propagates automatically.
+   -------------------------------------------------------------------------- */
+.list-social__link {
+  transition: color 0.25s ease;
+}
+
+.list-social__link:hover {
+  color: var(--sokole-gold);
+}
+
+
+/* --------------------------------------------------------------------------
+   Footer — brand column + 3 link columns, matches v0 SiteFooter
+   -------------------------------------------------------------------------- */
+.footer__content-top {
+  letter-spacing: 0.08em;
+}
+
+.footer__menu-item a {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .footer .footer__blocks-wrapper {
+    grid-template-columns: 1.6fr repeat(2, 1fr);
+  }
+}
+
+.footer-block:first-child .footer-block__heading {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.footer-block:not(:first-child) .footer-block__heading {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(43, 34, 28, 0.5);
+}
+
+.footer-block__details-content.rte ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-block__details-content.rte ul li:not(:first-child) {
+  margin-top: 1.2rem;
+}
+
+.footer-block__details-content.rte ul a {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgba(43, 34, 28, 0.75);
+  transition: color 0.25s ease;
+}
+
+.footer-block__details-content.rte ul a:hover {
+  color: var(--sokole-espresso);
+}

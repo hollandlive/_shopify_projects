@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Sokole Hero — split layout, luxury fragrance
+   Left: brand text   |   Right: full-bleed product image
+   ========================================================================== */
+
+.sokole-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+/* ── Left: text column ──────────────────────────────────────────────────── */
+.sokole-hero__content {
+  background-color: var(--sokole-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem clamp(2rem, 5vw, 5rem) 4rem clamp(1.5rem, calc((100vw - 1300px) / 2 + 3rem), 9rem);
+}
+
+.sokole-hero__overline {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--sokole-gold);
+  margin: 0 0 2.4rem;
+}
+
+.sokole-hero__heading {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: clamp(4rem, 7vw, 6.5rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: var(--sokole-espresso);
+  line-height: 0.95;
+  margin: 0 0 2.4rem;
+}
+
+.sokole-hero__description {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: rgba(43, 34, 28, 0.7);
+  line-height: 1.7;
+  margin: 0 0 3rem;
+  max-width: 42ch;
+}
+
+.sokole-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.sokole-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 1.6rem 3.6rem;
+  background-color: var(--sokole-espresso);
+  color: var(--sokole-cream);
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.sokole-hero__cta:hover {
+  background-color: var(--sokole-wine);
+}
+
+.sokole-hero__link {
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(43, 34, 28, 0.4);
+  padding-bottom: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sokole-espresso);
+  text-decoration: none;
+  transition: border-color 0.25s ease;
+}
+
+.sokole-hero__link:hover {
+  border-color: var(--sokole-espresso);
+}
+
+/* ── Right: media column ─────────────────────────────────────────────────── */
+.sokole-hero__media {
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+  background-color: var(--sokole-cream);
+}
+
+.sokole-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.sokole-hero__caption {
+  position: absolute;
+  left: 2.4rem;
+  bottom: 2.4rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(247, 243, 235, 0.9);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+/* ── Mobile: stack vertically — image first for visual impact ────────────── */
+@media screen and (max-width: 749px) {
+  .sokole-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    min-height: unset;
+  }
+
+  .sokole-hero__media {
+    order: 1;
+    min-height: 60vh;
+  }
+
+  .sokole-hero__content {
+    order: 2;
+    padding: 4rem 2rem;
+  }
+
+  .sokole-hero__heading {
+    font-size: 4rem;
+  }
+
+  .sokole-hero__description {
+    font-size: 1.5rem;
+  }
+
+  .sokole-hero__actions {
+    gap: 2rem;
+  }
+}

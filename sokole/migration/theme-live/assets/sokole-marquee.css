@@ -1,0 +1,45 @@
+.sokole-marquee {
+  width: 100%;
+  overflow: hidden;
+  background: var(--sokole-espresso);
+  border-bottom: 1px solid rgba(247, 243, 235, 0.1);
+}
+
+.sokole-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: sokole-marquee-scroll 32s linear infinite;
+}
+
+.sokole-marquee__message {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sokole-cream);
+  white-space: nowrap;
+}
+
+.sokole-marquee__divider {
+  margin: 0 3.2rem;
+  color: var(--sokole-gold);
+}
+
+@keyframes sokole-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sokole-marquee__track {
+    animation: none;
+  }
+}

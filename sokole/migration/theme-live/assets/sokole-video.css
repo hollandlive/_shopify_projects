@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Sokole Video Section — full-width atmospheric autoplay
+   ========================================================================== */
+
+.sokole-video {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  max-height: 800px;
+  overflow: hidden;
+  background-color: #2E1E0F;
+}
+
+/* ── Video element ─────────────────────────────────────────────────────── */
+.sokole-video__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ── Poster / placeholder image ─────────────────────────────────────────── */
+.sokole-video__poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ── Placeholder (no video or image uploaded yet) ───────────────────────── */
+.sokole-video__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #2E1E0F 0%, #4A3525 50%, #2E1E0F 100%);
+}
+
+.sokole-video__placeholder-inner {
+  text-align: center;
+}
+
+.sokole-video__placeholder-rule {
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C89B3C, transparent);
+  margin: 0 auto 2rem;
+}
+
+.sokole-video__placeholder-title {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: #C89B3C;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.sokole-video__placeholder-sub {
+  font-size: 1.1rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(253, 248, 240, 0.4);
+}
+
+/* ── Overlay ─────────────────────────────────────────────────────────────── */
+.sokole-video__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(46, 30, 15, 0.18) 0%,
+    rgba(46, 30, 15, 0.42) 60%,
+    rgba(46, 30, 15, 0.62) 100%
+  );
+  pointer-events: none;
+}
+
+/* ── Text content ────────────────────────────────────────────────────────── */
+.sokole-video__content {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 2rem;
+  pointer-events: none;
+}
+
+.sokole-video__overline {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(212, 175, 55, 0.85);
+  margin-bottom: 1rem;
+}
+
+.sokole-video__heading {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FDF8F0;
+  margin: 0 0 1.2rem;
+  line-height: 1.1;
+}
+
+.sokole-video__tagline {
+  font-family: var(--font-heading-family), Georgia, serif;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: rgba(253, 248, 240, 0.75);
+  margin: 0 0 2.4rem;
+}
+
+.sokole-video__cta {
+  display: inline-block;
+  padding: 1.1rem 2.8rem;
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  color: #FDF8F0;
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  pointer-events: auto;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.sokole-video__cta:hover {
+  background-color: rgba(200, 155, 60, 0.18);
+  border-color: rgba(212, 175, 55, 0.9);
+  color: #FDF8F0;
+}
+
+/* ── Mobile ──────────────────────────────────────────────────────────────── */
+@media screen and (max-width: 749px) {
+  .sokole-video {
+    height: 55vh;
+    min-height: 320px;
+  }
+
+  .sokole-video__content {
+    bottom: 8%;
+  }
+}

@@ -1,0 +1,158 @@
+{%- comment -%}
+  Hidden owner launch guide (Russian). Not in menus; reached only by direct link:
+  /pages/sokole-guide?view=launch (Greek: ?view=launch-el) — noindex comes from the sokole-guide check in theme.liquid.
+{%- endcomment -%}
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .sokole-launch { padding-top: 3rem; padding-bottom: 6rem; }
+  .sokole-launch .lead { font-size: 1.15em; }
+  .sokole-launch .step {
+    border: 1px solid rgba(var(--color-foreground), 0.15);
+    border-radius: 1.2rem;
+    padding: 2rem 2.4rem;
+    margin: 2.4rem 0;
+  }
+  .sokole-launch .step h2 { margin-top: 0; }
+  .sokole-launch .step__num {
+    display: inline-block;
+    min-width: 3.2rem;
+    padding: 0.2rem 1rem;
+    margin-right: 0.8rem;
+    border-radius: 2rem;
+    background: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .sokole-launch .note {
+    background: rgba(var(--color-foreground), 0.06);
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+  }
+  .sokole-launch li { margin-bottom: 0.6rem; }
+  .sokole-launch .lang-switch { margin: 0 0 1rem; }
+</style>
+
+<div class="page-width page-width--narrow sokole-launch">
+  <p class="lang-switch"><strong>Русский</strong> · <a href="/pages/sokole-guide?view=launch-el">Ελληνικά</a></p>
+  <h1 class="main-page-title page-title h0">Запуск магазина</h1>
+  <div class="rte">
+    <p class="lead">Виктория, здесь по шагам всё, что нужно, чтобы магазин заработал и начал принимать оплату. Ваша часть займёт около 30–40 минут. Ничего сломать нельзя — это обычные настройки в Вашем личном кабинете Shopify.</p>
+    <p><em>Эта страница скрыта: её нет в меню и в поиске, открыть её можно только по ссылке.</em></p>
+
+    <div class="note">
+      <p><strong>Что приготовить заранее:</strong></p>
+      <ul>
+        <li>банковскую карту — для оплаты самого Shopify (ежемесячно);</li>
+        <li>ΑΦΜ и данные компании (название, адрес);</li>
+        <li>паспорт или вид на жительство — Shopify может попросить фото;</li>
+        <li>IBAN счёта, куда будут приходить деньги от покупателей;</li>
+        <li>телефон под рукой — может прийти SMS-код.</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">1</span>Создать свой магазин Shopify</h2>
+      <ol>
+        <li>Откройте <a href="https://www.shopify.com" target="_blank" rel="noopener">shopify.com</a> и нажмите <strong>Start for free</strong> / <strong>Start free trial</strong>.</li>
+        <li>Зарегистрируйтесь на email магазина: <strong>sokolefragrance@gmail.com</strong>.</li>
+        <li>На вопросы о бизнесе можно отвечать как угодно или нажимать <strong>Skip</strong>. Страна — <strong>Greece</strong>, название магазина — <strong>Sokole</strong>.</li>
+        <li>Откроется админка нового магазина — дальше всё делается там (<a href="https://admin.shopify.com" target="_blank" rel="noopener">admin.shopify.com</a>), удобнее с компьютера.</li>
+      </ol>
+      <p>Товары, дизайн и тексты добавлять не нужно — их перенесёт Артемис (шаг 4).</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">2</span>Выбрать тариф</h2>
+      <ol>
+        <li>Слева внизу нажмите <strong>Settings</strong> (значок шестерёнки).</li>
+        <li>Выберите <strong>Plan</strong>.</li>
+        <li>Нажмите на тариф <strong>Basic</strong> — его полностью хватает для магазина.</li>
+        <li>Выберите оплату помесячно или за год (за год дешевле), введите данные своей карты и подтвердите.</li>
+      </ol>
+      <p>Цена тарифа показывается прямо на экране перед оплатой. Если Shopify предлагает пробный период — это нормально, тариф всё равно выбирается здесь.</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">3</span>Дать доступ Артемису</h2>
+      <ol>
+        <li><strong>Settings</strong> → <strong>Users</strong> → <strong>Add users</strong>.</li>
+        <li>Впишите email: <strong>dutchnewsru@gmail.com</strong>.</li>
+        <li>Дайте полный доступ (все права / роль администратора).</li>
+        <li>Нажмите <strong>Send invite</strong> и напишите Артемису, что приглашение отправлено.</li>
+      </ol>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">4</span>Артемис переносит сайт</h2>
+      <p>Артемис перенесёт в Ваш магазин дизайн сайта, товары и фото, греческую версию, доставку и подключит домен <strong>sokole.eu</strong>. От Вас здесь ничего не нужно — он напишет, когда всё будет готово. После этого переходите к шагу 5.</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">5</span>Подключить оплату картами</h2>
+      <p>Это главный шаг: после него покупатели смогут платить картой, Apple Pay и Google Pay.</p>
+      <ol>
+        <li><strong>Settings</strong> → <strong>Payments</strong>.</li>
+        <li>В блоке <strong>Shopify Payments</strong> нажмите <strong>Activate Shopify Payments</strong> (или <strong>Complete account setup</strong>).</li>
+        <li>Заполните по порядку то, что спрашивает Shopify:
+          <ul>
+            <li><strong>Business type</strong> — тип бизнеса (компания или ИП — как у Вас оформлено);</li>
+            <li><strong>Business details</strong> — название компании, ΑΦΜ, адрес;</li>
+            <li><strong>Personal details</strong> — Ваши имя, дата рождения, адрес, телефон;</li>
+            <li><strong>Product details</strong> — что продаёте: можно написать «Perfumes and fragrance gift boxes»;</li>
+            <li><strong>Bank account</strong> — IBAN, куда приходят деньги.</li>
+          </ul>
+        </li>
+        <li>Нажмите <strong>Submit</strong> / <strong>Save</strong>.</li>
+      </ol>
+      <p>Принимать оплату можно сразу. Если Shopify позже попросит фото документа — придёт письмо, нужно просто загрузить фото. Деньги приходят на счёт через несколько дней после заказа.</p>
+      <p><strong>Apple Pay и Google Pay</strong> включаются там же: на странице Payments в блоке Shopify Payments → <strong>Manage</strong> → раздел <strong>Wallets</strong> — проверьте, что они отмечены.</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">6</span>PayPal (по желанию)</h2>
+      <ol>
+        <li><strong>Settings</strong> → <strong>Payments</strong> → блок <strong>PayPal</strong> → <strong>Activate PayPal</strong>.</li>
+        <li>Войдите в свой PayPal <strong>Business</strong> или создайте его — PayPal проведёт по шагам.</li>
+      </ol>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">7</span>Проверить покупкой</h2>
+      <ol>
+        <li>Откройте <a href="https://sokole.eu" target="_blank" rel="noopener">sokole.eu</a> и купите самый недорогой товар своей картой — как обычный покупатель.</li>
+        <li>Проверьте, что пришло письмо о заказе и заказ появился в админке в разделе <strong>Orders</strong>.</li>
+        <li>Верните деньги: откройте этот заказ → <strong>Refund</strong> → <strong>Refund</strong>. Деньги вернутся на карту.</li>
+      </ol>
+      <p>Если всё прошло — магазин работает.</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">8</span>Открыть сайт для всех</h2>
+      <p>Сейчас сайт закрыт паролем — его видите только Вы. Когда оплата работает:</p>
+      <ol>
+        <li>Слева в меню <strong>Online Store</strong> → <strong>Preferences</strong>.</li>
+        <li>Вверху блок <strong>Store access</strong> → выключите переключатель <strong>Private mode</strong>.</li>
+        <li>Нажмите <strong>Save</strong>.</li>
+      </ol>
+      <p>Готово — <a href="https://sokole.eu" target="_blank" rel="noopener">sokole.eu</a> открыт для покупателей.</p>
+    </div>
+
+    <div class="step">
+      <h2><span class="step__num">9</span>Позже: IRIS через Viva</h2>
+      <p>Когда Viva одобрит заявку:</p>
+      <ol>
+        <li><strong>Settings</strong> → <strong>Payments</strong> → <strong>Add payment method</strong>.</li>
+        <li>В поиске введите <strong>Viva</strong> и выберите <strong>Viva.com Smart Checkout</strong>.</li>
+        <li>Подключите и войдите в свой аккаунт Viva.</li>
+        <li>В настройках Viva оставьте включённым только <strong>IRIS</strong> — карты уже принимает Shopify Payments.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <p><strong>Если что-то непонятно</strong> — в админке справа вверху есть значок <strong>?</strong> → чат с поддержкой Shopify. Они отвечают круглосуточно, пишите по-английски.</p>
+      <p>Полная памятка по магазину (товары, фото, заказы, доставка): <a href="/pages/sokole-guide">sokole.eu/pages/sokole-guide</a></p>
+    </div>
+  </div>
+</div>

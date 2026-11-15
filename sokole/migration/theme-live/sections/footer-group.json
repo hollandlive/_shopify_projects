@@ -1,0 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "newsletter": {
+      "type": "sokole-newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "overline": "The Sokole Letter",
+        "heading": "Be the first to know when Velvet returns",
+        "description": "Private launches, restock notices and an invitation to sample new compositions before anyone else.",
+        "input_placeholder": "Your email address",
+        "button_label": "Subscribe"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand": {
+          "type": "text",
+          "settings": {
+            "heading": "SOKOLE",
+            "subtext": "<p>Rare ingredients, composed with intention. A niche fragrance house for those who wear their story.</p>"
+          }
+        },
+        "shop": {
+          "type": "text",
+          "settings": {
+            "heading": "Shop",
+            "subtext": "<ul><li><a href=\"/collections/perfume-for-her\">Perfume for Her</a></li><li><a href=\"/collections/perfume-for-him\">Perfume for Him</a></li><li><a href=\"/collections/premium-boxes\">Premium Boxes</a></li><li><a href=\"/collections/body-mist-fragrance\">Body Mist</a></li><li><a href=\"/products/gift-card\">Gift Cards</a></li></ul>"
+          }
+        },
+        "client-care": {
+          "type": "text",
+          "settings": {
+            "heading": "Client Care",
+            "subtext": "<ul><li><a href=\"/pages/contact\">Contact</a></li><li><a href=\"/account\">My Orders</a></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "brand",
+        "shop",
+        "client-care"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 44,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "newsletter",
+    "footer"
+  ]
+}

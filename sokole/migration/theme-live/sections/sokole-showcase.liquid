@@ -1,0 +1,218 @@
+{{ 'sokole-showcase.css' | asset_url | stylesheet_tag }}
+
+<section class="sokole-showcase shopify-section" id="{{ section.settings.anchor | default: 'collection' }}">
+  <div class="page-width">
+    <div class="sokole-showcase__header">
+      {%- if section.settings.overline != blank -%}
+        <p class="sokole-showcase__overline">{{ section.settings.overline }}</p>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="sokole-showcase__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <p class="sokole-showcase__description">{{ section.settings.description }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="sokole-showcase__grid">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign product = block.settings.product
+          assign card_title = block.settings.title
+          assign card_subtitle = block.settings.subtitle
+          assign card_link = block.settings.link
+          assign card_image = block.settings.image
+
+          if product != blank
+            assign card_title = card_title | default: product.title
+            assign card_subtitle = card_subtitle | default: product.type
+            assign card_link = product.url
+            if card_image == blank and block.settings.fallback_image == blank
+              assign card_image = product.featured_image
+            endif
+          endif
+        -%}
+        <article class="sokole-showcase__card" {{ block.shopify_attributes }}>
+          <a href="{{ card_link | default: routes.all_products_collection_url }}" class="sokole-showcase__media">
+            {%- if card_image != blank -%}
+              {{
+                card_image
+                | image_url: width: 1200
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '400, 600, 900, 1200',
+                  sizes: '(max-width: 749px) 100vw, (max-width: 989px) 50vw, 33vw',
+                  alt: card_image.alt | default: card_title | escape
+              }}
+            {%- elsif block.settings.fallback_image != blank -%}
+              <img
+                src="{{ block.settings.fallback_image | asset_url }}"
+                alt="{{ card_title | escape }}"
+                loading="lazy"
+                width="1254"
+                height="1254"
+              >
+            {%- endif -%}
+            {%- if block.settings.tag != blank -%}
+              <span class="sokole-showcase__tag">{{ block.settings.tag }}</span>
+            {%- endif -%}
+            <span class="sokole-showcase__cta">{{ section.settings.add_to_bag_label | default: 'Add to Cart' }}</span>
+          </a>
+          <div class="sokole-showcase__info">
+            <h3 class="sokole-showcase__name">{{ card_title }}</h3>
+            {%- if card_subtitle != blank -%}
+              <p class="sokole-showcase__subtitle">{{ card_subtitle }}</p>
+            {%- endif -%}
+            <p class="sokole-showcase__price">
+              {%- if product != blank -%}
+                {%- render 'price', product: product, price_class: '' -%}
+              {%- else -%}
+                {{ block.settings.price_text }}
+              {%- endif -%}
+            </p>
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sokole Showcase",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "overline",
+      "label": "Overline",
+      "default": "The Collection"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "One fragrance, three rituals"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Sokole Velvet in its purest expressions — chosen by hand, foiled in gold, and finished for the way you wear it."
+    },
+    {
+      "type": "text",
+      "id": "add_to_bag_label",
+      "label": "Hover button label",
+      "default": "Add to Cart"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Section anchor ID",
+      "default": "collection",
+      "info": "Used for links like #collection from other sections (e.g. the hero)."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product card",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product",
+          "info": "When set, title, price, image and link come from this product unless overridden below."
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Badge (optional)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image override"
+        },
+        {
+          "type": "select",
+          "id": "fallback_image",
+          "label": "Fallback image",
+          "info": "Used only when no product and no image override are set.",
+          "options": [
+            { "value": "", "label": "None" },
+            { "value": "socole_velvet2.PNG", "label": "Sokole Velvet — bottle on marble" },
+            { "value": "sokole_velvet_1.PNG", "label": "Sokole Velvet — coffret on silk" },
+            { "value": "sokole_velvet0.PNG", "label": "Sokole Velvet — box on marble" }
+          ],
+          "default": "socole_velvet2.PNG"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title override"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle override",
+          "info": "e.g. \"Eau de Parfum · 50ml\""
+        },
+        {
+          "type": "text",
+          "id": "price_text",
+          "label": "Price (only used without a linked product)",
+          "default": "€185"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (only used without a linked product)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sokole Showcase",
+      "blocks": [
+        {
+          "type": "product",
+          "settings": {
+            "product": "sokole-velvet",
+            "tag": "The Signature",
+            "fallback_image": "socole_velvet2.PNG",
+            "title": "Sokole Velvet",
+            "subtitle": "Eau de Parfum · 50ml",
+            "price_text": "€185"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "tag": "Limited",
+            "fallback_image": "sokole_velvet_1.PNG",
+            "title": "The Velvet Coffret",
+            "subtitle": "Gift Edition · 50ml",
+            "price_text": "€210",
+            "link": "/collections/all"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "fallback_image": "sokole_velvet0.PNG",
+            "title": "Velvet Maison",
+            "subtitle": "Eau de Parfum · 50ml",
+            "price_text": "€185",
+            "link": "/collections/all"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

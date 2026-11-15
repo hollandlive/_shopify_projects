@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img">
+  <title>Sokole Fragrance — Concept 3: Medallion Monogram + Wordmark</title>
+
+  <!--
+    Concept 3: Monogram seal + wordmark.
+    The "S" sits inside a thin oval (like a perfume cap seal or wax emblem).
+    A small smoke wisp is integrated into the upper stem of the S.
+    SOKOLE and FRAGRANCE are set to the right.
+    Works for packaging, favicon (the oval S alone), and digital header.
+  -->
+
+  <defs>
+    <linearGradient id="c3Gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#E2BB56"/>
+      <stop offset="48%"  stop-color="#C89B3C"/>
+      <stop offset="100%" stop-color="#A67828"/>
+    </linearGradient>
+    <linearGradient id="c3SmokeS" x1="0%" y1="100%" x2="20%" y2="0%">
+      <stop offset="0%"   stop-color="#C89B3C" stop-opacity="0.0"/>
+      <stop offset="40%"  stop-color="#D4A848" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#E8C46A" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── Oval seal ───────────────────────────────────────────────────── -->
+  <ellipse cx="55" cy="60" rx="44" ry="53"
+           fill="none" stroke="url(#c3Gold)" stroke-width="1.0" stroke-opacity="0.8"/>
+  <!-- Inner thin oval -->
+  <ellipse cx="55" cy="60" rx="38" ry="47"
+           fill="none" stroke="url(#c3Gold)" stroke-width="0.4" stroke-opacity="0.45"/>
+
+  <!-- ── S monogram ─────────────────────────────────────────────────── -->
+  <text x="55" y="80"
+        font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,serif"
+        font-size="72"
+        font-weight="300"
+        text-anchor="middle"
+        fill="url(#c3Gold)">S</text>
+
+  <!-- Tiny smoke wisp rising from top of the S -->
+  <path d="M 50,13  C 47,8  51,4  48,0"
+        fill="none" stroke="url(#c3SmokeS)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 56,14  C 59,9  55,5  57,1"
+        fill="none" stroke="url(#c3SmokeS)" stroke-width="0.9" stroke-linecap="round"/>
+
+  <!-- ── Wordmark — to the right of the seal ────────────────────────── -->
+  <!-- SOKOLE -->
+  <text x="114" y="56"
+        font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,serif"
+        font-size="52"
+        font-weight="300"
+        letter-spacing="6"
+        fill="url(#c3Gold)">SOKOLE</text>
+
+  <!-- Thin rule under SOKOLE, above FRAGRANCE -->
+  <line x1="114" y1="67" x2="390" y2="67"
+        stroke="url(#c3Gold)" stroke-width="0.55" stroke-opacity="0.6"/>
+
+  <!-- FRAGRANCE -->
+  <text x="116" y="86"
+        font-family="'Palatino Linotype','Book Antiqua',Palatino,Georgia,serif"
+        font-size="13"
+        font-weight="400"
+        letter-spacing="10"
+        fill="url(#c3Gold)">FRAGRANCE</text>
+
+</svg>

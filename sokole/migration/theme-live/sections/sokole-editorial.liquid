@@ -1,0 +1,96 @@
+{{ 'sokole-editorial.css' | asset_url | stylesheet_tag }}
+
+<section class="sokole-editorial shopify-section">
+  {%- if section.settings.image != blank -%}
+    {{
+      section.settings.image
+      | image_url: width: 2000
+      | image_tag:
+        loading: 'lazy',
+        widths: '750, 1100, 1500, 2000',
+        sizes: '100vw',
+        class: 'sokole-editorial__image',
+        alt: section.settings.image.alt | escape
+    }}
+  {%- else -%}
+    <img
+      src="{{ 'sokole_velvet_1.PNG' | asset_url }}"
+      alt="{{ section.settings.quote | strip_html | escape }}"
+      loading="lazy"
+      width="1254"
+      height="1254"
+      class="sokole-editorial__image"
+    >
+  {%- endif -%}
+
+  <div class="sokole-editorial__overlay" aria-hidden="true"></div>
+
+  <div class="sokole-editorial__content">
+    {%- if section.settings.overline != blank -%}
+      <p class="sokole-editorial__overline">{{ section.settings.overline }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.quote != blank -%}
+      <blockquote class="sokole-editorial__quote">{{ section.settings.quote }}</blockquote>
+    {%- endif -%}
+
+    {%- if section.settings.body != blank -%}
+      <p class="sokole-editorial__body">{{ section.settings.body }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.link_label != blank -%}
+      <a href="{{ section.settings.link_url }}" class="sokole-editorial__link">
+        {{ section.settings.link_label }}
+      </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sokole Editorial",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "overline",
+      "label": "Overline",
+      "default": "The Philosophy"
+    },
+    {
+      "type": "textarea",
+      "id": "quote",
+      "label": "Quote",
+      "default": "“Every bottle begins as a question — what does beauty smell like without compromise?”"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body text",
+      "default": "Our perfumers work with rare, hand-selected materials sourced from the same producers who have supplied the great houses for generations. Each composition is crafted to evolve on your skin over hours. Not a statement. An atmosphere."
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link label",
+      "default": "Our Story"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sokole Editorial"
+    }
+  ]
+}
+{% endschema %}

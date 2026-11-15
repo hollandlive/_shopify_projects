@@ -1,0 +1,48 @@
+{{ 'sokole-marquee.css' | asset_url | stylesheet_tag }}
+
+<div class="sokole-marquee shopify-section">
+  <div class="sokole-marquee__track">
+    {%- for i in (1..2) -%}
+      {%- for block in section.blocks -%}
+        <span class="sokole-marquee__message" {{ block.shopify_attributes }}>
+          {{ block.settings.text }}
+          <span class="sokole-marquee__divider" aria-hidden="true">&#10022;</span>
+        </span>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sokole Marquee",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 8,
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Message",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Message",
+          "default": "Complimentary samples with every order"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sokole Marquee",
+      "blocks": [
+        { "type": "message", "settings": { "text": "Complimentary samples with every order" } },
+        { "type": "message", "settings": { "text": "Wrapped by hand in the Sokole atelier" } },
+        { "type": "message", "settings": { "text": "Complimentary shipping across Europe" } },
+        { "type": "message", "settings": { "text": "A fragrance that stays long after you have gone" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,122 @@
+{{ 'sokole-newsletter.css' | asset_url | stylesheet_tag }}
+
+<section class="sokole-newsletter shopify-section color-{{ section.settings.color_scheme }}">
+  <div class="page-width sokole-newsletter__wrapper">
+    <img
+      src="{{ 'sokole_fin_png.png' | asset_url }}"
+      alt="{{ shop.name }}"
+      class="sokole-newsletter__logo"
+      width="260"
+      height="108"
+      loading="lazy"
+    >
+
+    {%- if section.settings.overline != blank -%}
+      <p class="sokole-newsletter__overline">{{ section.settings.overline }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="sokole-newsletter__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.description != blank -%}
+      <p class="sokole-newsletter__description">{{ section.settings.description }}</p>
+    {%- endif -%}
+
+    {% form 'customer', class: 'sokole-newsletter__form' %}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+
+      {%- if form.posted_successfully? -%}
+        <p class="sokole-newsletter__success" tabindex="-1" autofocus>
+          {{- 'newsletter.success' | t -}}
+        </p>
+      {%- else -%}
+        <div class="sokole-newsletter__field">
+          <label for="SokoleNewsletter-{{ section.id }}" class="visually-hidden">
+            {{ 'newsletter.label' | t }}
+          </label>
+          <input
+            id="SokoleNewsletter-{{ section.id }}"
+            type="email"
+            name="contact[email]"
+            value="{{ form.email }}"
+            aria-required="true"
+            autocorrect="off"
+            autocapitalize="off"
+            autocomplete="email"
+            {% if form.errors %}
+              autofocus
+              aria-invalid="true"
+              aria-describedby="SokoleNewsletter-error-{{ section.id }}"
+            {% endif %}
+            placeholder="{{ section.settings.input_placeholder }}"
+            required
+          >
+          <button type="submit" name="commit">
+            {{ section.settings.button_label }}
+          </button>
+        </div>
+        {%- if form.errors -%}
+          <small class="sokole-newsletter__error" id="SokoleNewsletter-error-{{ section.id }}">
+            {{ form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email }}
+          </small>
+        {%- endif -%}
+      {%- endif -%}
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sokole Newsletter",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    },
+    {
+      "type": "text",
+      "id": "overline",
+      "label": "Overline",
+      "default": "The Sokole Letter"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Be the first to know when Velvet returns"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Private launches, restock notices and an invitation to sample new compositions before anyone else."
+    },
+    {
+      "type": "text",
+      "id": "input_placeholder",
+      "label": "Input placeholder",
+      "default": "Your email address"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Subscribe"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sokole Newsletter"
+    }
+  ]
+}
+{% endschema %}
