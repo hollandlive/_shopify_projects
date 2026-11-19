@@ -59,8 +59,12 @@
     {%- endif -%}
   {%- endfor -%}
 
-  {%- assign gift_card_product = all_products['gift-card'] -%}
-  {%- if gift_card_product -%}
+  {%- comment -%} handle differs between stores: old = gift-card, af0btt-11 = sokole-gift-card {%- endcomment -%}
+  {%- assign gift_card_product = all_products['sokole-gift-card'] -%}
+  {%- if gift_card_product.id == blank -%}
+    {%- assign gift_card_product = all_products['gift-card'] -%}
+  {%- endif -%}
+  {%- if gift_card_product.id != blank -%}
     <div class="sokole-catalog-group">
       <div class="sokole-catalog-group__header">
         <h2 class="title title--primary">Gift Card</h2>

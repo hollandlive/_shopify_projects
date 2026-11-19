@@ -41,3 +41,16 @@
 ## GitGuardian, 15 Nov 2026
 - 2 алерта «Generic Password» на `b296cb0` — ложные. Сработали строки 227–228 в `migration/Sokole_translations_Nov-13-2026.csv` и `migration/sokole-el-import-new-store.csv`: `section.password.json…:3jfchdkhhlz4x` / `:3dpbi4yl0bkb6` — это ключи переводов страницы «Opening soon», не пароли.
 - Реальных паролей/токенов в репо нет (проверено). Историю не переписывали. В GitGuardian отметить как False positive.
+
+## Магазин закрыт, 17 Nov 2026
+- sokole.eu и `af0btt-11.myshopify.com` отдают **HTTP 402** «Store unavailable». DNS в порядке, тема и товары на месте.
+- Причина: триал закончился, тариф клиент не выбрал (п. 1 «Осталось на стороне клиента»). Админка открывает форму оплаты тарифа.
+- Collaborator не видит Plan/Billing и Payments, исправить может только владелец (sokolefragrance@gmail.com): войти в admin.shopify.com/store/af0btt-11 → выбрать Basic → ввести карту. Магазин включится сразу. Карту за клиента не вводить.
+- Клиенту написано (Артём), черновик сообщения на EN подготовлен. Ждём, пока выберут тариф; затем по памятке: Payments, тестовый заказ, снять пароль.
+- Старый `sokole-sqcoggyz` работает (за паролем), админка: admin.shopify.com/store/sokole-sqcoggyz.
+
+## Gift card вместо футболки, 19 Nov 2026
+- Сайт открыт (тариф оплачен). В каталоге вместо подарочной карты была заглушка-футболка Dawn, ссылка «Gift Cards» в футере давала 404.
+- Причина: карту в af0btt-11 создали вручную с handle `sokole-gift-card`, а тема и футер (EN/EL) ждут `gift-card`.
+- Исправлено в админке: handle → `gift-card`, редирект `sokole-gift-card` → `gift-card` создан. Проверено: каталог показывает карту с фото, /products/gift-card и /el/products/gift-card — 200.
+- Локально `migration/theme-live/snippets/sokole-catalog-grouped.liquid` сделан устойчивым (ищет оба handle, проверяет `.id`) — в магазин НЕ пушено, не обязательно.
