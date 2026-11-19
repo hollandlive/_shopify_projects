@@ -58,3 +58,8 @@
 ## Заголовок рассылки, 19 Nov 2026
 - Клиенту не понравилось «Be the first to know when Velvet returns» (читается так, будто Velvet нет в наличии).
 - Заменено на «Be the first to discover new compositions» (`sections/footer-group.json`, запушено в живую тему) и EL «Ανακαλύψτε πρώτοι τις νέες μας συνθέσεις» (Translate & Adapt). Проверено на sokole.eu и /el.
+
+## Портфолио, 19 Nov 2026
+- Клиенту отправлено, сайт открыт. Статус передан сессии artemisaxen: запись Sokole в `artemisaxen/lib/projects.ts` обновлена (Live, ссылка на sokole.eu, launch fixes, «launched and handed over») — **не закоммичено, ждёт Артёма** в репо artemisaxen.
+- Тема — Sense (не Dawn; Dawn-овская только заглушка-футболка). Robust-сниппет каталога в портфолио не заявлен, т.к. в магазин не пушен.
+- С нашей стороны по Sokole всё закрыто.
