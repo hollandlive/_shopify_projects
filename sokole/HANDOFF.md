@@ -54,3 +54,7 @@
 - Причина: карту в af0btt-11 создали вручную с handle `sokole-gift-card`, а тема и футер (EN/EL) ждут `gift-card`.
 - Исправлено в админке: handle → `gift-card`, редирект `sokole-gift-card` → `gift-card` создан. Проверено: каталог показывает карту с фото, /products/gift-card и /el/products/gift-card — 200.
 - Локально `migration/theme-live/snippets/sokole-catalog-grouped.liquid` сделан устойчивым (ищет оба handle, проверяет `.id`) — в магазин НЕ пушено, не обязательно.
+
+## Заголовок рассылки, 19 Nov 2026
+- Клиенту не понравилось «Be the first to know when Velvet returns» (читается так, будто Velvet нет в наличии).
+- Заменено на «Be the first to discover new compositions» (`sections/footer-group.json`, запушено в живую тему) и EL «Ανακαλύψτε πρώτοι τις νέες μας συνθέσεις» (Translate & Adapt). Проверено на sokole.eu и /el.
